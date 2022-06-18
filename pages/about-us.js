@@ -1,4 +1,4 @@
-import AboutUsPage from "../container/About Us Page";
+import AboutUsPage from "../container/AboutUsPage";
 
 
 export default function About() {

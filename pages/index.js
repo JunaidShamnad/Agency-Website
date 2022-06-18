@@ -1,10 +1,10 @@
-import HomePage from "../container/Home Page";
+import HomePage from "../container/HomePage";
 
 
 export default function Home() {
   return (
-   <>
+    <>
    <HomePage/>
-   </>
+    </>
   )
 }

@@ -1,7 +1,4 @@
-import styled from "styled-components";
-
 export const theme = {
-
   colors: {
     text: "#333",
     background: "#fff",
@@ -64,7 +61,7 @@ export const theme = {
     base: "0.25em",
     round: "99999em",
   },
-  
+
   space: [
     0, // [0]
     "0.125rem", // 2px [1]

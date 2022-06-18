@@ -1,4 +1,4 @@
-import ContactUsPage from "../container/Contact Us Page";
+import ContactUsPage from "../container/ContactUsPage";
 
 export default function Contact() {
     return (
