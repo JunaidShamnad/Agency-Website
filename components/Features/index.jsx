@@ -3,7 +3,7 @@
 const Features = () => {
     return (
       <>
-      <h1>Features</h1>
+      <h3>Features</h3>
       </>
     )
   }
