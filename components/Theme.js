@@ -1,7 +1,8 @@
 export const theme = {
   colors: {
     text: "#333",
-    background: "#fff",
+    primaryBackground: "#fff",
+    secondaryBackground: "#fafafa",
     primary: "#783396",
     secondary: "#767676",
     accent: "#d396c3",
@@ -20,10 +21,35 @@ export const theme = {
     primary: {
       color: "white",
       backgroundColor: "orange",
+      border:'none',
+      borderRadius: "0.5rem",
+      padding: "0.5rem 1rem",
+      fontSize: "1rem",
+      fontWeight: "bold",
+      cursor: "pointer",
+      transition: "all 0.2s ease-in-out",
+      "&:hover": {
+        backgroundColor: "orange",
+        color: "white",
+        borderColor: "orange",
+      },
+
     },
     secondary: {
       color: "white",
       backgroundColor: "black",
+      border: "none",
+      borderRadius: "0.5rem",
+      padding: "0.5rem 1rem",
+      fontSize: "1rem",
+      fontWeight: "bold",
+      cursor: "pointer",
+      transition: "all 0.2s ease-in-out",
+      "&:hover": {
+        backgroundColor: "black",
+        color: "white",
+        border: "none",
+      },
     },
   },
 
@@ -39,18 +65,19 @@ export const theme = {
     laptop: "1200px", // 1200px
     desktop: "1400px", // 1400px
     desktopL: "1600px", // 1600px
-  },
-
+  }, 
   fontWeights: {
     light: 200,
     normal: 400,
     bold: 700,
   },
 
+
   lineHeights: {
     body: 1.5,
     heading: 1.1,
   },
+
   borders: {
     none: "none",
     thin: "1px solid",
@@ -61,6 +88,18 @@ export const theme = {
     base: "0.25em",
     round: "99999em",
   },
+
+  shadows: {
+    none: "none",
+    base: "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+    md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+    inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+    outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
+  },
+
 
   space: [
     0, // [0]
@@ -73,4 +112,5 @@ export const theme = {
     "8rem", // 128px [7]
     "16rem", // 256px [8]
   ],
+
 };
