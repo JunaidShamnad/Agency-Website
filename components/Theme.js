@@ -56,6 +56,16 @@ export const theme = {
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
     },
+    fourth: {
+      color: "#fff",
+      backgroundColor: 'none',
+      border: "2px solid #FFD338",
+      padding: "1rem 1.6rem",
+      fontSize: "1rem",
+      fontWeight: "500",
+      cursor: "pointer",
+      transition: "all 0.2s ease-in-out",
+    },
   },
 
   mobile: {
