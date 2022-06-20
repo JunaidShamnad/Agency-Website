@@ -26,9 +26,10 @@ export const theme = {
       backgroundColor: "#FFD338",
       border:'none',
       borderRadius: "5px",
-      padding: "1rem 1.6rem",
-      fontSize: "1rem",
+      padding: "11px 36px",
+      fontSize: "1.1rem",
       fontWeight: "500",
+      letterSpacing: "0.8px",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
 

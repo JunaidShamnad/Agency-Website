@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
       <>
       <Heading>HeroSection</Heading>
-      <Button>Hi</Button>
+      <Button>Button</Button>
       </>
     )
   }
