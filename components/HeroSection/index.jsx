@@ -5,7 +5,7 @@ import { Heading } from "./HeroSection.styled"
 const HeroSection = () => {
     return (
       <>
-      <Heading>HeroSection</Heading>
+      <Heading>Main Heading</Heading>
       <Button>Button</Button>
       </>
     )

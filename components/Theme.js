@@ -13,11 +13,19 @@ export const theme = {
   },
 
   fontSizes: {
+    xxxxl: "9rem", //114px
+    xxxl: "8rem",
+    xxl: "7rem", //112px
     xl: "6rem", //96px
     l: "5rem",  //80px
-    m: "3.9rem", //62.4px
-    s: "2.8rem", // 44.8px
-    xs: "2.1rem", //33.6px
+    m: "3.94rem", //63.04px
+    s: "2.88rem", // 46.08px
+    xs: "2.3rem", //36.8px
+    xxs: "1.65rem", //26.4px
+    xxxs: "1.069rem", //17.104px
+    xxxxs: "0.99rem", //15.84px
+    xxxxxs: "0.85rem", //13.6px
+    xxxxxxs: "0.75rem", //12px
   },
 
   buttons: {
@@ -75,7 +83,11 @@ export const theme = {
   },
 
   breakpoints: {
-    mobile: "768px", // 768px
+    extraSmallMobile:"340px", //340px
+    smallestMobile: "460px", //460px
+    smallMobile:"585px", //585px
+    mobile: "710px", //710px
+    smallTablet: "830px", // 830px
     tablet: "992px", // 992px
     laptop: "1200px", // 1200px
     desktop: "1400px", // 1400px
