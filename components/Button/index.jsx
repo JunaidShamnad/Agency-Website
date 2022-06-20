@@ -1,10 +1,10 @@
+import { ButtonStyled } from './Button.elements'
 
-
-const Button = () => {
+const Button = ({children}) => {
   return (
-  <>
-  <button>Button</button>
-  </>
+    <ButtonStyled>
+        {children}
+    </ButtonStyled>
   )
 }
 

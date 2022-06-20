@@ -1,62 +1,66 @@
 export const theme = {
   colors: {
-    text: "#333",
-    primaryBackground: "#fff",
-    secondaryBackground: "#fafafa",
-    primary: "#783396",
-    secondary: "#767676",
-    accent: "#d396c3",
-    muted: "#efefef",
+    primaryText: "#000000",
+    primaryInvertedText: "#fff",
+    secondaryText: "#FFFFFF",
+    primaryBackground: "#FFFDF6",
+    secondaryBackground: "#FEE33A",
+    accentBackground: "#6368E5",
+    primary: "#FFFDF6",
+    secondary: "#FEE33A",
+    teritory:"#1D1A26",
+    accent: "#6368E5",
   },
 
   fontSizes: {
-    xl: "4rem",
-    l: "2rem",
-    m: "1rem",
-    s: "0.9rem",
-    xs: "0.75rem",
+    xl: "6rem", //96px
+    l: "5rem",  //80px
+    m: "3.9rem", //62.4px
+    s: "2.8rem", // 44.8px
+    xs: "2.1rem", //33.6px
   },
 
   buttons: {
     primary: {
-      color: "white",
-      backgroundColor: "orange",
+      color: "#000000",
+      backgroundColor: "#FFD338",
       border:'none',
-      borderRadius: "0.5rem",
-      padding: "0.5rem 1rem",
+      borderRadius: "5px",
+      padding: "1rem 1.6rem",
       fontSize: "1rem",
-      fontWeight: "bold",
+      fontWeight: "500",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
-      "&:hover": {
-        backgroundColor: "orange",
-        color: "white",
-        borderColor: "orange",
-      },
 
     },
     secondary: {
-      color: "white",
-      backgroundColor: "black",
+      color: "#FFFFFF",
+      backgroundColor: "#1D1A26",
       border: "none",
-      borderRadius: "0.5rem",
-      padding: "0.5rem 1rem",
+      borderRadius: "5px",
+      padding: "1rem 1.6rem",
       fontSize: "1rem",
-      fontWeight: "bold",
+      fontWeight: "500",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
-      "&:hover": {
-        backgroundColor: "black",
-        color: "white",
-        border: "none",
-      },
+    },
+    teritory: {
+      color: "#000",
+      textDecoration: "underline",
+      backgroundColor: 'none',
+      border: "none",
+      padding: "1rem 1.6rem",
+      fontSize: "1rem",
+      fontWeight: "500",
+      cursor: "pointer",
+      transition: "all 0.2s ease-in-out",
     },
   },
 
   mobile: {
-    fontSize: 12,
+    fontSize: "0.75rem",
     margin: "4px",
-    color: "red",
+    color: "#000",
   },
 
   breakpoints: {
@@ -67,9 +71,14 @@ export const theme = {
     desktopL: "1600px", // 1600px
   }, 
   fontWeights: {
-    light: 200,
-    normal: 400,
+    thin: 200,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semibold: 600,
     bold: 700,
+    bolder: 800,
+    black: 900
   },
 
 
@@ -81,12 +90,13 @@ export const theme = {
   borders: {
     none: "none",
     thin: "1px solid",
+    thick: "3px solid",
   },
 
   radii: {
     none: 0,
-    base: "0.25em",
-    round: "99999em",
+    base: "5px",
+    round: "50px",
   },
 
   shadows: {

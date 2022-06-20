@@ -9,6 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
+    background-color:#fff;
 }
 
 html {

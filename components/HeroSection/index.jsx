@@ -1,9 +1,12 @@
+import Button from "../Button"
+import { Heading } from "./HeroSection.styled"
 
 
 const HeroSection = () => {
     return (
       <>
-      <h1>HeroSection</h1>
+      <Heading>HeroSection</Heading>
+      <Button>Hi</Button>
       </>
     )
   }
