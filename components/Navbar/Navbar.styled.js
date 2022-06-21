@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { HeadingH3 } from "../cssHelper";
+import { HeadingH3,Paragraph,SecondaryButton,QuaternaryButton } from "../cssHelper";
 
-export const Heading = styled.h1`
+export const HeadingTitle = styled.h1`
  ${ HeadingH3 };
-`;
+
+`
 
