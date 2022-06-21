@@ -6,6 +6,14 @@ export const flexRowCenter = css`
   justify-content: center;
   align-items: center;
 `;
+export const flexRow = css`
+  display: flex;
+  flex-direction: row;
+`;
+export const flexColumn = css`
+  display: flex;
+  flex-direction: Column;
+`;
 export const flexColumnCenter = css`
   display: flex;
   flex-direction: column;
