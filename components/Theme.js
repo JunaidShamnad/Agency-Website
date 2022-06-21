@@ -113,7 +113,7 @@ export const theme = {
       }
     },
     quaternary: {
-      color: "#fff",
+      color: "#000",
       backgroundColor: 'transparent',
       display: "inline-block",
       boxSizing:"border-box",
