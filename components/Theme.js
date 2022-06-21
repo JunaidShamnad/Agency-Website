@@ -83,12 +83,12 @@ export const theme = {
   },
 
   breakpoints: {
-    extraSmallMobile:"340px", //340px
-    smallestMobile: "460px", //460px
-    smallMobile:"585px", //585px
-    mobile: "710px", //710px
-    smallTablet: "830px", // 830px
-    tablet: "992px", // 992px
+    extraSmallMobile:"360px", //360px
+    smallestMobile: "490px", //490px
+    smallMobile:"622px", //622px
+    mobile: "740px", //740px
+    smallTablet: "860px", // 860px
+    tablet: "999px", // 999px
     laptop: "1200px", // 1200px
     desktop: "1400px", // 1400px
     desktopL: "1600px", // 1600px
