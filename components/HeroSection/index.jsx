@@ -1,5 +1,5 @@
 
-import MainButton, { FourthButton, SecondButton, ThirdButton } from "../Button"
+import MainButton from "../Button"
 import { Heading } from "./HeroSection.styled"
 
 
@@ -8,9 +8,6 @@ const HeroSection = () => {
       <>
       <Heading>Main Heading</Heading>
       <MainButton>Main Button</MainButton>
-      <SecondButton>Second Button</SecondButton>
-      <ThirdButton>Third Button</ThirdButton>
-      <FourthButton>Fourth Button</FourthButton>
       </>
     )
   }

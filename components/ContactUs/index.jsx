@@ -1,11 +1,11 @@
-import { Heading } from "./ContactUs.styled"
+import { Container, Heading } from "./ContactUs.styled"
 
 
 const ContactUs = () => {
     return (
-      <>
+      <Container>
       <Heading>Contact Us</Heading>
-      </>
+      </Container>
     )
   }
   

@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import {  MainHeading } from "../cssHelper";
+import { MainHeading } from "../cssHelper";
+
 
 export const Heading = styled.h1`
- ${MainHeading};
+${MainHeading}
 `;
 
