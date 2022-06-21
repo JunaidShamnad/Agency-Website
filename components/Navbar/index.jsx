@@ -1,10 +1,12 @@
-import { Heading } from "./Navbar.styled"
+import { HeadingTitle } from "./Navbar.styled"
 
 
 const Navbar = () => {
     return (
       <>
-      <Heading>Navbar</Heading>
+      <HeadingTitle>
+        NavBAr
+      </HeadingTitle>
       </>
     )
   }

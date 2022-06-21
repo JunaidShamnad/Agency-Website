@@ -1,7 +1,22 @@
 import { css } from "styled-components";
 
-export const flexCenter = css`
+export const flexRowCenter = css`
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+export const flexRow = css`
+  display: flex;
+  flex-direction: row;
+`;
+export const flexColumn = css`
+  display: flex;
+  flex-direction: Column;
+`;
+export const flexColumnCenter = css`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
@@ -23,8 +38,7 @@ export const MainHeading = css`
     font-size: ${({ theme }) => theme.fontSizes?.xxl};
     line-height: ${({ theme }) => theme.fontSizes?.xxxl};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallTablet}) {
+  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.xl};
     line-height: ${({ theme }) => theme.fontSizes?.xxl};
   }
@@ -32,18 +46,15 @@ export const MainHeading = css`
     font-size: ${({ theme }) => theme.fontSizes?.l};
     line-height: ${({ theme }) => theme.fontSizes?.xl};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.m};
     line-height: ${({ theme }) => theme.fontSizes?.l};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.s};
     line-height: ${({ theme }) => theme.fontSizes?.m};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.extraSmallMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xs};
     line-height: ${({ theme }) => theme.fontSizes?.s};
   }
@@ -60,8 +71,7 @@ export const HeadingH2 = css`
     font-size: ${({ theme }) => theme.fontSizes?.xl};
     line-height: ${({ theme }) => theme.fontSizes?.xxl};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallTablet}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.l};
     line-height: ${({ theme }) => theme.fontSizes?.xl};
   }
@@ -69,18 +79,15 @@ export const HeadingH2 = css`
     font-size: ${({ theme }) => theme.fontSizes?.m};
     line-height: ${({ theme }) => theme.fontSizes?.l};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.s};
     line-height: ${({ theme }) => theme.fontSizes?.m};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xs};
     line-height: ${({ theme }) => theme.fontSizes?.s};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.extraSmallMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
     line-height: ${({ theme }) => theme.fontSizes?.xs};
   }
@@ -97,8 +104,7 @@ export const HeadingH3 = css`
     font-size: ${({ theme }) => theme.fontSizes?.l};
     line-height: ${({ theme }) => theme.fontSizes?.xl};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallTablet}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.m};
     line-height: ${({ theme }) => theme.fontSizes?.l};
   }
@@ -106,13 +112,11 @@ export const HeadingH3 = css`
     font-size: ${({ theme }) => theme.fontSizes?.s};
     line-height: ${({ theme }) => theme.fontSizes?.m};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xs};
     line-height: ${({ theme }) => theme.fontSizes?.s};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
     line-height: ${({ theme }) => theme.fontSizes?.xs};
   }
@@ -124,14 +128,12 @@ export const Paragraph = css`
   line-height: ${({ theme }) => theme.fontSizes?.xxs};
   transition: ${({ theme }) => theme.transition?.base};
 
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallTablet}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxxxs};
     line-height: ${({ theme }) => theme.fontSizes?.xxxs};
   }
 
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxxxxs};
     line-height: ${({ theme }) => theme.fontSizes?.xxxxs};
   }
@@ -154,15 +156,19 @@ export const PrimaryButton = css`
   cursor: ${({ theme }) => theme.buttons.primary?.cursor};
   transition: ${({ theme }) => theme.buttons.primary?.transition};
 
-  @media screen and (max-width:${({theme})=>theme.breakpoints.smallMobile}){
-    font-size: ${({ theme }) => theme.buttons.primary?.mediaQuery.tablet.fontSize};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.primary?.mediaQuery.tablet.fontSize};
     padding: ${({ theme }) => theme.buttons.primary?.mediaQuery.tablet.padding};
-    font-weight: ${({ theme }) => theme.buttons.primary?.mediaQuery.tablet.fontWeight};
+    font-weight: ${({ theme }) =>
+      theme.buttons.primary?.mediaQuery.tablet.fontWeight};
   }
-  @media screen and (max-width:${({theme})=>theme.breakpoints.extraSmallMobile}){
-    font-size: ${({ theme }) => theme.buttons.primary?.mediaQuery.mobile.fontSize};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.extraSmallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.primary?.mediaQuery.mobile.fontSize};
     padding: ${({ theme }) => theme.buttons.primary?.mediaQuery.mobile.padding};
-    font-weight: ${({ theme }) => theme.buttons.primary?.mediaQuery.mobile.fontWeight};
+    font-weight: ${({ theme }) =>
+      theme.buttons.primary?.mediaQuery.mobile.fontWeight};
   }
 `;
 
@@ -183,15 +189,21 @@ export const SecondaryButton = css`
   cursor: ${({ theme }) => theme.buttons.secondary?.cursor};
   transition: ${({ theme }) => theme.buttons.secondary?.transition};
 
-  @media screen and (max-width:${({theme})=>theme.breakpoints.smallMobile}){
-    font-size: ${({ theme }) => theme.buttons.secondary?.mediaQuery.tablet.fontSize};
-    padding: ${({ theme }) => theme.buttons.secondary?.mediaQuery.tablet.padding};
-    font-weight: ${({ theme }) => theme.buttons.secondary?.mediaQuery.tablet.fontWeight};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.secondary?.mediaQuery.tablet.fontSize};
+    padding: ${({ theme }) =>
+      theme.buttons.secondary?.mediaQuery.tablet.padding};
+    font-weight: ${({ theme }) =>
+      theme.buttons.secondary?.mediaQuery.tablet.fontWeight};
   }
-  @media screen and (max-width:${({theme})=>theme.breakpoints.extraSmallMobile}){
-    font-size: ${({ theme }) => theme.buttons.secondary?.mediaQuery.mobile.fontSize};
-    padding: ${({ theme }) => theme.buttons.secondary?.mediaQuery.mobile.padding};
-    font-weight: ${({ theme }) => theme.buttons.secondary?.mediaQuery.mobile.fontWeight};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.extraSmallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.secondary?.mediaQuery.mobile.fontSize};
+    padding: ${({ theme }) =>
+      theme.buttons.secondary?.mediaQuery.mobile.padding};
+    font-weight: ${({ theme }) =>
+      theme.buttons.secondary?.mediaQuery.mobile.fontWeight};
   }
 `;
 
@@ -212,15 +224,21 @@ export const TeritaryButton = css`
   cursor: ${({ theme }) => theme.buttons.teritary?.cursor};
   transition: ${({ theme }) => theme.buttons.teritary?.transition};
 
-  @media screen and (max-width:${({theme})=>theme.breakpoints.smallMobile}){
-    font-size: ${({ theme }) => theme.buttons.teritary?.mediaQuery.tablet.fontSize};
-    padding: ${({ theme }) => theme.buttons.teritary?.mediaQuery.tablet.padding};
-    font-weight: ${({ theme }) => theme.buttons.teritary?.mediaQuery.tablet.fontWeight};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.teritary?.mediaQuery.tablet.fontSize};
+    padding: ${({ theme }) =>
+      theme.buttons.teritary?.mediaQuery.tablet.padding};
+    font-weight: ${({ theme }) =>
+      theme.buttons.teritary?.mediaQuery.tablet.fontWeight};
   }
-  @media screen and (max-width:${({theme})=>theme.breakpoints.extraSmallMobile}){
-    font-size: ${({ theme }) => theme.buttons.teritary?.mediaQuery.mobile.fontSize};
-    padding: ${({ theme }) => theme.buttons.teritary?.mediaQuery.mobile.padding};
-    font-weight: ${({ theme }) => theme.buttons.teritary?.mediaQuery.mobile.fontWeight};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.extraSmallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.teritary?.mediaQuery.mobile.fontSize};
+    padding: ${({ theme }) =>
+      theme.buttons.teritary?.mediaQuery.mobile.padding};
+    font-weight: ${({ theme }) =>
+      theme.buttons.teritary?.mediaQuery.mobile.fontWeight};
   }
 `;
 
@@ -240,14 +258,20 @@ export const QuaternaryButton = css`
   text-decoration: ${({ theme }) => theme.buttons.quaternary?.textDecoration};
   cursor: ${({ theme }) => theme.buttons.quaternary?.cursor};
   transition: ${({ theme }) => theme.buttons.quaternary?.transition};
-  @media screen and (max-width:${({theme})=>theme.breakpoints.smallMobile}){
-    font-size: ${({ theme }) => theme.buttons.quaternary?.mediaQuery.tablet.fontSize};
-    padding: ${({ theme }) => theme.buttons.quaternary?.mediaQuery.tablet.padding};
-    font-weight: ${({ theme }) => theme.buttons.quaternary?.mediaQuery.tablet.fontWeight};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.quaternary?.mediaQuery.tablet.fontSize};
+    padding: ${({ theme }) =>
+      theme.buttons.quaternary?.mediaQuery.tablet.padding};
+    font-weight: ${({ theme }) =>
+      theme.buttons.quaternary?.mediaQuery.tablet.fontWeight};
   }
-  @media screen and (max-width:${({theme})=>theme.breakpoints.extraSmallMobile}){
-    font-size: ${({ theme }) => theme.buttons.quaternary?.mediaQuery.mobile.fontSize};
-    padding: ${({ theme }) => theme.buttons.quaternary?.mediaQuery.mobile.padding};
-    font-weight: ${({ theme }) => theme.buttons.quaternary?.mediaQuery.mobile.fontWeight};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.extraSmallMobile}) {
+    font-size: ${({ theme }) =>
+      theme.buttons.quaternary?.mediaQuery.mobile.fontSize};
+    padding: ${({ theme }) =>
+      theme.buttons.quaternary?.mediaQuery.mobile.padding};
+    font-weight: ${({ theme }) =>
+      theme.buttons.quaternary?.mediaQuery.mobile.fontWeight};
   }
 `;
