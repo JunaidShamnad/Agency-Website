@@ -1,32 +1,33 @@
-import { Heading,WorkTitle,Work,WorkOne,WorkLinkImage,WorkTwo,WorkThree } from "./OurWorks.styled"
-
+import {
+  Container,
+  WorkTitle,
+  Work,
+  WorkOne,
+  WorkLinkImage,
+  WorkTwo,
+  WorkThree,
+} from "./OurWorks.styled";
 
 const OurWorks = () => {
-    return (
-      <>
-      <OurWorks>
+  return (
+    <>
+      <Container>
         <WorkOne>
-          <WorkTitle>Latest Projects</WorkTitle>
+          <WorkHeading>Latest Projects</WorkHeading>
           <Work>
-
+            <WorkTitle></WorkTitle>
           </Work>
         </WorkOne>
         <WorkTwo>
-          <Work>
-              
-          </Work>
+          <Work></Work>
         </WorkTwo>
         <WorkThree>
-          <Work>
-              
-          </Work>
-          <WorkLinkImage>
-
-          </WorkLinkImage>
+          <Work></Work>
+          <WorkLinkImage></WorkLinkImage>
         </WorkThree>
-      </OurWorks>
-      </>
-    )
-  }
-  
-  export default OurWorks
+      </Container>
+    </>
+  );
+};
+
+export default OurWorks;

@@ -1,10 +1,10 @@
-import { Heading } from "./Features.styled"
+
 
 
 const Features = () => {
     return (
       <>
-      <Heading>Features</Heading>
+     <h1>Hi</h1>
       </>
     )
   }

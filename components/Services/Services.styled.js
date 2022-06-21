@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeadingH3, flexColumn,flexRow,flexRowCenter,flexColumnCenter} from "../cssHelper";
+import { HeadingH3, flexColumn,flexRowCenter,flexColumnCenter} from "../cssHelper";
 
 export const Heading = styled.h1`
  ${ HeadingH3 };

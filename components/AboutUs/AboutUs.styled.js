@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeadingH2,flexRowCenter,flexColumnCenter } from "../cssHelper";
+import { flexRowCenter,flexColumnCenter } from "../cssHelper";
 
 
 export const About  = styled.div`
