@@ -10,7 +10,6 @@ body {
     padding: 0;
     margin: 0;
     background-color:#fff;
-    transition: all 0.2s ease-in-out ;
 
 }
 
@@ -27,6 +26,7 @@ a {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: all 0.2s ease-in-out ;
 }
 
 `;

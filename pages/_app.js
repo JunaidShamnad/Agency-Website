@@ -6,14 +6,17 @@ import GlobalStyle from '../components/globalStyles';
 function MyApp({ Component, pageProps }) {
 
   return(
-   
+   <>
+    <GlobalStyle/>
+    <ThemeProvider theme={theme}>
     <Layout>
-      <GlobalStyle/>
-      <ThemeProvider theme={theme}>
+     
+      
       <Component {...pageProps} />
-      </ThemeProvider>
+      
     </Layout>
- 
+    </ThemeProvider>
+    </>
  
   ) 
 }

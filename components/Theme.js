@@ -31,49 +31,114 @@ export const theme = {
   buttons: {
     primary: {
       color: "#000000",
+      boxSizing:"border-box",
       backgroundColor: "#FFD338",
+      display: "inline-block",
       border:'none',
-      borderRadius: "5px",
-      padding: "11px 36px",
-      fontSize: "1.1rem",
+      textDecoration: "none",
+      borderRadius: "3px",
+      padding: "13.5px 32px",
+      fontSize: "1.199rem",
       fontWeight: "500",
+      textAlign:"center",
       letterSpacing: "0.8px",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
+      mediaQuery: {
+        tablet: {
+          fontSize: "0.999rem",
+          padding: "11px 26px",
+          fontWeight: "500",
+        },
+        mobile: {
+          fontSize: "0.875rem",
+          padding: "8px 22x",
+          fontWeight: "500",
+        },
+      },
+
 
     },
     secondary: {
       color: "#FFFFFF",
+      boxSizing:"border-box",
       backgroundColor: "#1D1A26",
+      display: "inline-block",
+      textDecoration: "none",
       border: "none",
-      borderRadius: "5px",
-      padding: "1rem 1.6rem",
-      fontSize: "1rem",
+      borderRadius: "3px",
+      padding: "13.5px 32px",
+      fontSize: "1.199rem",
       fontWeight: "500",
+      textAlign:"center",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
+      mediaQuery: {
+        tablet: {
+          fontSize: "0.999rem",
+          padding: "11px 26px",
+          fontWeight: "500",
+        },
+        mobile: {
+          fontSize: "0.875rem",
+          padding: "8px 22x",
+          fontWeight: "500",
+        },
+      }
     },
-    teritory: {
+    teritary: {
       color: "#000",
       textDecoration: "underline",
-      backgroundColor: 'none',
+      boxSizing:"border-box",
+      display: "inline-block",
+      backgroundColor: 'transparent',
       border: "none",
-      padding: "1rem 1.6rem",
-      fontSize: "1rem",
+      padding: "13.5px 32px",
+      fontSize: "1.199rem",
       fontWeight: "500",
+      textAlign:"center",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
+      mediaQuery: {
+        tablet: {
+          fontSize: "0.999rem",
+          padding: "11px 26px",
+          fontWeight: "500",
+        },
+        mobile: {
+          fontSize: "0.875rem",
+          padding: "8px 22x",
+          fontWeight: "500",
+        },
+      }
     },
-    fourth: {
+    quaternary: {
       color: "#fff",
-      backgroundColor: 'none',
+      backgroundColor: 'transparent',
+      display: "inline-block",
+      boxSizing:"border-box",
+      textDecoration: "none",
+      borderRadius: "3px",
       border: "2px solid #FFD338",
-      padding: "1rem 1.6rem",
-      fontSize: "1rem",
+      padding: "13.5px 32px",
+      fontSize: "1.199rem",
+      textAlign:"center",
       fontWeight: "500",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
-    },
+      mediaQuery: {
+        tablet: {
+          fontSize: "0.999rem",
+          padding: "11px 26px",
+          fontWeight: "500",
+        },
+        mobile: {
+          fontSize: "0.875rem",
+          padding: "8px 22x",
+          fontWeight: "500",
+        },
+    }
+  }
   },
 
   mobile: {
@@ -83,13 +148,13 @@ export const theme = {
   },
 
   breakpoints: {
-    extraSmallMobile:"360px", //360px
-    smallestMobile: "490px", //490px
-    smallMobile:"622px", //622px
-    mobile: "740px", //740px
-    smallTablet: "860px", // 860px
-    tablet: "999px", // 999px
-    laptop: "1200px", // 1200px
+    extraSmallMobile:"395px", //395px
+    smallestMobile: "530px", //530px
+    smallMobile:"662px", //662px
+    mobile: "785px", //785px
+    smallTablet: "895px", // 895px
+    tablet: "1100px", // 1100px
+    laptop: "1250px", // 1250px
     desktop: "1400px", // 1400px
     desktopL: "1600px", // 1600px
   }, 
@@ -146,4 +211,9 @@ export const theme = {
     "16rem", // 256px [8]
   ],
 
-};
+  transition: {
+    base: "all 0.2s ease-in-out",
+    short: "all 0.1s ease-in-out",
+    long: "all 0.3s ease-in-out",
+  }
+}

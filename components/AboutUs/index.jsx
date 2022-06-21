@@ -1,9 +1,10 @@
+import { Heading } from "./AboutUs.styled"
 
 
 const AboutUs = () => {
   return (
     <>
-    <h1>About Us</h1>
+    <Heading>About Us</Heading>
     </>
   )
 }

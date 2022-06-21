@@ -1,8 +1,9 @@
+import { Heading } from "./FAQ.styled"
 
 const FAQ = () => {
     return (
       <>
-      <h3>FAQ</h3>
+      <Heading>FAQ</Heading>
       </>
     )
   }

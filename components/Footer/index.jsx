@@ -1,9 +1,10 @@
+import { Heading } from "./Footer.styled"
 
 
 const Footer = () => {
     return (
       <>
-      <h1>Footer</h1>
+      <Heading>Footer</Heading>
       </>
     )
   }
