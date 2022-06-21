@@ -3,7 +3,31 @@
 const OurWorks = () => {
     return (
       <>
-      <h1>Our Works</h1>
+      <Works>
+        <FirstWork>
+          <WorkHeading></WorkHeading>
+          <Work>
+            <WorkTitles></WorkTitles>
+            <WorkDescription></WorkDescription>
+            <WorkImage></WorkImage>
+          </Work>
+        </FirstWork>
+        <SecondWork>
+        <Work>
+            <WorkTitles></WorkTitles>
+            <WorkDescription></WorkDescription>
+            <WorkImage></WorkImage>
+          </Work>
+        </SecondWork>
+        <ThirdWork>
+        <Work>
+            <WorkTitles></WorkTitles>
+            <WorkDescription></WorkDescription>
+            <WorkImage></WorkImage>
+          </Work>
+          <RoundImage></RoundImage>
+        </ThirdWork>
+      </Works>
       </>
     )
   }

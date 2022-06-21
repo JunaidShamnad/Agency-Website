@@ -1,12 +1,20 @@
 import Button from "../Button"
-import { Heading } from "./HeroSection.styled"
+import Paragraph from "../cssHelper"
+import Heading from "./HeroSection.styled"
 
 
 const HeroSection = () => {
     return (
       <>
-      <Heading>Main Heading</Heading>
-      <Button>Button</Button>
+      <Heading>It's Time to Pursue Better future</Heading>
+      <Paragraph>We provide finacial planning, wealth management and investment services</Paragraph>
+      <Button>LetsTalks</Button>
+      <Button>Learn More</Button>
+      <ImageContainer>
+        <Image/>
+        <ImageBelow/>
+        <Image/>
+      </ImageContainer>
       </>
     )
   }

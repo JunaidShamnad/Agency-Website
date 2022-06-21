@@ -3,7 +3,19 @@
 const Testimonials = () => {
     return (
       <>
-      <h1>Testimonials</h1>
+      <Testimonials>
+        <TestimonialTextContent>
+          <TestimonialHeading></TestimonialHeading>
+          <TestimonialDescription></TestimonialDescription>
+          <TestimonialIcons>
+            
+          </TestimonialIcons>
+        </TestimonialTextContent>
+        <TestimonialContent>
+          <TestimonialImage></TestimonialImage>
+          <Testimonial></Testimonial>
+        </TestimonialContent>
+      </Testimonials>
       </>
     )
   }
