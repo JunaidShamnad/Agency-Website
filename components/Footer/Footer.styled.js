@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import { HeadingH3,flexRow } from "../cssHelper";
 
-export const Heading = styled.h1`
- ${ HeadingH3 };
-`;
 
-export const Container = styled.h1`
+export const Container = styled.div`
  ${ flexRow };
  width:90%;
  justify-content: space-between;

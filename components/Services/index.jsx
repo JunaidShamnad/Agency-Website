@@ -17,6 +17,7 @@ import {
 const Services = () => {
   return (
     <ServiceContent>
+      {/*========================= error code=================== */}
       <ServiceDetails>
         <ServicesText>
           <ServiceHeading>
@@ -47,7 +48,7 @@ const Services = () => {
         <Service>
           <ServiceIndex>03/</ServiceIndex>
           <ServiceTitle>
-            Dashboard & Saas Design<ServiceLink>Explore</ServiceLink>
+            Dashboard and Saas Design<ServiceLink>Explore</ServiceLink>
           </ServiceTitle>
         </Service>
       </ServiceList>

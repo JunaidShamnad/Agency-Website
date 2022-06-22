@@ -40,19 +40,23 @@ const Features = () => {
       <Container>
         <AboveContainer>
           <AboveContainerHeading>
-            Create <br></br>presence in digital
+            Create <br/>presence in digital
           </AboveContainerHeading>
 
           <SectionOne>
+
             <SectionOneImage>
               <SectionOneImageDate>Since 2021</SectionOneImageDate>
               <SectionOneImageImg src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
             </SectionOneImage>
+
             <SectionOneDetails>
               <SectionOneDetailsHead>Years Of Experience</SectionOneDetailsHead>
+
               <SectionOneDetailsDescription>
-                We turn great ideas into brilliant realities Got one?Let's talk.
+                We turn great ideas into brilliant realities Got one?Lets talk.
               </SectionOneDetailsDescription>
+
               <SectionOneDetailsDescription>
                 Our passion for impactful creative and more meaningful
                 connections remains.
@@ -102,6 +106,8 @@ const Features = () => {
               </SectionTwoDetail>
             </SectionTwoDetails>
           </SectionTwo>
+    
+  {/* -------------------------------error code ---------------------------*/}
         </AboveContainer>
         <BelowConatiner>
           <LeftSection>
@@ -109,7 +115,7 @@ const Features = () => {
               <Span>Core values</Span>we always live by
             </LeftSideHeading>
             <LeftSectionParagraph>
-              <strong>Don't missed it </strong>We will regularly update about
+              <strong> Dont missed it </strong>We will regularly update about
               our latest project and availability.
             </LeftSectionParagraph>
             <Form action="">
@@ -136,7 +142,7 @@ const Features = () => {
               <FeatureTitle>Consistent Deadline</FeatureTitle>
               <FeatureDescription>
                 We always update our design by daily basis.It is better if we
-                know what's the problem faster
+                know whats the problem faster
               </FeatureDescription>
             </Feature>
             <Feature>
@@ -152,7 +158,7 @@ const Features = () => {
               <FeatureTitle>Transparency</FeatureTitle>
               <FeatureDescription>
                 Keeping the relationship between us and the client as clear as
-                possible to achieve client's goals
+                possible to achieve clients goals
               </FeatureDescription>
             </Feature>
           </RightSection>

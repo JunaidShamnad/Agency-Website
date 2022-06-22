@@ -11,7 +11,7 @@ const Navbar = () => {
           <Li>Services</Li>
           <Li>Contact Us</Li>
         </Menu>
-        <Button>Let's Talk</Button>
+        <Button>Lets Talk</Button>
       </Nav>
     </>
   );

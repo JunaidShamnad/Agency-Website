@@ -19,7 +19,7 @@ height: 60vh;
 position: relative;
 width: 100%;
 `
-export const AboutDescription = styled.div`
+export const AboutDescription = styled.p`
 font-size: 50px;
 width: 100%;
 margin-right: 100px;
@@ -27,10 +27,10 @@ position: absolute;
 top: 50px;
 text-align: right;
 `
-export const AboutQuote = styled.div`
+export const AboutQuote = styled.p`
 margin-top:150px;
 `
-export const AboutLink = styled.div`
+export const AboutLink = styled.p`
 position: absolute;
 right:50px;
 bottom:0;
