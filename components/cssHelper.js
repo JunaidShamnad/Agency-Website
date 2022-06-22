@@ -10,6 +10,10 @@ export const flexRow = css`
   display: flex;
   flex-direction: row;
 `;
+export const divCenter = css`
+margin-left:auto;
+margin-right:auto;
+`
 export const flexColumn = css`
   display: flex;
   flex-direction: Column;
