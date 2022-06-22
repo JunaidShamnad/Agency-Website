@@ -4,6 +4,9 @@ import { flexRowCenter,flexColumnCenter } from "../cssHelper";
 
 export const About  = styled.div`
 margin-top: 150px;
+width: 95%;
+margin-left: auto;
+margin-right: auto;
 `
 export const AboutTitle = styled.h1`
  font-size: 300px;
@@ -18,7 +21,8 @@ width: 100%;
 `
 export const AboutDescription = styled.div`
 font-size: 50px;
-width: 87%;
+width: 100%;
+margin-right: 100px;
 position: absolute;
 top: 50px;
 text-align: right;

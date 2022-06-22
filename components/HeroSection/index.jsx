@@ -13,7 +13,7 @@ const HeroSection = () => {
         
         <HeroButtons>
           <SecondButton>Lets Talk</SecondButton>
-          <FourthButton>Learn More</FourthButton>
+          {/* <FourthButton>Learn More</FourthButton> */}
         </HeroButtons>
         <ImageContainer>
           <Image alt="image" src="https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>

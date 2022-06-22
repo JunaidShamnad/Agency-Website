@@ -3,6 +3,7 @@ import { HeadingH3,Paragraph,SecondaryButton,flexRowCenter,QuaternaryButton,flex
 
 export const Hero = styled.div`
     ${flexColumnCenter};
+    margin-top: 100px;
     width: 100%;
 `
 export const Heading = styled.h1`
@@ -16,9 +17,10 @@ margin-top:25px;
 `
 export const HeroButtons = styled.div`
 ${flexRowCenter};
-width: 18%;
+width: 20%;
 justify-content: space-between;
 margin-top:40px;
+
 `
 export const ImageContainer = styled.div`
 ${flexRowCenter};

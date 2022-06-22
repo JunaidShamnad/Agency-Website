@@ -1,12 +1,27 @@
-import { Container,Detail,DetailIcons,LeftSection,RightSection,Span,Contact,ContactDetails,Title } from "./ContactUs.styled"
-
+import {
+  Container,
+  Detail,
+  DetailIcons,
+  ContactLinkImage,
+  DetailDescription,
+  DetailTitle,
+  LeftSection,
+  RightSection,
+  Span,
+  Contact,
+  ContactDetails,
+  Title,
+  TitleContact,
+} from "./ContactUs.styled";
 
 const ContactUs = () => {
-    return (
-      <>
+  return (
+    <>
       <Container>
         <LeftSection>
-          <Title><Span>Contact</Span>Lets Discus Your Project</Title>
+          <TitleContact>
+            <Span>Contact</Span>Lets Discus Your Project
+          </TitleContact>
           <ContactDetails>
             <Contact>
               <DetailIcons></DetailIcons>
@@ -16,20 +31,22 @@ const ContactUs = () => {
               </Detail>
             </Contact>
             <Contact>
-              <DetailIcons><DetialIcons>
-                <Detail>
-                  <DetailTitle>Location</DetailTitle>
-                  <DetailDescription>loreum ipsum is a text generator </DetailDescription>
-                </Detail>
+              <DetailIcons></DetailIcons>
+              <Detail>
+                <DetailTitle>Location</DetailTitle>
+                <DetailDescription>
+                  loreum ipsum is a text generator{" "}
+                </DetailDescription>
+              </Detail>
             </Contact>
           </ContactDetails>
         </LeftSection>
         <RightSection>
-          <ContactLinkImage/>
+          <ContactLinkImage />
         </RightSection>
       </Container>
-      </>
-    )
-  }
-  
-  export default ContactUs
+    </>
+  );
+};
+
+export default ContactUs;

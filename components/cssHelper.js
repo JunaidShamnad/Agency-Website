@@ -20,7 +20,10 @@ export const flexColumnCenter = css`
   justify-content: center;
   align-items: center;
 `;
-
+export const gridTwo = css`
+display:grid;
+grid-template-columns: auto auto;
+`
 export const gridCenter = css`
   display: grid;
   justify-content: center;

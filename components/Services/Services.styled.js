@@ -63,6 +63,7 @@ margin-right: 15px;
 export const ServiceContent = styled.span`
 ${flexRowCenter};
 width: 100%;
+margin-top: 150px;
 margin-bottom: 150px;
 `
 export const ServicesText = styled.div`

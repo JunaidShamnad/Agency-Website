@@ -19,15 +19,27 @@ export const theme = {
     xl: "6rem", //96px
     l: "5rem",  //80px
     m: "3.94rem", //63.04px
+    ms: "3.1rem",//49px
     s: "2.88rem", // 46.08px
     xs: "2.3rem", //36.8px
-    xxs: "1.65rem", //26.4px
+    xxs: "1.75rem", //28px
     xxxs: "1.069rem", //17.104px
     xxxxs: "0.99rem", //15.84px
     xxxxxs: "0.85rem", //13.6px
     xxxxxxs: "0.75rem", //12px
   },
-
+  width: [
+    "10%",
+    "20%",
+    "30%",
+    "40%",
+    "50%",
+    "60%",
+    "70%",
+    "80",
+    "90",
+    "100",
+  ],
   buttons: {
     primary: {
       color: "#000000",
@@ -67,7 +79,7 @@ export const theme = {
       textDecoration: "none",
       border: "none",
       borderRadius: "3px",
-      padding: "13.5px 32px",
+      padding: "13.5px 50px",
       fontSize: "1.199rem",
       fontWeight: "500",
       textAlign:"center",
@@ -209,6 +221,9 @@ export const theme = {
     "4rem", // 64px [6]
     "8rem", // 128px [7]
     "16rem", // 256px [8]
+    "1.5rem",// 24px [9]
+    "3rem",// 48px[10]
+    "5rem",//75px
   ],
 
   transition: {
