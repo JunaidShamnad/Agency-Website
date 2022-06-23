@@ -26,18 +26,18 @@ export const Feature = styled.div`
 width:90%;
 `
 export const Icon = styled.div``
-export const FeatureTitle = styled.div`
+export const FeatureTitle = styled.h2`
 font-size: ${({theme})=>theme.fontSizes?.xs};
 margin-bottom: ${({ theme }) => theme.space[9]};
 font-weight: ${({ theme }) => theme.fontWeights.semibold};
 `
-export const FeatureDescription = styled.div`
+export const FeatureDescription = styled.p`
 font-size: ${({theme})=>theme.fontSizes?.xxs};
 `
 export const LeftSideHeading = styled.h1`
 font-size:75px;
 `
-export const Span = styled.div`
+export const Span = styled.span`
 font-style: italic;
 `
 export const SectionOne = styled.div`
@@ -104,7 +104,7 @@ font-size: ${({ theme }) => theme.fontSizes?.xxs};
 font-weight:${({ theme }) => theme.fontWeights.semibold};
 `
 
-export const SectionTwoContentHead = styled.h1`
+export const SectionTwoContentHead = styled.h2`
 font-size:${({ theme }) => theme.fontSizes?.xs};
 font-weight:${({ theme }) => theme.fontWeights.semibold};
 `

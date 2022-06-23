@@ -5,30 +5,30 @@ export const Heading = styled.h1`
  ${ HeadingH3 };
 `
 
-export const ServiceDescription = styled.h1`
+export const ServiceDescription = styled.p`
 font-size:${({theme})=>theme.fontSizes?.xxs};
 font-weight: normal;
 width:75%;
 `
 
-export const ServiceHeading = styled.h1`
+export const ServiceHeading = styled.h3`
 display: flex;
 flex-direction: column;
 width: 50%;
 margin-left: 40px;
 
 `
-export const ServiceDetails = styled.h1`
+export const ServiceDetails = styled.div`
 margin-top:100px;
 width:50%;
 height: 100vh;
 justify-content: space-between;
 `
-export const ServiceList = styled.h1`
+export const ServiceList = styled.ul`
 width:30%;
 ${flexColumnCenter}
 `
-export const Service = styled.h1`
+export const Service = styled.div`
 ${flexRowCenter}
 width: 100%;
 align-items: flex-start;
@@ -40,7 +40,7 @@ padding-bottom: 75px;
 export const ServiceIndex = styled.h1`
 font-size:${({theme})=>theme.fontSizes?.xxs};
 `
-export const ServiceTitle = styled.h1`
+export const ServiceTitle = styled.h2`
 display:flex;
 font-size:${({theme})=>theme.fontSizes?.m};
 width:85%;
@@ -53,7 +53,7 @@ transform:rotate(-18deg);
 margin-bottom: 75px;
 margin-left: -40px;
 `
-export const ServiceLink = styled.span`
+export const ServiceLink = styled.p`
 font-size:${({theme})=>theme.fontSizes?.xxxs};
 margin-top:20px;
 `
@@ -61,7 +61,7 @@ export const HorizontalLine = styled.span`
 font-size: 35px;
 margin-right: 15px;
 `
-export const ServiceContent = styled.span`
+export const ServiceContent = styled.div`
 ${flexRowCenter};
 width: 100%;
 margin-top: 150px;

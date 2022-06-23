@@ -35,7 +35,7 @@ margin-left: -30px;
 export const TestimonialsDesigination = styled.p`
 font-size:20px;
 `;
-export const TestimonialsName = styled.h1`
+export const TestimonialsName = styled.h2`
 margin-bottom:15px;
 `;
 export const TestimonialsContent = styled.div`
