@@ -24,7 +24,7 @@ width:50%;
 height: 100vh;
 justify-content: space-between;
 `
-export const ServiceList = styled.ul`
+export const ServiceList = styled.div`
 width:30%;
 ${flexColumnCenter}
 `
