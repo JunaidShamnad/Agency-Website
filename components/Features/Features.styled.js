@@ -43,6 +43,9 @@ font-style: italic;
 export const SectionOne = styled.div`
 ${flexRow}
 margin-bottom:${({ theme }) => theme.space[11]};
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `
 export const AboveContainer = styled.div`
 margin-bottom:${({ theme }) => theme.space[8]};
@@ -86,9 +89,15 @@ width:53%;
 export const SectionTwo = styled.div`
 ${flexRow};
 justify-content: space-between;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `
 export const BelowConatiner = styled.div`
 ${flexRow}
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `
 export const SectionTwoIndex = styled.h1`
 font-size: ${({ theme }) => theme.fontSizes?.xxs};
@@ -116,6 +125,9 @@ export const Form = styled.form`
 width:75%;
 ${flexRow}
 justify-content: space-between;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `
 export const Input = styled.input`
 border:none;
@@ -140,6 +152,9 @@ ${flexRow}
 width: 100%;
 justify-content: space-between;
 margin-bottom: ${({ theme})=>theme.space[6]};
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `
 export const SectionTwoContent = styled.div`
 

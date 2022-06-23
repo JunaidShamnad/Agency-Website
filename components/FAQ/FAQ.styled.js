@@ -17,6 +17,9 @@ border-top:1px solid #c4c4c4;
 border-bottom:1px solid #c4c4c4;
 align-items:center;
 justify-content: space-between;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `;
 export const Container = styled.div`
 ${flexColumn}
@@ -32,6 +35,9 @@ height: 100%;
 ${flexRow}
 align-items:center;
 justify-content: center;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `;
 export const FaqIndex = styled.h1`
 font-size:50px;

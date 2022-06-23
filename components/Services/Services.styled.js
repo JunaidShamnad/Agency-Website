@@ -16,6 +16,7 @@ display: flex;
 flex-direction: column;
 width: 50%;
 margin-left: 40px;
+
 `
 export const ServiceDetails = styled.h1`
 margin-top:100px;
@@ -65,6 +66,9 @@ ${flexRowCenter};
 width: 100%;
 margin-top: 150px;
 margin-bottom: 150px;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `
 export const ServicesText = styled.div`
 ${flexColumn};
@@ -75,6 +79,9 @@ export const ServiceNavImage = styled.div`
 ${flexRowCenter};
 width: 100%;
 margin-bottom: 150px;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `
 
 

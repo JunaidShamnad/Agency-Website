@@ -22,6 +22,9 @@ width: 40%;
 `;
 export const UpperTestimonial = styled.div`
 ${flexRow}
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `;
 export const SpanTitle = styled.span`
 font-size: ${({ theme }) => theme.fontSizes?.xxxs};
@@ -68,6 +71,9 @@ export const LowerTestimonial = styled.div`
 ${flexRow}
 justify-content: space-between;
 align-items:center;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `;
 export const TestimonialsIcons = styled.div`
 

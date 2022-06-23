@@ -12,6 +12,9 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  @media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `;
 
 export const WorkOne = styled.div`

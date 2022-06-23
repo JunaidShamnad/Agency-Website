@@ -39,6 +39,9 @@ height:215px;
 align-items:center;
 border-top:4px solid #000;
 width:75%;
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn}
+}
 `;
 
 export const ContactDetails = styled.div`

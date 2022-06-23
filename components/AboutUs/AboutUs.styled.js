@@ -1,46 +1,49 @@
 import styled from "styled-components";
-import { flexRowCenter,flexColumnCenter } from "../cssHelper";
+import { flexRowCenter,flexColumnCenter,flexRow,flexColumn,divCenter } from "../cssHelper";
 
 
 export const About  = styled.div`
-margin-top: 150px;
-width: 95%;
-margin-left: auto;
-margin-right: auto;
+margin-top: ${({ theme})=>theme.space[13]};
+width: ${({ theme})=>theme.width[10]};
+${divCenter}
 `
 export const AboutTitle = styled.h1`
- font-size: 300px;
+ font-size: ${({ theme})=>theme.fontSizes.xxxxxxxl};
  text-transform: uppercase;
 `;
 
 export const AboutContent = styled.div`
 ${flexColumnCenter}
-height: 60vh;
+height: ${({ theme})=>theme.height[5]};
 position: relative;
-width: 100%;
+width: ${({ theme})=>theme.width[9]};
 `
 export const AboutDescription = styled.div`
-font-size: 50px;
-width: 100%;
-margin-right: 100px;
+font-size: ${({ theme})=>theme.fontSizes.ms};
+width: ${({ theme})=>theme.width[9]};
+margin-right: ${({ theme})=>theme.space[15]};
 position: absolute;
-top: 50px;
+top: ${({ theme})=>theme.space[10]};
 text-align: right;
 `
 export const AboutQuote = styled.div`
-margin-top:150px;
+margin-top:${({ theme})=>theme.space[13]};
 `
 export const AboutLink = styled.div`
 position: absolute;
-right:50px;
+right:${({ theme})=>theme.space[10]};
 bottom:0;
 `
 export const AboutImage = styled.img`
-width:500px;
+width:${({ theme})=>theme.width[2]};;
 height:750px;
-margin-top:50px;
+margin-top:${({ theme})=>theme.space[10]};
 `
 export const AboutBelow = styled.div`
 ${flexRowCenter}
-width: 95%;
+width: ${({ theme})=>theme.width[8]};
+
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+${flexColumn} 
+}
 `
