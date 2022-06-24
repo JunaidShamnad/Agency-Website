@@ -91,7 +91,7 @@ export const ServiceContent = styled.div`
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 18% 1fr;
+    grid-template-rows: 30% 1fr;
 
   }
 
@@ -119,6 +119,8 @@ export const ServiceHeading = styled.h3`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
+    font-size:65px;
+    line-height:5rem;
   }
 `;
 
@@ -149,7 +151,6 @@ export const HorizontalLine = styled.span`
 
 export const ServiceList = styled.div`
   width: 100%;
-  max-height:100%;
   padding:0;
 `;
 export const Service = styled.div`
@@ -158,7 +159,6 @@ export const Service = styled.div`
   justify-content: space-between;
   width: 100%;
   height: auto;
-  max-height: 100%;
   border-top: 1px solid #000;
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -166,8 +166,7 @@ export const Service = styled.div`
 export const ServiceIndex = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes?.xxs};
 
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxxs};
   }
 `;
@@ -188,8 +187,7 @@ export const ServiceLink = styled.p`
   font-size: ${({ theme }) => theme.fontSizes?.xxxs};
   font-weight: 500;
   margin-top: 20px;
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxxxs};
   }
 `;
@@ -199,14 +197,12 @@ export const ServiceTextMainContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  height: auto;
 `;
 export const ServiceLinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  height: auto;
 `;
 
 export const ArrowIcon = styled(BsFillArrowUpRightCircleFill)`
@@ -216,17 +212,14 @@ export const ArrowIcon = styled(BsFillArrowUpRightCircleFill)`
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.s};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallTablet}) {
+  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.xs};
   }
 
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallMobile}) {
+  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
   }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
   }
 `;

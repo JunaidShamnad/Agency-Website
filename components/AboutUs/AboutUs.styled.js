@@ -45,6 +45,7 @@ export const AboutTitle = styled.h1`
   text-transform: uppercase;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
+    font-size:65px;
   }
 `;
 
@@ -94,6 +95,10 @@ export const AboutDescription = styled.p`
 export const AboutQuote = styled.p`
   grid-row: 2/3;
   line-height:180%;
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    margin-top:20px;
+    margin-bottom:20px;
+  }
 `;
 
 export const AboutLink = styled.p``;

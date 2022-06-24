@@ -20,6 +20,9 @@ justify-content: space-between;
 export const RightSection = styled.div`
 ${gridTwo};
 width:100%;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    grid-template-columns:auto;
+}
 `
 
 export const Feature = styled.div`
@@ -36,6 +39,9 @@ font-size: ${({theme})=>theme.fontSizes?.xxs};
 `
 export const LeftSideHeading = styled.h1`
 font-size:75px;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size:65px;
+}
 `
 export const Span = styled.span`
 font-style: italic;
@@ -55,6 +61,9 @@ export const AboveContainerHeading = styled.h1`
 font-size:${({ theme }) => theme.fontSizes?.xl};
 margin-bottom:${({ theme }) => theme.space[11]};
 font-weight:${({ theme }) =>theme.fontWeights.medium};
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    font-size: 65px;
+}
 `
 export const SectionOneDetails = styled.div`
 
@@ -62,11 +71,18 @@ export const SectionOneDetails = styled.div`
 export const SectionOneDetailsHead = styled.h1`
 font-size:${({ theme }) => theme.fontSizes?.ms};
 margin-bottom:${({ theme }) => theme.space[9]};
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 30px;
+}
 `
 export const SectionOneDetailsDescription = styled.p`
 font-size: ${({ theme }) => theme.fontSizes?.xxs};
 width:70%;
-margin-bottom:${({ theme }) => theme.space[5]}; 
+margin-bottom:${({ theme }) => theme.space[5]};
+@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
+    width:100%;
+    font-size:21px;
+} 
 `
 export const SectionOneImage = styled.div`
 
@@ -85,6 +101,9 @@ width: 90%;
 `
 export const SectionTwoImage = styled.div`
 width:53%;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+}
 `
 export const SectionTwo = styled.div`
 ${flexRow};
@@ -107,11 +126,19 @@ font-weight:${({ theme }) => theme.fontWeights.semibold};
 export const SectionTwoContentHead = styled.h2`
 font-size:${({ theme }) => theme.fontSizes?.xs};
 font-weight:${({ theme }) => theme.fontWeights.semibold};
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+    font-size: 30px;
+}
 `
 export const SectionTwoContentDescription = styled.p`
 font-size: ${({ theme }) => theme.fontSizes?.xxs};
 font-weight:${({ theme }) => theme.fontWeights.medium};
 width: ${({ theme }) => theme.width[6]};
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+    font-size:22px;
+}
 `
 export const LeftSectionParagraph = styled.p`
 width:70%;
@@ -120,6 +147,9 @@ line-height:45px;
 font-size:30px;
 margin-top:200px;
 margin-bottom:100px;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+}
 `
 export const Form = styled.form`
 width:75%;
@@ -127,6 +157,7 @@ ${flexRow}
 justify-content: space-between;
 @media (max-width:${({ theme })=>theme.breakpoints.mobile}){
 ${flexColumn}
+width:100%;
 }
 `
 export const Input = styled.input`
@@ -146,6 +177,9 @@ font-weight:bold;
 export const SectionTwoDetails = styled.div`
 ${flexColumn}
 width:47%;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+}
 `
 export const SectionTwoDetail = styled.div`
 ${flexRow}

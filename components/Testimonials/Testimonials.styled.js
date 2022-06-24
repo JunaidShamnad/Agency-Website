@@ -19,6 +19,10 @@ ${flexColumn}
 font-size:100px;
 position: relative;
 width: 40%;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+    font-size:65px
+}
 `;
 export const UpperTestimonial = styled.div`
 ${flexRow}
@@ -44,6 +48,10 @@ width: 75%;
 padding-top: 50px;
 margin-left: 50px;
 ${flexColumn}
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+    margin-left:0px;
+}
 `;
 export const TestimonialsImage = styled.div`
 min-width:29.5%;
@@ -81,6 +89,9 @@ export const TestimonialsIcons = styled.div`
 export const TestimonialsDescription = styled.p`
 width: 27%;
 line-height: 25px;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+}
 `;
 export const TestimonialDescription = styled.p`
 font-size:30px;
@@ -88,6 +99,10 @@ width: 100%;
 /* color:#7e7e81; */
 margin-bottom: 50px;
 line-height: 40px;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+    font-size:20px;
+}
 `;
 export const TestimonialContentSection = styled.div`
 padding-top: 50px;

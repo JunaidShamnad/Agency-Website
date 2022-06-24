@@ -11,6 +11,9 @@ justify-content: space-evenly;
 margin-left: auto;
 margin-right: auto;
 margin-bottom:250px;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    flex-direction: column;
+}
 `;
 export const LeftSection = styled.div`
 width:50%;
@@ -24,6 +27,10 @@ export const TitleContact = styled.h1`
   ${flexColumn}
   margin-bottom:100px;
   position: relative;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:100%;
+    font-size:75px;
+}
 `;
 export const Span = styled.span`
 font-size:${({theme})=>theme.fontSizes?.xxxs};
