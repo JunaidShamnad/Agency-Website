@@ -41,8 +41,8 @@ export const theme = {
     "70%",//[6]
     "80%",//[7]
     "90%",//[8]
-    "100%",//[9]
-    "95%",//[10]
+    "95%",//[9]
+    "100%",//[10]
   ],
   height:[
     "10vh",//[0]
@@ -58,16 +58,16 @@ export const theme = {
   ],
   buttons: {
     primary: {
-      color: "#000000",
+      color: "#1D1A26",
       boxSizing:"border-box",
       backgroundColor: "#FFD338",
       display: "inline-block",
       border:'none',
       textDecoration: "none",
-      borderRadius: "3px",
+      borderRadius: "0px",
       padding: "13.5px 32px",
       fontSize: "1.199rem",
-      fontWeight: "500",
+      fontWeight: "600",
       textAlign:"center",
       letterSpacing: "0.8px",
       cursor: "pointer",
@@ -97,7 +97,7 @@ export const theme = {
       borderRadius: "3px",
       padding: "13.5px 50px",
       fontSize: "1.199rem",
-      fontWeight: "500",
+      fontWeight: "600",
       textAlign:"center",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",

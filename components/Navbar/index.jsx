@@ -1,4 +1,6 @@
-import { HeadingTitle, Nav, Logo, Menu, Li, Button } from "./Navbar.styled";
+import {  Nav, Logo, Menu, Li } from "./Navbar.styled";
+import { ThirdButton } from '../Button'
+import {BsArrowRight} from 'react-icons/bs'
 
 const Navbar = () => {
   return (
@@ -11,7 +13,7 @@ const Navbar = () => {
           <Li>Services</Li>
           <Li>Contact Us</Li>
         </Menu>
-        <Button>Lets Talk</Button>
+        <ThirdButton>Lets Talk <BsArrowRight/></ThirdButton>
       </Nav>
     </>
   );

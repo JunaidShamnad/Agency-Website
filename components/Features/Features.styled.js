@@ -78,7 +78,7 @@ margin-bottom:${({ theme }) => theme.space[10]};
 
 `
 export const SectionOneImageImg = styled.img`
-width:90%;
+
 `
 export const SectionTwoImageImg = styled.img`
 width: 90%;

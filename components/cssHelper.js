@@ -36,6 +36,7 @@ export const gridCenter = css`
 
 export const MainHeading = css`
   font-size: ${({ theme }) => theme.fontSizes?.xxxl};
+  font-family: 'Archivo Black', sans-serif;
   font-weight: ${({ theme }) => theme.fontWeights?.black};
   line-height: ${({ theme }) => theme.fontSizes?.xxxxl};
   letter-spacing: 1px;
@@ -102,6 +103,7 @@ export const HeadingH2 = css`
 
 export const HeadingH3 = css`
   font-size: ${({ theme }) => theme.fontSizes?.xl};
+
   font-weight: ${({ theme }) => theme.fontWeights?.bold};
   line-height: ${({ theme }) => theme.fontSizes?.xxl};
   letter-spacing: 0.8px;
