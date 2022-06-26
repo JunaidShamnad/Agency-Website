@@ -35,7 +35,7 @@ a {
     font-family: 'Syne', sans-serif;
     /* overflow-x:hidden; */
     /* background-color:rgba(27, 245, 49, 0.12);*/
-     outline: 1px solid red; 
+     /* outline: 1px solid red;  */
 }
 
 img{
