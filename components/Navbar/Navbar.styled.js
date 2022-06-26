@@ -4,6 +4,7 @@ import { QuaternaryButton, flexRow } from "../cssHelper";
 export const Nav = styled.div`
   ${flexRow}
   width:100%;
+  max-width:100vw;
   padding: 1rem 2.5rem;
   align-items: center;
   margin-bottom: 25px;

@@ -11,15 +11,15 @@ import {
 
 
 export const Section = styled.section`
-  width: 100vw;
-  max-width: 1600px;
-  overflow-x: hidden;
-  height: 100%;
+width: 100vw;
+    height: 100%;
+    max-width:100%;
 `;
 
 export const Container = styled.div`
   height: 100%;
-  max-width: 90%;
+  width: 90%;
+  max-width:1600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,31 +32,6 @@ export const Container = styled.div`
   } ;
 `;
 
-// export const Section = styled.section`
-//   width: 100vw;
-//   max-width: 1600px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   overflow-x: hidden;
-//   height: 100%;
-//   min-height:100vh;
-// `;
-
-// export const Container = styled.div`
-//   max-height: 100%;
-//   max-width: 90%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin: 0 auto;
-//   padding-top: 2rem;
-//   padding-bottom: 1rem;
-//   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-//     padding-top: 0.9rem;
-//     padding-bottom: 0.9rem;
-//   } ;
-// `;
 export const ServiceContent = styled.div`
   display: grid;
   grid-template-columns: 1.1fr 1fr;

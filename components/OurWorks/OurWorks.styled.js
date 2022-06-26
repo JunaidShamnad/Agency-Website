@@ -3,19 +3,19 @@ import { HeadingH3,flexRow,flexColumn } from "../cssHelper";
 
 
 export const Section = styled.section`
-  width: 100vw;
-  max-width: 1600px;
+ width: 100vw;
+    height: 100%;
+    max-width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
-  height: 100%;
 
 `;
 
 export const Container = styled.div`
   height: 100%;
-  max-width: 90%;
+  width: 90%;
+  max-width:1600px;
   display: flex;
   align-items: center;
   justify-content: center;

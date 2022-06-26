@@ -1,6 +1,27 @@
 import styled from "styled-components";
 import {SecondaryButton, HeadingH3,flexRow,flexColumn,gridTwo } from "../cssHelper";
 
+// export const Section = styled.section`
+//   width: 100vw;
+//   max-width: 1600px;
+//   overflow-x: hidden;
+//   height: 100%;
+// `;
+
+// export const Container = styled.div`
+//   height: 100%;
+//   max-width: 90%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0 auto;
+//   padding-top: 2rem;
+//   padding-bottom: 1rem;
+//   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+//     padding-top: 0.9rem;
+//     padding-bottom: 0.9rem;
+//   } ;
+// `;
 export const Container = styled.div`
 ${flexColumn}
 justify-content: space-between;

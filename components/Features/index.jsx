@@ -32,6 +32,7 @@ import {
   SectionTwoIndex,
   SectionTwoContentHead,
   SectionTwoContentDescription,
+  
 } from "./Features.styled";
 
 const Features = () => {
