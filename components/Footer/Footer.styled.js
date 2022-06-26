@@ -3,18 +3,28 @@ import { HeadingH3,flexRow } from "../cssHelper";
 
 
 export const Container = styled.div`
- ${ flexRow };
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr;
  width:90%;
- justify-content: space-between;
  margin-left: auto;
  margin-right: auto;
  padding-top: 50px;
- margin-bottom:100px;
+ 
  border-top:3px solid #000;
+ @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+ }
 `;
 
 export const FooterTitles = styled.h1`
  font-size: 20px;
  font-weight: 500;
+ margin-bottom:50px;
+ @media (max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    font-size:11px;
+    width:78%;
+    margin-bottom: 25px;
+ }
 `;
 

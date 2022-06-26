@@ -42,7 +42,7 @@ ${flexColumn}
 export const FaqIndex = styled.h1`
 font-size:50px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 30px;
+    font-size: 28px;
 }
 `;
 export const FaqQuestion = styled.p`
@@ -50,7 +50,7 @@ font-size:50px;
 margin-top:15px;
 font-weight:800;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 30px;
+    font-size: 28px;
 }
 `;
 export const FaqAnswer = styled.p`
@@ -58,15 +58,20 @@ font-size:30px;
 color:#656665;
 margin-top:15px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 22px;
+    font-size: 14px;
 }
 `;
 export const Icon = styled.p`
-font-size: 50px;
+font-size: 40px;
 background-color:#000;
 padding: 5px 20px;
 border-radius: 50%;
 color:#fff;
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    padding: 1px 10px;
+    margin-bottom:15px;
+    font-size:25px;
+}
 
 `;
 

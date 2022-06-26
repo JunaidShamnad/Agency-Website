@@ -35,7 +35,7 @@ const ContactUs = () => {
               <Detail>
                 <DetailTitle>Location</DetailTitle>
                 <DetailDescription>
-                  loreum ipsum is a text generator{" "}
+                  Kerala, India
                 </DetailDescription>
               </Detail>
             </Contact>

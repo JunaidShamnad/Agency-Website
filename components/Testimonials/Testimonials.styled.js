@@ -10,6 +10,7 @@ width:80%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom:50px;
+margin-top:55px;
 `;
 export const Span = styled.span`
 
@@ -18,14 +19,15 @@ export const TestimonialsTitle = styled.h1`
 ${flexColumn}
 font-size:100px;
 position: relative;
-width: 40%;
+width: 50%;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width:100%;
-    font-size:65px
+    font-size:63px
 }
 `;
 export const UpperTestimonial = styled.div`
 ${flexRow}
+align-items: end;
 @media (max-width:${({ theme })=>theme.breakpoints.mobile}){
 ${flexColumn}
 }
@@ -35,12 +37,24 @@ font-size: ${({ theme }) => theme.fontSizes?.xxxs};
 transform:rotate(-18deg);
 position:absolute;
 margin-left: -30px;
+margin-top:-20px;
+
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    font-size: 14px;
+    
+}
 `;
 export const TestimonialsDesigination = styled.p`
 font-size:20px;
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    font-size: 12px;
+}
 `;
 export const TestimonialsName = styled.h2`
 margin-bottom:15px;
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    font-size: 14px;
+}
 `;
 export const TestimonialsContent = styled.div`
 border-top: 2px solid #000000;
@@ -91,6 +105,7 @@ width: 27%;
 line-height: 25px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width:100%;
+    font-size:13.5px;
 }
 `;
 export const TestimonialDescription = styled.p`
@@ -101,7 +116,8 @@ margin-bottom: 50px;
 line-height: 40px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width:100%;
-    font-size:20px;
+    font-size:13.5px;
+    line-height:25px
 }
 `;
 export const TestimonialContentSection = styled.div`
