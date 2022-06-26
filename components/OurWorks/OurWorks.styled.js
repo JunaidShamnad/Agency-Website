@@ -40,16 +40,20 @@ margin-bottom: 10px;
 `
 export const Work = styled.div`
 border-top:1px solid #000;
-padding-top: 20px;
+padding-top: 1rem;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
 `;
 
 export const WorkTwo = styled.div`
 
-height: 750px;
 justify-content: center;
 `;
 
 export const WorkThree = styled.div``;
+
 export const WorkDescription = styled.p`
 font-size:15px;
 margin-bottom:25px;
@@ -75,10 +79,11 @@ grid-template-columns:1fr 1fr 1fr;
 grid-template-rows:1fr;
 grid-gap:2rem;
 max-width:100%;
-
+height:100%;
+margin-bottom:2rem;
 @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
   grid-template-columns:1fr;
-   grid-template-rows:1fr 1fr 1fr;
+   grid-template-rows:1fr 0.8fr 0.8fr;
    place-items:center;
     /* ${flexColumn} */
   } ;

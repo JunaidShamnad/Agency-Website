@@ -11,7 +11,7 @@ import {
 
 
 export const Section = styled.section`
-width: 100vw;
+    width: 100vw;
     height: 100%;
     max-width:100%;
 `;
@@ -38,35 +38,38 @@ export const ServiceContent = styled.div`
   grid-template-rows: 1fr;
   grid-gap: 2rem;
   width: 100%;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  height:100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-rows:  1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-rows:  1fr;
 
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.mobile}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 22% 1fr;
+    grid-template-rows:  1fr;
 
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 17% 1fr;
+    grid-template-rows:  1fr;
 
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 1fr;
+    grid-template-rows:  1fr;
 
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-rows:  1fr;
 
   }
 
@@ -81,7 +84,19 @@ export const ServicesText = styled.div`
   ${flexColumn};
 
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 4rem;
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.mobile}) {
+   margin-bottom:3rem;
+
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
+    margin-bottom:2rem;
+
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
+   margin-bottom:1rem;
+
+  }
 `;
 export const ServiceHeading = styled.h3`
   ${HeadingH2};
@@ -125,8 +140,7 @@ export const HorizontalLine = styled.span`
 // `;
 
 export const ServiceList = styled.div`
-  width: 100%;
-  padding:0;
+
 `;
 export const Service = styled.div`
   display: flex;
