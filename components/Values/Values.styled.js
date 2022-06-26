@@ -184,8 +184,8 @@ height:100%;
 
 @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
   grid-template-columns:1fr;
-grid-template-rows:1fr 1fr 1fr 1fr;
-    grid-gap:1.1rem;
+  grid-template-rows:1fr 1fr 1fr 1fr;
+  grid-gap:1.1rem;
   }
 `
 export const ValuesRightCard =styled.div`
@@ -194,6 +194,8 @@ height:100%;
 display:flex;
 flex-direction:column;
 justify-content:space-evenly;
+align-items: center;
+margin:0 1rem;
 `
 
 // export const ValuesRightTextContiner = styled.div``
@@ -221,6 +223,9 @@ export const ValuesRightCardTitle = styled.p`
 export const ValuesRightCardDescription = styled.p`
 width:80%;
 margin-bottom:5px;
+line-height:150%;
+text-align:center;
+opacity:0.7;
 @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
    width:100%;
    text-align:center;
