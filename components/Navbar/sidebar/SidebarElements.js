@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkS } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 
 export const SidebarContainer = styled.aside`
