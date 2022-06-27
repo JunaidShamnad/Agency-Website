@@ -1,22 +1,21 @@
-import {  Nav, Logo, Menu, Li } from "./Navbar.styled";
-import { ThirdButton } from '../Button'
-import {BsArrowRight} from 'react-icons/bs'
+import React, { useState }  from 'react';
 
-const Navbar = () => {
+import Navbar from './header';
+import Sidebar from "./sidebar";
+
+function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <>
-      <Nav>
-        <Logo></Logo>
-        <Menu>
-          <Li>About Us</Li>
-          <Li>Portfolio</Li>
-          <Li>Services</Li>
-          <Li>Contact Us</Li>
-        </Menu>
-        <ThirdButton>Lets Talk <BsArrowRight/></ThirdButton>
-      </Nav>
-    </>
+    <div style={{width: '100%'}}>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+    </div>
   );
-};
+}
 
-export default Navbar;
+export default App;
