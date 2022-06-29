@@ -34,7 +34,7 @@ export const WorkOne = styled.div`
 place-content:center;
 `
 export const WorkTitle = styled.h1`
-width:60%;
+width:100%;
 line-height:140%;
 margin-bottom: 10px;
 `
@@ -44,7 +44,6 @@ padding-top: 1rem;
 display: flex;
 flex-direction:column;
 justify-content: center;
-align-items: center;
 `;
 
 export const WorkTwo = styled.div`
@@ -65,10 +64,15 @@ export const WorkHeading = styled.h1`
 font-size: 64px;
 width: 100%;
 margin-bottom:50px;
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+  font-size:40px;
+  width:50%;
+}
 `;
 export const WorkLinkImage = styled.img``;
 export const WorkImage = styled.img`
-width:20rem;
+width:100%;
+/* width:20rem; */
 height:20rem;
 object-fit: cover;
 object-position:center;

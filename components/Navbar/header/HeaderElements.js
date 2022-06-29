@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import {FaBars} from 'react-icons/fa';
 
 export const Nav=styled.nav`
-    background:#000;
+    background:transparent;
     height: 80px;
     width: 100%;
     display:flex;
-    color:#fff;
+    color:#000;
+    z-index:99999;
     position: sticky;
     top: 0;
     justify-content:space-between;
@@ -19,7 +20,7 @@ export const Nav=styled.nav`
 `;
 export const Link = styled.a`
 text-decoration:none;
-color: #fff;
+color: #000;
 
 `
 export const MobileIcon = styled.div`
@@ -32,7 +33,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: #000;
   }
 `;
 
@@ -49,7 +50,6 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
 `;
 /*
 export const NavLink=styled(LinkR)`

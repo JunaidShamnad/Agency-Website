@@ -29,13 +29,13 @@ width:50%;
 }
 `;
 export const TitleContact = styled.h1`
-  font-size:125px;
+  font-size:64px;
   ${flexColumn}
   margin-bottom:100px;
   position: relative;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width:100%;
-    font-size:62px;
+    font-size:40px;
 }
 `;
 export const Span = styled.span`
@@ -74,7 +74,7 @@ width:75%;
 }
 `;
 export const DetailTitle = styled.h1`
-font-size:22px;
+font-size:19px;
 font-weight: normal;
 margin-bottom: 10px;
 `;
@@ -89,7 +89,7 @@ border-radius: 50%;
 }
 `;
 export const DetailDescription = styled.p`
-font-size:35px;
+font-size:25px;
 font-weight: 600;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
   font-size:15px;
@@ -97,7 +97,9 @@ font-weight: 600;
 }
 `;
 export const ContactLinkImage = styled.img`
-
+width:100%;
+height:80%;
+object-fit:cover;
 `;
 export const Title = styled.h1`
 

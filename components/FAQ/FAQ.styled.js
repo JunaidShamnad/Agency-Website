@@ -18,7 +18,7 @@ border-bottom:1px solid #c4c4c4;
 align-items:center;
 justify-content: space-between;
 @media (max-width:${({ theme })=>theme.breakpoints.mobile}){
-${flexColumn}
+${flexRow}
 }
 `;
 export const Container = styled.div`
@@ -29,6 +29,9 @@ margin-bottom:150px;
 `;
 export const LeftSection = styled.div`
 ${flexColumn}
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    width:90%;
+}
 `;
 export const RightSection = styled.div`
 height: 100%;
@@ -46,19 +49,19 @@ font-size:50px;
 }
 `;
 export const FaqQuestion = styled.p`
-font-size:50px;
+font-size:32px;
 margin-top:15px;
 font-weight:800;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 28px;
+    font-size: 22px;
 }
 `;
 export const FaqAnswer = styled.p`
-font-size:30px;
+font-size:20px;
 color:#656665;
 margin-top:15px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 14px;
+    font-size: 12px;
 }
 `;
 export const Icon = styled.p`

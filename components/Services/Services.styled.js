@@ -99,7 +99,7 @@ export const ServicesText = styled.div`
   }
 `;
 export const ServiceHeading = styled.h3`
-  ${HeadingH2};
+  font-size:64px;
   width: ${({ theme }) => theme.width[10]};
   line-height: 140%;
   text-align: left;
@@ -109,25 +109,30 @@ export const ServiceHeading = styled.h3`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
-    font-size:65px;
-    line-height:5rem;
+    font-size:41px;
+    line-height:3rem;
   }
 `;
 
 export const ServiceDescription = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes?.xxs};
+  font-size: 20px;
   font-weight: normal;
   width: 85%;
   line-height: 150%;
   letter-spacing: 0.3px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.mobile}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxxs};
+    font-size: 15px;
+    width: 100%;
+    /* font-size: ${({ theme }) => theme.fontSizes?.xxxs}; */
   }
 `;
 export const HorizontalLine = styled.span`
   font-size: 35px;
   margin-right: 15px;
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    display: none;
+  }
 `;
 
 // export const ServiceNavImage = styled.div`
@@ -160,9 +165,9 @@ export const ServiceIndex = styled.h1`
   }
 `;
 export const ServiceTitle = styled.h2`
-  ${HeadingH3};
+
   display: flex;
-  font-size: ${({ theme }) => theme.fontSizes?.s};
+  font-size: 30px;
   width: 90%;
   line-height: 120%;
   font-weight: 600;

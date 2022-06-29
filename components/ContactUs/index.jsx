@@ -42,7 +42,7 @@ const ContactUs = () => {
           </ContactDetails>
         </LeftSection>
         <RightSection>
-          <ContactLinkImage src="https://images.unsplash.com/photo-1656275035513-e1d2f094b034?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+          <ContactLinkImage src="https://images.unsplash.com/photo-1656358828391-fac84b7db711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" alt=""/>
         </RightSection>
       </Container>
     </>

@@ -17,12 +17,12 @@ export const Span = styled.span`
 `;
 export const TestimonialsTitle = styled.h1`
 ${flexColumn}
-font-size:100px;
+font-size:64px;
 position: relative;
-width: 50%;
+width: 30%;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width:100%;
-    font-size:63px
+    font-size:41px
 }
 `;
 export const UpperTestimonial = styled.div`
@@ -45,13 +45,14 @@ margin-top:-20px;
 }
 `;
 export const TestimonialsDesigination = styled.p`
-font-size:20px;
+font-size:15px;
 @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
     font-size: 12px;
 }
 `;
 export const TestimonialsName = styled.h2`
 margin-bottom:15px;
+font-size:19px;
 @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
     font-size: 14px;
 }
@@ -109,7 +110,7 @@ line-height: 25px;
 }
 `;
 export const TestimonialDescription = styled.p`
-font-size:30px;
+font-size:21px;
 width: 100%;
 /* color:#7e7e81; */
 margin-bottom: 50px;
