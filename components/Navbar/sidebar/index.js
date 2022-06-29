@@ -29,9 +29,9 @@ const Sidebar = ({ isOpen, toggle }) => {
             Sign Up
           </a>
         </SidebarMenu>
-        <SideBtnWrap>
+        {/* <SideBtnWrap>
           <a to="/sign-in">Sign In</a>
-        </SideBtnWrap>
+        </SideBtnWrap> */}
       </SidebarWrapper>
     </SidebarContainer>
   );

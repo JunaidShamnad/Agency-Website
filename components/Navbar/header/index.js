@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
-import {FaBars} from "react-icons/fa";
+import {HiOutlineMenuAlt3} from "react-icons/hi";
+
 import { IconContext} from "react-icons/lib";
 import {Nav,NavItem,NavbarContainer,MobileIcon,NavMenu,NavBtn,Link} from './HeaderElements';
 
@@ -26,14 +27,15 @@ const Navbar = ({ toggle }) => {
     
     return (
         <>
-        <IconContext.Provider value={{color:'#fff'}}>
+        <IconContext.Provider value={{color:'#000'}}>
           <Nav scrollNav={scrollNav}>
           <NavbarContainer>
               <div to="/" onClick={toggleHome}>
-                   <img src="" alt="Logo"/>
+                   {/* <img src="" alt="Logo"/> */}
+                   <h3>Intelpik</h3>
               </div>
               <MobileIcon onClick={toggle}>
-                <FaBars />
+                <HiOutlineMenuAlt3/>
               </MobileIcon>
               <NavMenu>
                   <NavItem>
@@ -58,9 +60,9 @@ const Navbar = ({ toggle }) => {
                   </NavItem> 
                   {/* smooth={true} duration={500} spy={true} exact='true' offset={-80} */}
               </NavMenu>
-              <NavBtn>
+              {/* <NavBtn>
                   
-              </NavBtn>
+              </NavBtn> */}
               </NavbarContainer>
           </Nav>
           </IconContext.Provider>

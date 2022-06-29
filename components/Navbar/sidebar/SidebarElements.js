@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
+import { VscClose } from "react-icons/vsc";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
+  
   z-index: 999;
   width: 100%;
   height: 100%;
   background: #000000;
   display: grid;
-  align-items: center;
+  align-content: center;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
@@ -16,7 +17,7 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled(VscClose)`
   color: #fff;
 `;
 
@@ -37,12 +38,23 @@ export const SidebarWrapper = styled.div`
 
 export const SidebarMenu = styled.ul`
   display: grid;
+  font-family: "Archivo Black", sans-serif;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(4, 80px);
+  grid-gap:2rem;
   text-align: center;
+  font-size:4rem;
+  letter-spacing:1px;
+ 
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(4, 60px);
+    font-size:1.8rem;
+  }
+
+  a{
+    font-family: "Archivo Black", sans-serif;
+    text-decoration:underline;
   }
 `;
 /*
