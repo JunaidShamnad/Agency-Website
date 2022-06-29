@@ -36,6 +36,7 @@ export const ValuesParentWrapper = styled.div`
  width:100vw;
  max-width:100%;
  height:auto;
+
 padding:2.1rem 0;
  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
   grid-template-rows:0.4fr 1fr;
@@ -75,11 +76,11 @@ place-items:center;
 
 `
 export const ValuesLeftHeadline = styled.h2`
-  font-size: 62px;
+  font-size: 60px;
   font-weight: ${({ theme }) => theme.fontWeights?.semibold};
   line-height: 120%;
   transition: ${({ theme }) => theme.transition?.base};
- margin-bottom:1rem;
+  margin-bottom:2.5rem;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.ms};
     
@@ -111,6 +112,7 @@ export const ValuesLeftBottomWrapper = styled.div`
 display:flex;
 flex-direction:column;
 justify-content:flex-end;
+margin-top:1rem;
 padding-bottom:2rem;
 width:90%;
 `
@@ -177,6 +179,7 @@ grid-template-rows:1fr 1fr;
 grid-gap:5px;
 width:100%;
 height:100%;
+place-items:center;
 @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     place-items:center;
    
@@ -199,9 +202,19 @@ margin:0 1rem;
 `
 
 // export const ValuesRightTextContiner = styled.div``
-export const ValuesRightIconContiner = styled.div``
+export const ValuesRightIconContiner = styled.div`
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+`
 
-export const ValuesRightTextContiner = styled.div``
+export const ValuesRightTextContiner = styled.div`
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;`
 
 export const ValuesRightCardTitle = styled.p`
  font-size:25px;

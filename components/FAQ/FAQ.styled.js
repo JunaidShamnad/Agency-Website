@@ -123,7 +123,7 @@ min-height:25px;
 max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
-color:#000;
+color:#1D1A26;
 `
 export const MinusIcon = styled(FiMinusCircle)`
 font-size:25px;
@@ -132,5 +132,5 @@ min-height:25px;
 max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
-color:#000;
+color:#1D1A26;
 `
