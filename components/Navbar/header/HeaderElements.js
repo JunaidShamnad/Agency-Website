@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {FaBars} from 'react-icons/fa';
 
 export const Nav=styled.nav`
-    background:transparent;
+    background:#fff7f0;
     height: 80px;
     width: 100%;
     display:flex;
