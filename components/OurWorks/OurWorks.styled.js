@@ -48,8 +48,10 @@ align-items: center;
 `;
 
 export const WorkTwo = styled.div`
-
-justify-content: center;
+margin-top:25%;
+@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+ margin-top:0;
+  } ;
 `;
 
 export const WorkThree = styled.div``;
