@@ -18,7 +18,6 @@ const FAQS = () => {
         <FaqsSection>
           <LeftSection>
             <Faq>
-              <FaqIndex>01</FaqIndex>
               <FaqQuestion>Services can also be a more stable</FaqQuestion>
               <FaqAnswer>
                 Table source of profits, as they tend not to be as exposed to
@@ -33,7 +32,6 @@ const FAQS = () => {
         <FaqsSection>
           <LeftSection>
             <Faq>
-              <FaqIndex>02</FaqIndex>
               <FaqQuestion>
                 It brings together the notion of a product
               </FaqQuestion>
@@ -50,7 +48,6 @@ const FAQS = () => {
         <FaqsSection>
           <LeftSection>
             <Faq>
-              <FaqIndex>03</FaqIndex>
               <FaqQuestion>Selling your existing products</FaqQuestion>
               <FaqAnswer>
                 Table source of profits, as they tend not to be as exposed to
