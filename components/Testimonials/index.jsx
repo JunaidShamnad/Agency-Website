@@ -24,7 +24,6 @@ const Testimonials = () => {
   return (
     <>
       <Container>
-
         <UpperTestimonial>
           <TestimonialsTitle>
             <SpanTitle>Testimonial</SpanTitle>Clients Kind Word
