@@ -1,16 +1,3 @@
-import {
-  Heading,
-  Faq,
-  FaqsSection,
-  Container,
-  LeftSection,
-  RightSection,
-  FaqIndex,
-  FaqQuestion,
-  FaqAnswer,
-  Icon,
-  Section,
-} from "./FAQ.styled";
 import FaqLayout from "./faqLayout";
 import data from '../../data/faqData';
 

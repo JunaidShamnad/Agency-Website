@@ -37,7 +37,6 @@ export const Faq = styled.div`
 export const FaqsSection = styled.div`
 width:90%;
 ${flexRow};
-/* border-top:1px solid #c4c4c4; */
 border-bottom:1px solid #c4c4c4;
 display:flex;
 align-items:center;
@@ -49,12 +48,7 @@ margin:1rem 0;
 ${flexRow}
 }
 `;
-// export const Container = styled.div`
-// ${flexColumn}
-// align-items:center;
-// justify-content: center;
-// margin-bottom:150px;
-// `;
+
 export const LeftSection = styled.div`
 width:100%;
 ${flexColumn}
@@ -62,15 +56,7 @@ ${flexColumn}
     width:90%;
 }
 `;
-// export const RightSection = styled.div`
-// height: 100%;
-// ${flexRow}
-// align-items:center;
-// justify-content: center;
-// @media (max-width:${({ theme })=>theme.breakpoints.mobile}){
-// ${flexColumn}
-// }
-// `;
+
 export const FaqIndex = styled.h1`
 font-size:50px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -80,8 +66,8 @@ font-size:50px;
 export const FaqQuestion = styled.div`
 width:100%;
 font-size:30px;
-margin-top:15px;
 font-weight:800;
+margin-top:15px;
 display: flex;
 align-items: center;
 margin-bottom: 2px;
@@ -137,7 +123,7 @@ min-height:25px;
 max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
-color:#000;
+color:#1D1A26;
 `
 export const MinusIcon = styled(FiMinusCircle)`
 font-size:25px;
@@ -146,5 +132,5 @@ min-height:25px;
 max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
-color:#000;
+color:#1D1A26;
 `
