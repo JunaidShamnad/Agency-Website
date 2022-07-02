@@ -1,12 +1,19 @@
 import styled from'styled-components';
 
 
-export const Section = styled.div``
+export const Section = styled.section`
+width: 100vw;
+height: 100%;
+max-width:100%;
+`
 export const Container = styled.div`
 display:flex;
 flex-direction:row;
 justify-content: center;
-width:100%;
+height: 100%;
+width: 90%;
+max-width:1600px;
+margin:5rem auto;
 margin-top: 150px;
 @media(max-width:767px){
     flex-direction: column;
@@ -104,7 +111,7 @@ export const LeftContainerTitle = styled.h4`
 font-size:32px;
 `
 export const LeftContainerMainHeading = styled.h1`
-width:50%;
+width:60%;
 font-size:64px;
 @media(max-width:767px){
     font-size:30px;
@@ -118,4 +125,5 @@ background-color:transparent;
 border: 1px solid #000;
 outline:none;
 margin-top: 25px;
+font-size: 18px;
 `
