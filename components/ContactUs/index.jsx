@@ -12,7 +12,10 @@ import {
   ContactDetails,
   Title,
   TitleContact,
+  MailIcon,
+  LocationIcon,
 } from "./ContactUs.styled";
+
 
 const ContactUs = () => {
   return (
@@ -20,18 +23,18 @@ const ContactUs = () => {
       <Container>
         <LeftSection>
           <TitleContact>
-            <Span>Contact</Span>Lets Discus Your Project
+          Lets Discus Your Project
           </TitleContact>
           <ContactDetails>
             <Contact>
-              <DetailIcons></DetailIcons>
+              <DetailIcons><MailIcon/></DetailIcons>
               <Detail>
                 <DetailTitle>Email</DetailTitle>
                 <DetailDescription>admin@intelpik.com</DetailDescription>
               </Detail>
             </Contact>
             <Contact>
-              <DetailIcons></DetailIcons>
+              <DetailIcons><LocationIcon/></DetailIcons>
               <Detail>
                 <DetailTitle>Location</DetailTitle>
                 <DetailDescription>

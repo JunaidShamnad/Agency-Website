@@ -1,22 +1,28 @@
 import styled from "styled-components";
 import { HeadingH3,flexColumn,flexRow,flexColumnCenter } from "../cssHelper";
+import {HiOutlineMail,HiOutlineLocationMarker} from 'react-icons/hi';
 
 export const Section = styled.section`
-height:100vh;
+   width: 100vw;
+    height: 100%;
+    max-width:100%;
 `;
 export const Container = styled.div`
-width:85%;
+ height: 100%;
+  width: 90%;
+  max-width:1600px;
 display: flex;
 justify-content: space-evenly;
-margin-left: auto;
-margin-right: auto;
-margin-bottom:250px;
+margin:5rem auto;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     flex-direction: column;
+    margin:1rem auto;
 }
 `;
 export const LeftSection = styled.div`
 width:50%;
+height:90%;
+/* max-height:90%; */
 ${flexColumn}
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}){
   width:100%;
@@ -24,6 +30,8 @@ ${flexColumn}
 `;
 export const RightSection = styled.div`
 width:50%;
+height:90%;
+/* max-height:90%; */
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}){
   width:100%;
 }
@@ -38,15 +46,15 @@ export const TitleContact = styled.h1`
     font-size:40px;
 }
 `;
-export const Span = styled.span`
-font-size:${({theme})=>theme.fontSizes?.xxxs};
-transform:rotate(-18deg);
-position: absolute;
-top:0;
-margin-left:-25px;
-margin-top: -20px;
+// export const Span = styled.span`
+// font-size:${({theme})=>theme.fontSizes?.xxxs};
+// transform:rotate(-18deg);
+// position: absolute;
+// top:0;
+// margin-left:-25px;
+// margin-top: -20px;
 
-`;
+// `;
 export const Contact = styled.div`
 ${flexRow}
 height:215px;
@@ -79,15 +87,29 @@ font-weight: normal;
 margin-bottom: 10px;
 `;
 export const DetailIcons = styled.div`
-width:70px;
-height: 70px;
-background:#000;
+width:50px;
+height: 50px;
+background:#1D1A26;
 border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}){
   height:60px;
   width:60px;
 }
 `;
+
+export const MailIcon = styled(HiOutlineMail)`
+font-size:25px;
+opacity:0.7;
+color:#fff;
+`
+export const LocationIcon = styled(HiOutlineLocationMarker)`
+font-size:25px;
+opacity:0.7;
+color:#fff;
+`
 export const DetailDescription = styled.p`
 font-size:25px;
 font-weight: 600;
@@ -98,7 +120,7 @@ font-weight: 600;
 `;
 export const ContactLinkImage = styled.img`
 width:100%;
-height:80%;
+max-height:80%;
 object-fit:cover;
 `;
 export const Title = styled.h1`

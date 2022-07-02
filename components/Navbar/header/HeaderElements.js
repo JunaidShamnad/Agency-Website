@@ -41,6 +41,7 @@ export const MobileIcon = styled.div`
 
 export const NavItem = styled.li`
   /* height: 80px; */
+  cursor:pointer;
 `;
 
 export const NavbarContainer = styled.div`
@@ -51,6 +52,12 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
+
+  div{
+    h3{
+      cursor:pointer;
+    }
+  }
 `;
 /*
 export const NavLink=styled(LinkR)`

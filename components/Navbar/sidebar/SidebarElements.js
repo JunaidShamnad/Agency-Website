@@ -3,7 +3,7 @@ import { VscClose } from "react-icons/vsc";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  
+  user-select: none;
   z-index: 999;
   width: 100%;
   height: 100%;
@@ -45,7 +45,7 @@ export const SidebarMenu = styled.ul`
   text-align: center;
   font-size:4rem;
   letter-spacing:1px;
- 
+ cursor:pointer;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(4, 60px);

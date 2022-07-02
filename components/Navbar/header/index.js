@@ -21,16 +21,16 @@ const Navbar = ({ toggle }) => {
     },[]);
     
     
-    const toggleHome=()=>{
-      scroll.scrollToTop()
-    };
+    // const toggleHome=()=>{
+    //   scroll.scrollToTop()
+    // };
     
     return (
         <>
         <IconContext.Provider value={{color:'#000'}}>
           <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-              <div to="/" onClick={toggleHome}>
+              <div to="/">
                    {/* <img src="" alt="Logo"/> */}
                    <h3>Intelpik</h3>
               </div>

@@ -133,4 +133,5 @@ max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
 color:#1D1A26;
+/* color:#ED5040; */
 `
