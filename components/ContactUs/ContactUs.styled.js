@@ -63,7 +63,7 @@ border-top:4px solid #000;
 width:85%;
 justify-content:space-between;
 @media (max-width:${({ theme })=>theme.breakpoints.mobile}){
-justify-content:space-between;
+justify-content:space-evenly;
 width: 100%;
 }
 `;
@@ -120,7 +120,7 @@ font-weight: 600;
 `;
 export const ContactLinkImage = styled.img`
 width:100%;
-max-height:80%;
+max-height:100%;
 object-fit:cover;
 `;
 export const Title = styled.h1`

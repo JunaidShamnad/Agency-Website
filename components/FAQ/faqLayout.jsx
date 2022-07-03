@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from "react";
+import React,{ useState, createContext, useContext} from "react";
 import {
   Container,
   Faq,
@@ -15,10 +15,13 @@ import {
 const QuestionContext = createContext();
 
 const FaqLayout = ({ children, ...restProps }) => {
+ 
   return (
-    <Section {...restProps}>
-      <Container>{children}</Container>
+    
+    <Section >
+      <Container {...restProps}>{children}</Container>
     </Section>
+    
   );
 };
 
@@ -27,31 +30,32 @@ FaqLayout.Header = function FaqLayoutHeader({ children, ...restProps }) {
 };
 
 FaqLayout.Entity = function FaqLayoutEntity({ children, ...restProps }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen]=useState(0);
   return (
     <QuestionContext.Provider value={{ open, setOpen }}>
       <FaqsSection {...restProps}>
         <LeftSection>
-          <Faq>{children}</Faq>
+          <Faq >{children}</Faq>
         </LeftSection>
       </FaqsSection>
-    </QuestionContext.Provider>
+      </QuestionContext.Provider>
   );
 };
 
 FaqLayout.Question = function FaqLayoutQuestion({ children, ...restProps }) {
   const { open, setOpen } = useContext(QuestionContext);
   return (
-    <FaqQuestion onClick={() => setOpen((open) => !open)} {...restProps}>
+    <FaqQuestion  onClick={()=>setOpen((open)=>!open)} {...restProps}>
       {children}
-      {open ? <MinusIcon /> : <PlusIcon />}
+      {open ? <MinusIcon/> : <PlusIcon/>}
     </FaqQuestion>
   );
 };
 
 FaqLayout.Answer = function FaqLayoutAnswer({ children, ...restProps }) {
-  const { open } = useContext(QuestionContext);
+  const {open} = useContext(QuestionContext);
   return open ? <FaqAnswer {...restProps}>{children}</FaqAnswer> : null;
+  
 };
 
 export default FaqLayout;

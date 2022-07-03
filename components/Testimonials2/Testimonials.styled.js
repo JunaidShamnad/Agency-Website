@@ -68,7 +68,7 @@ border-radius:50%;
 }
 `
 export const Testimonial = styled.div`
-background-color: #7770a4;
+background-color: #8873f0;
 margin-bottom: 30px;
 padding: 20px;
 border-radius:10px;

@@ -31,5 +31,9 @@ export const FooterTitles = styled.h1`
     width:78%;
     margin-bottom: 25px;
  }
+
+ :nth-child(3){
+   text-align:right;
+ }
 `;
 
