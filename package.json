@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^6.3.11",
+    "framer-motion": "^6.3.16",
     "next": "12.1.6",
     "next-images": "^1.8.4",
     "nprogress": "^0.2.0",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.7",
-    "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6"
+    "eslint": "^8.19.0",
+    "eslint-config-next": "^12.2.0"
   }
 }
