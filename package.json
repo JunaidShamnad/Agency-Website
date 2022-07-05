@@ -16,7 +16,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "styled-components": "^5.3.5"
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.7.4"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.7",
