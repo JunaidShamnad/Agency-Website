@@ -126,3 +126,83 @@ object-fit:cover;
 export const Title = styled.h1`
 
 `;
+export const Form = styled.form`
+height: 100%;
+width:100%;
+`;
+
+export const ContactForm = styled.p`
+font-size:32px;
+font-weight:600;
+letter-spacing:1.5;
+color:#000;
+line-height:75px;
+
+
+`;
+
+export const NameInput = styled.input`
+width:300px;
+height:40px;
+border:none;
+border-bottom:2px solid #000; 
+color: #000;
+outline:none;
+font-size:32px;
+`;
+
+export const EmailInput = styled.input`
+width:550px;
+height:40px;
+border:none;
+border-bottom:2px solid #000; 
+color:#000;
+outline:none;
+font-size:32px;
+`;
+
+export const ServiceInput = styled.input`
+width:300px;
+height:40px;
+border:none;
+border-bottom:2px solid #000; 
+color:#000;
+outline:none;
+font-size:32px;
+`;
+export const GetaQuote = styled.h1`
+font-size:22px;
+color: #000;
+margin:30px 0 15px 0px;
+`;
+
+export const ScheduleP = styled.p`
+font-size:35px;
+font-weight:bold;
+margin:0 0 50px 0;
+`;
+export const TermsCheckbox = styled.div`
+display:flex;
+margin:30px 0 10px 0;
+
+`;
+export const SubmitForm = styled.button`
+padding:15px 35px;
+font-weight:500;
+font-size:15px;
+border-radius: 5px;
+margin:20px 0 50px 0;
+background-color:#000;
+color:#fff;
+
+`;
+export const CheckboxTitle = styled.h1`
+font-size:22px;
+margin-left:15px;
+
+
+`;
+export const Checkbox = styled.input`
+
+`;
+
