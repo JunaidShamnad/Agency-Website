@@ -120,7 +120,7 @@ export const ServiceDescription = styled.p`
   width: 85%;
   line-height: 150%;
   letter-spacing: 0.3px;
-
+  margin-top:12px;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.mobile}) {
     font-size: 15px;
     width: 100%;
@@ -200,7 +200,7 @@ export const ServiceLinkContainer = styled.div`
 `;
 
 export const ArrowIcon = styled(BsFillArrowUpRightCircleFill)`
-  color: #8873f0;
+  color: #5928e5;
   font-size: 49px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {

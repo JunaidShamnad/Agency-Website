@@ -62,18 +62,19 @@ export const TestimonialAvatarImage = styled.img`
 width:75px;
 height:75px;
 border-radius:50%;
+box-shadow: -11px 7px 21px -14px rgba(254,201,193,0.79);
 @media(max-width:768px){
     width:50px;
     height:50px;
 }
 `
 export const Testimonial = styled.div`
-background-color: #8873f0;
+background-color: #5928e5;
 margin-bottom: 30px;
 padding: 20px;
 border-radius:10px;
 margin: 15px 15px;
-color:#fff;
+color:#fff2f2;
 min-width:250px;
 `
 export const TestimonialAvatar = styled.div`
@@ -85,6 +86,7 @@ margin-bottom: 20px;
 export const TestimonialAvatarName = styled.h1`
 margin-left:20px;
 font-size:18px;
+color:#fec9c1;
 @media(max-width:767px){
     margin-left:15px;
 }

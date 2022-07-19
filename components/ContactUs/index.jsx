@@ -1,4 +1,5 @@
 import {
+  Section,
   Container,
   Detail,
   DetailIcons,
@@ -14,13 +15,14 @@ import {
   TitleContact,
   MailIcon,
   LocationIcon,
+ 
 } from "./ContactUs.styled";
 
 
 const ContactUs = () => {
   return (
-    <>
-      <Container>
+    <Section>
+      <Container  id="contact-us">
         <LeftSection>
           <TitleContact>
           Lets Discus Your Project
@@ -48,7 +50,7 @@ const ContactUs = () => {
           <ContactLinkImage src="https://images.unsplash.com/photo-1656358828391-fac84b7db711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" alt=""/>
         </RightSection>
       </Container>
-    </>
+    </Section>
   );
 };
 

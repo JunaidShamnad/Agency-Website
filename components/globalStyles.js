@@ -9,8 +9,8 @@ body {
     font-family: 'Syne', sans-serif;
     padding: 0;
     margin: 0;
-    background-color:#fff;
-
+    background-color:#fff2f2;
+    color:#0d0a19;
 }
 
 html {

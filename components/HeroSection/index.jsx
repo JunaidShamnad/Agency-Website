@@ -13,7 +13,7 @@ import {
 
 const HeroSection = () => {
   return (
-    <Section>
+    <Section  id="hero-section">
       <Container>
         <Hero>
           <Heading>Build,Grow and Manage Your Brand</Heading>

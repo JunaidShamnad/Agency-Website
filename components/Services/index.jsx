@@ -21,7 +21,7 @@ import {
 
 const Services = () => {
   return (
-    <Section>
+    <Section id="services">
       <Container>
 
         <ServiceContent>

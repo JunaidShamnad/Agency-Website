@@ -21,7 +21,7 @@ import {
 function index() {
   return (
     <>
-      <Section>
+      <Section id="testimonials">
         <Container>
           <LeftContainer>
             <LeftContainerContent>

@@ -1,40 +1,25 @@
-import React from "react";
-import {
-  SidebarContainer,
-  Icon,
-  CloseIcon,
-  SidebarWrapper,
-  SidebarMenu,
-  SideBtnWrap,
-} from "./SidebarElements";
+import Links from '../../../data/menuLinks';
+import { CloseIcon, IconContainer, SidebarContainer, SidebarMenu, SidebarMenuLink, SidebarMenuLinkA, SidebarMenuWrapper } from './Sidebar.styled'
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen,toggle}) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <a to="about" onClick={toggle}>
-            About
-          </a>
-          <a to="services" onClick={toggle}>
-            Services
-          </a>
-          <a to="contact-us" onClick={toggle}>
-            Contact Us
-          </a>
-          <a to="sign-up" onClick={toggle}>
-            Sign Up
-          </a>
+    
+    <SidebarContainer isOpen={isOpen} onClick={toggle} >
+        <IconContainer onClick={toggle}>
+            <CloseIcon/>
+        </IconContainer>
+        <SidebarMenuWrapper>
+        {Links.map((link) => (
+        <SidebarMenu key={link.id} onClick={toggle}>
+        <SidebarMenuLink  href={link.to} >
+         <SidebarMenuLinkA> {link.name}</SidebarMenuLinkA>
+        </SidebarMenuLink>
         </SidebarMenu>
-        {/* <SideBtnWrap>
-          <a to="/sign-in">Sign In</a>
-        </SideBtnWrap> */}
-      </SidebarWrapper>
+      ))}
+        </SidebarMenuWrapper>
     </SidebarContainer>
-  );
-};
+   
+  )
+}
 
-export default Sidebar;
+export default Sidebar

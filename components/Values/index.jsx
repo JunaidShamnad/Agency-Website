@@ -24,7 +24,7 @@ import {
 
 const Values = () => {
   return (
-    <Section>
+    <Section id="values">
       <Container>
         <ValuesParentWrapper>
 

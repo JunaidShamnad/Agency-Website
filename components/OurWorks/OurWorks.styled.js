@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import { HeadingH3,flexRow,flexColumn } from "../cssHelper";
-
+import { HeadingH3, flexRow, flexColumn } from "../cssHelper";
 
 export const Section = styled.section`
- width: 100vw;
-    height: 100%;
-    max-width:100%;
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  background-color: #5928e5;
+  color:#fff2f2;
 `;
 
 export const Container = styled.div`
   height: 100%;
   width: 90%;
-  max-width:1600px;
+  max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,68 +29,66 @@ export const Container = styled.div`
   } ;
 `;
 
-
 export const WorkOne = styled.div`
-place-content:center;
-`
+  place-content: center;
+`;
 export const WorkTitle = styled.h1`
-width:100%;
-line-height:140%;
-margin-bottom: 10px;
-`
+  width: 100%;
+  line-height: 140%;
+  margin-bottom: 10px;
+  color:#fff2f2;
+`;
 export const Work = styled.div`
-border-top:1px solid #000;
-padding-top: 1rem;
-display: flex;
-flex-direction:column;
-justify-content: center;
+  border-top: 1px solid #fec9c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const WorkTwo = styled.div`
-margin-top:25%;
-@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
- margin-top:0;
+  margin-top: 25%;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    margin-top: 0;
   } ;
 `;
 
 export const WorkThree = styled.div``;
 
 export const WorkDescription = styled.p`
-font-size:15px;
-margin-bottom:25px;
-line-height:140%;
-`
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 140%;
+`;
 export const WorkHeading = styled.h1`
-font-size: 64px;
-width: 100%;
-margin-bottom:50px;
-@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-  font-size:40px;
-  width:50%;
-}
+  font-size: 64px;
+  width: 100%;
+  margin-bottom: 50px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 40px;
+    width: 50%;
+  }
 `;
 export const WorkLinkImage = styled.img``;
 export const WorkImage = styled.img`
-width:100%;
-/* width:20rem; */
-height:20rem;
-object-fit: cover;
-object-position:center;
+  width: 100%;
+  /* width:20rem; */
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
 `;
 
-
 export const WorkInnerContainer = styled.div`
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-grid-template-rows:1fr;
-grid-gap:2rem;
-max-width:100%;
-height:100%;
-margin-bottom:2rem;
-@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-  grid-template-columns:1fr;
-   grid-template-rows:1fr 0.8fr 0.8fr;
-   place-items:center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+  max-width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.8fr;
+    place-items: center;
     /* ${flexColumn} */
   } ;
-`
+`;

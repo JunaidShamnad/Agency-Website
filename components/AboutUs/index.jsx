@@ -14,7 +14,7 @@ import {
 
 const AboutUs = () => {
   return (
-    <Section>
+    <Section id="about-us">
       <Container>
 
         <About>
