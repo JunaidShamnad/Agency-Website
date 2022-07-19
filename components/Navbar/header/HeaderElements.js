@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {FaBars} from 'react-icons/fa';
+import NextLink from 'next/link'
 
 export const Nav=styled.nav`
     background:#fff7f0;
@@ -18,7 +19,7 @@ export const Nav=styled.nav`
     transition: 0.8s all ease;
   }
 `;
-export const Link = styled.a`
+export const Link = styled(NextLink)`
 text-decoration:none;
 color: #000;
 

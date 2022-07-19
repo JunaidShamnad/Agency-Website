@@ -39,22 +39,22 @@ const Navbar = ({ toggle }) => {
               </MobileIcon>
               <NavMenu>
                   <NavItem>
-                  <Link to="/about" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
+                  <Link href="/about" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
                       About
                   </Link>
                   </NavItem>
                   <NavItem>
-                  <Link to="/services" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
+                  <Link href="/services" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
                       Services
                   </Link>
                   </NavItem>
                   <NavItem>
-                  <Link to="/contact-us" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
+                  <Link href="/contact-us" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
                       Contact Us
                   </Link>
                   </NavItem>
                   <NavItem>
-                  <Link to="/sign-up" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
+                  <Link href="/sign-up" smooth={true} duration={500} spy={true} exact='true' offset={-80} activeStyle>
                       Sign Up
                   </Link>
                   </NavItem> 

@@ -1,4 +1,4 @@
-import PortfolioPage from "../container/Portfolio Page";
+import PortfolioPage from "../container/PortfolioPage";
 
 export default function Portfolio() {
     return (

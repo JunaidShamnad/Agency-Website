@@ -11,7 +11,7 @@ export const Section = styled.section`
     width: 100vw;
     height: 100%;
     max-width:100%;
-  background-color: #fff7f0;
+  background-color: #5928e5;
 `;
 
 export const Container = styled.div`
@@ -45,13 +45,13 @@ export const Heading = styled.h1`
   height: auto;
   word-wrap: break-word;
   word-spacing:1px;
-  color:#1D1A26;
+  color:#FFF2F2;
   text-align: center;
   font-family: "Archivo Black", sans-serif;
   font-weight:800;
   font-size:150px;
   line-height:190px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   padding: 10px;
   margin: 1rem 0;
 
@@ -61,6 +61,8 @@ export const Heading = styled.h1`
 `;
 export const HeroDescription = styled.p`
   ${Paragraph};
+  color:#FFF2F2;
+  opacity:0.9;
   font-family: 'Syne', sans-serif;
   font-weight:500;
   margin-top: 25px;
@@ -79,6 +81,7 @@ export const HeroDescription = styled.p`
 `;
 export const HeroButtons = styled.div`
   ${flexRowCenter};
+  
   justify-content: space-between;
   margin-top: 40px;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -89,6 +92,8 @@ export const HeroButtons = styled.div`
 
 export const HeaderButton = styled.button`
   ${PrimaryButton}
+  background-color:#FEC9C1;
+  color:#0D0A19;
   padding:16px 42px;
   font-size: 22px;
 `;
