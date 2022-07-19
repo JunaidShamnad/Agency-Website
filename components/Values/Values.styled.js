@@ -9,7 +9,7 @@ export const Section = styled.section`
     height: 100%;
     max-width:100%;
     background-color: #5928e5;
-    
+    z-index:20;
 `;
 
 export const Container = styled.div`

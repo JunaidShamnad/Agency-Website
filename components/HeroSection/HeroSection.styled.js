@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {motion} from 'framer-motion';
+
 import {
   HeadingH3,
   Paragraph,
@@ -30,7 +32,7 @@ export const Container = styled.div`
     padding-bottom: 1rem;
   } ;
 `;
-export const Hero = styled.div`
+export const Hero = styled(motion.div)`
   ${flexColumnCenter};
   margin-top: 4.9rem;
   width: 100%;
@@ -39,7 +41,7 @@ export const Hero = styled.div`
     margin-bottom:0; */
   } ;
 `;
-export const Heading = styled.h1`
+export const Heading = styled(motion.h1)`
   ${HeadingH3};
   width: ${({ theme }) => theme.width[10]};
   height: auto;

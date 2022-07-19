@@ -1,19 +1,58 @@
-import FaqLayout from "./faqLayout";
-import data from '../../data/faqData';
+import React, { useState } from "react";
+import data from "../../data/faqData";
+import {
+  Container,
+  Faq,
+  FaqAnswer,
+  FaqHeader,
+  FaqQuestion,
+  FaqsSection,
+  LeftSection,
+  MinusIcon,
+  PlusIcon,
+  QuestionWrapper,
+  Section,
+} from "./FAQ.styled";
 
-const FAQS = () => {
+const FAQ = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const toggle = (index) => {
+    if (clicked === index) {
+      //if clicked question is already active, then close it
+      return setClicked(null);
+    }
+
+    setClicked(index);
+  };
+
   return (
+    <Section>
+      <Container>
+        <FaqHeader>Frequently Asked Questions</FaqHeader>
 
-    <FaqLayout id="faq">
-      <FaqLayout.Header>Frequently Asked Questions</FaqLayout.Header>
-      {data.map((faqData)=>(
-        <FaqLayout.Entity key={faqData.id}>
-          <FaqLayout.Question>{faqData.question}</FaqLayout.Question>
-          <FaqLayout.Answer>{faqData.answer}</FaqLayout.Answer>
-        </FaqLayout.Entity>
-      ))}
-    </FaqLayout>
+        {data.map((item, index) => {
+          return (
+            <FaqsSection key={item.id}>
+              <LeftSection>
+                <Faq >
+                  <QuestionWrapper onClick={() => toggle(index)}>
+                    <FaqQuestion>
+                      {item.question}
+                      {clicked === index ? <MinusIcon /> : <PlusIcon />}{" "}
+                    </FaqQuestion>
+                  </QuestionWrapper>
+                  {clicked === index ? (
+                    <FaqAnswer>{item.answer}</FaqAnswer>
+                  ) : null}
+                </Faq>
+              </LeftSection>
+            </FaqsSection>
+          );
+        })}
+      </Container>
+    </Section>
   );
 };
 
-export default FAQS;
+export default FAQ;

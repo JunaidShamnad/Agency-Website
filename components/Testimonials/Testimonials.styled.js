@@ -1,131 +1,139 @@
-import styled from "styled-components";
-import { HeadingH3,flexColumn,flexRow } from "../cssHelper";
-import Image from 'next/image'
+import styled from'styled-components';
+import {motion} from 'framer-motion'
 
-export const Heading = styled.h1`
- ${ HeadingH3 };
-`;
-export const Container = styled.div`
-width:80%;
-margin-left: auto;
-margin-right: auto;
-margin-bottom:50px;
-margin-top:55px;
-`;
-export const Span = styled.span`
-
-`;
-export const TestimonialsTitle = styled.h1`
-${flexColumn}
-font-size:64px;
-position: relative;
-width: 30%;
-@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width:100%;
-    font-size:41px
-}
-`;
-export const UpperTestimonial = styled.div`
-${flexRow}
-align-items: end;
-@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
-${flexColumn}
-}
-`;
-export const SpanTitle = styled.span`
-font-size: ${({ theme }) => theme.fontSizes?.xxxs};
-transform:rotate(-18deg);
-position:absolute;
-margin-left: -30px;
-margin-top:-20px;
-
-@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    font-size: 14px;
-    
-}
-`;
-export const TestimonialsDesigination = styled.p`
-font-size:15px;
-@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    font-size: 12px;
-}
-`;
-export const TestimonialsName = styled.h2`
-margin-bottom:15px;
-font-size:19px;
-@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    font-size: 14px;
-}
-`;
-export const TestimonialsContent = styled.div`
-border-top: 2px solid #000000;
-width: 75%;
-padding-top: 50px;
-margin-left: 50px;
-${flexColumn}
-@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width:100%;
-    margin-left:0px;
-}
-`;
-export const TestimonialsImage = styled.div`
-min-width:29.5%;
-height:720px;
-border-radius:40%;
-position: relative;
-div{
-    height: 75%;
-    bottom: 39px;
-    width: 100%;
-    border-radius: 40%;
-    background-color: red;
-    position: absolute;
-}
-`;
-export const TestimonialsImg = styled(Image)`
-width: 100%;
-position: absolute;
+export const Section = styled.section`
+width: 100vw;
 height: 100%;
-z-index: 999;
-bottom: 0;
-`;
-
-export const LowerTestimonial = styled.div`
-${flexRow}
-justify-content: space-between;
-align-items:center;
-@media (max-width:${({ theme })=>theme.breakpoints.mobile}){
-${flexColumn}
+max-width:100%;
+/* z-index:555; */
+`
+export const Container = styled.div`
+display:flex;
+flex-direction:row;
+justify-content: center;
+height: 100%;
+overflow:hidden;
+width: 90%;
+max-width:1600px;
+margin:5rem auto;
+margin-top: 150px;
+@media(max-width:767px){
+    flex-direction: column;
 }
-`;
-export const TestimonialsIcons = styled.div`
+`
+export const LeftContainer = styled.div`
+width:50%;
 
-`;
-export const TestimonialsDescription = styled.p`
-width: 27%;
-line-height: 25px;
-@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width:100%;
-    font-size:13.5px;
-}
-`;
-export const TestimonialDescription = styled.p`
-font-size:21px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
 width: 100%;
-/* color:#7e7e81; */
-margin-bottom: 50px;
-line-height: 40px;
-@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width:100%;
-    font-size:13.5px;
-    line-height:25px
+padding-right: 0px;
 }
-`;
-export const TestimonialContentSection = styled.div`
-padding-top: 50px;
-padding-bottom: 50px;
 
-`;
+`
+export const RightContainer = styled.div`
+width:50%;
+padding-right: 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+flex-direction: column;
+justify-content: center;
+width: 100%;
+padding-right: 0px;
+}
+`
+export const TestimonialDescription = styled.p``
+export const TestimonialFirstContent = styled(motion.div)`
+width:auto;
+height:100%;
+@media(max-width:767px){
+    display:flex;
+    overflow-x:scroll;
+    flex-direction: row;
 
 
-
+}
+&::-webkit-scrollbar{
+    display: none;
+}
+`
+export const TestimonialAvatarImage = styled.img`
+width:75px;
+height:75px;
+border-radius:50%;
+box-shadow: -11px 7px 21px -14px rgba(254,201,193,0.79);
+@media(max-width:768px){
+    width:50px;
+    height:50px;
+}
+`
+export const Testimonial = styled(motion.div)`
+background-color: #5928e5;
+margin-bottom: 30px;
+padding: 20px;
+z-index:2;
+border-radius:10px;
+margin: 15px 15px;
+color:#fff2f2;
+min-width:250px;
+`
+export const TestimonialAvatar = styled.div`
+display: flex;
+flex-direction: row;
+align-items:center;
+margin-bottom: 20px;
+`
+export const TestimonialAvatarName = styled.h1`
+margin-left:20px;
+font-size:18px;
+color:#fec9c1;
+@media(max-width:767px){
+    margin-left:15px;
+}
+`
+export const LeftContainerContent = styled.div`
+padding:20px;
+@media(max-width:767){
+    padding: 50px;
+}
+`
+export const TesimonialSecondContent = styled.div`
+margin-top:15%;
+margin-left: 50px;
+width:auto;
+height:100%;
+@media(max-width:767px){
+    display:flex;
+    overflow-x:scroll;
+    flex-direction: row;
+}
+&::-webkit-scrollbar{
+    display: none;
+}
+`
+export const LeftContainerTitle = styled.h4`
+font-size:32px;
+`
+export const LeftContainerMainHeading = styled.h1`
+width:60%;
+font-size:64px;
+@media(max-width:767px){
+    font-size:30px;
+    width:100%;
+}
+`
+export const LeftContainerButton = styled.button`
+padding:10px 20px;
+border:none;
+background-color:transparent;
+border: 1px solid #000;
+outline:none;
+margin-top: 25px;
+font-size: 18px;
+`

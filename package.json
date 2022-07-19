@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^6.3.16",
+    "framer-motion": "^6.5.1",
     "next": "12.2.0",
     "nprogress": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-intersection-observer": "^9.3.5",
     "react-is": "^18.2.0",
     "styled-components": "^5.3.5",
     "typescript": "^4.7.4"
