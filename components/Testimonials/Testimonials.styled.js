@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { GrPrevious, GrNext } from "react-icons/gr";
-
+import {motion} from 'framer-motion'
 export const Section = styled.div`
   width: 100vw;
   height: 100%;
@@ -24,28 +24,26 @@ export const Container = styled.div`
   } ;
 `;
 
-export const SliderContainer = styled.div`
+export const SliderContainer = styled(motion.div)`
   user-select: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
-  margin: 5rem 0;
+  margin: 5rem auto;
 `;
 
-export const Slider = styled.div`
+export const Slider = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
  grid-gap:1rem;
+ max-width:100%;
   @media screen and (max-width: 980px) {
     grid-template-columns: 1fr;
     grid-gap:5rem;
   }
 `;
 
-export const SliderLeft = styled.div`
+export const SliderLeft = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,7 +59,7 @@ export const SliderTitle = styled.h2`
   letter-spacing: 0.8px;
 `;
 
-export const SliderContent = styled.div`
+export const SliderContent = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,7 +72,8 @@ export const SliderReview = styled.p`
   font-weight: 500;
   margin-bottom: 2rem;
   line-height:140%;
-  width: 55%;
+  width: 60%;
+
   @media screen and (max-width: 980px) {
    width:90%;
   }
@@ -98,7 +97,10 @@ font-size:16px;
 letter-spacing:0.5px;
 `;
 
-export const SliderRight = styled.div``;
+export const SliderRight = styled(motion.div)`
+display:flex;
+max-width:100%;
+`;
 
 export const SliderImage = styled.img`
   object-fit: cover;
@@ -117,7 +119,7 @@ export const SliderIconContainer = styled.div`
 
 export const PrevArrow = styled(GrPrevious)`
   cursor: pointer;
-  margin-right: 1.2rem;
+  margin-right: 2rem;
 `;
 
 export const NextArrow = styled(GrNext)`

@@ -16,7 +16,7 @@ import {
   SliderTitle,
 } from "./Testimonials.styled";
 import slides from "./TestimonialData";
-
+import { AnimatePresence, usePresence } from "framer-motion";
 function Testimonials() {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -40,6 +40,13 @@ function Testimonials() {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  const [isPresent, safeToRemove] = usePresence();
+
+  useEffect(() => {
+    !isPresent && setTimeout(safeToRemove, 1000);
+  }, [isPresent, safeToRemove]);
+
   return (
     <>
       <Section>
@@ -51,18 +58,48 @@ function Testimonials() {
                   <>
                     <SliderLeft>
                       <SliderTitle>Happiness Testimonial</SliderTitle>
-                      <SliderContent>
-                        <SliderReview>&quot;&nbsp;{slide.Descriptions}&nbsp;&quot;</SliderReview>
-                        <SliderReviewer>{slide.Name}</SliderReviewer>
-                      </SliderContent>
+                      <AnimatePresence exitBeforeEnter>
+                        <SliderContent
+                          key={slide.Name}
+                          layout
+                          initial={{ opacity: 0}}
+                          animate={{ opacity: 1 }}
+
+                          exit={{ opacity: 0 }}
+                        >
+                          <SliderReview>
+                            &quot;&nbsp;{slide.Descriptions}&nbsp;&quot;
+                          </SliderReview>
+                          <SliderReviewer>{slide.Name}</SliderReviewer>
+                        </SliderContent>
+                      </AnimatePresence>
                       <SliderIconContainer>
                         <PrevArrow onClick={prevSlide} />
                         <NextArrow onClick={nextSlide} />
                       </SliderIconContainer>
                     </SliderLeft>
-                    <SliderRight>
-                      <SliderImage src={slide.Image} alt="Image" />
-                    </SliderRight>
+                    <AnimatePresence exitBeforeEnter>
+                      <SliderRight
+                        key={slide.Name}
+                        layout
+                        initial={{ opacity: 0, scale: 0.5, x: 500 }}
+                        animate={{
+                          opacity: 1,
+                          scale: 1,
+                          x: 0,
+                        }}
+                        transition={{
+                          duration: 0.5,
+                          ease: "easeInOut",
+                          type: "spring",
+                          stiffness: 200,
+                          damping: 15,
+                        }}
+                        exit={{ opacity: 0 }}
+                      >
+                        <SliderImage src={slide.Image} alt="Image" />
+                      </SliderRight>
+                    </AnimatePresence>
                   </>
                 )}
               </Slider>
