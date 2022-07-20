@@ -116,6 +116,9 @@ text-align: center;
 color: #070707;
 `;
 
+export const QuestionWrapper = styled.div`
+margin-bottom:1rem;`
+
 export const PlusIcon = styled(FiPlusCircle)`
 font-size:25px;
 min-width:25px;

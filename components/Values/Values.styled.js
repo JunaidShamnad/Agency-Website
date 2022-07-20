@@ -8,7 +8,8 @@ export const Section = styled.section`
    width: 100vw;
     height: 100%;
     max-width:100%;
-    background-color: #fff7f0;
+    background-color: #5928e5;
+    z-index:20;
 `;
 
 export const Container = styled.div`
@@ -77,6 +78,7 @@ place-items:center;
 `
 export const ValuesLeftHeadline = styled.h2`
   font-size: 60px;
+  color:#fff2f2;
   font-weight: ${({ theme }) => theme.fontWeights?.semibold};
   line-height: 120%;
   transition: ${({ theme }) => theme.transition?.base};
@@ -106,6 +108,7 @@ export const ValuesLeftHeadline = styled.h2`
 export const ValuesLeftHeadlineItalic = styled.span`
  font-style: italic;
  display:block;
+ color:#fff2f2;
 `
 
 export const ValuesLeftBottomWrapper = styled.div`
@@ -117,8 +120,9 @@ padding-bottom:2rem;
 width:90%;
 `
 
-export const ValuesLeftParagraph = styled.div`
+export const ValuesLeftParagraph = styled.p`
 ${Paragraph}
+color:#fff2f2;
 margin-bottom:2rem;
 width:80%;
 @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
@@ -129,7 +133,7 @@ width:80%;
 `
 export const ValuesLeftParagraphBold = styled.span`
  font-weight:bold;
- 
+ color:#fff2f2;
 `
 
 export const ValuesLeftInputContainer = styled.div`
@@ -146,19 +150,26 @@ export const ValuesLeftInput = styled.input`
  background:transparent;
  outline:none;
  border:none;
- border-bottom:2px solid #000;
+ border-bottom:2px solid #fec9c1;
  text-align:left;
- color:#1D1A26;
+ color:#fff2f2;
  font-size:18px;
  font-weight:500;
  margin-right:0.5rem;
  width:50%;
+
+ ::placeholder {
+  color: #fff2f2;
+  opacity:0.8;
+}
 
 `
 export const ValuesLeftInputButton = styled.button`
 ${SecondaryButton}
 outline:none;
 border-radius:0px;
+background-color:#fec9c1;
+color:#0d0a19;
 padding:12px 25px;
 /* text-transform:uppercase; */
 `
@@ -222,7 +233,7 @@ export const ValuesRightCardTitle = styled.p`
  /* font-family:'Archivo', sans-serif; */
  line-height:120%;
  margin-bottom:16px;
-
+ color:#fff2f2;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
     font-size: 20px;
     
@@ -239,6 +250,7 @@ margin-bottom:5px;
 line-height:150%;
 text-align:center;
 opacity:0.7;
+color:#fff2f2;
 @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
    width:100%;
    text-align:center;
@@ -248,10 +260,12 @@ opacity:0.7;
 export const FirstIcon = styled(AiOutlineFieldTime)`
 font-size:45px;
 font-weight:300;
+color:#fec9c1;
 `
 export const SecondIcon = styled(FiSearch)`
 font-size:45px;
 font-weight:300;
+color:#fff2f2;
 `
 
 //=========================== Values Right Section *end==============================//

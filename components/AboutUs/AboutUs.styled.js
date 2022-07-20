@@ -5,7 +5,7 @@ export const Section = styled.section`
    width: 100vw;
     height: 100%;
     max-width:100%;
-   
+   background-color:#fff2f2 ;
 `;
 
 export const Container = styled.div`
@@ -34,7 +34,7 @@ export const AboutTitle = styled.h1`
   width: ${({ theme }) => theme.width[8]};
   height: auto;
   word-wrap: break-word;
-  color: #1d1a26;
+  color: #5928e5;
   text-align: left;
   font-family: "Archivo Black", sans-serif;
   font-size: 190px;
@@ -52,6 +52,7 @@ export const AboutTitle = styled.h1`
 
 export const AboutContent = styled.div`
   display: grid;
+  color:#0d0a19;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr;
   position: relative;
@@ -73,6 +74,7 @@ export const AboutDescription = styled.p`
   width: ${({ theme }) => theme.width[10]};
   line-height: 130%;
   text-align: left;
+  color:#0d0a19;
   margin-bottom:10px;
   opacity:0.9;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
@@ -96,13 +98,16 @@ export const AboutDescription = styled.p`
 export const AboutQuote = styled.p`
   grid-row: 2/3;
   line-height:180%;
+  color:#0d0a19;
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
     margin-top:20px;
     margin-bottom:20px;
   }
 `;
 
-export const AboutLink = styled.p``;
+export const AboutLink = styled.p`
+color:#0d0a19;
+`;
 
 export const AboutImage = styled.img`
   width: ${({ theme }) => theme.width[8]};
@@ -147,6 +152,7 @@ export const AboutBelow = styled.div`
 
 export const AboutContentLowerContainer = styled.div`
   display: flex;
+  color:#0d0a19;
   justify-content: space-between;
   align-items: flex-end;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {

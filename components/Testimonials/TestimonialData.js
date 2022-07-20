@@ -1,4 +1,4 @@
-const Data = [
+const dataOne = [
     {
         Image:"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1lbiUyMGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
         Name:"Demo",
@@ -17,6 +17,9 @@ const Data = [
         Descriptions: "Lorem ipsum is a text generator Lorem ipsum is a text generator Lorem ipsum is a text generator Lorem ipsum is a text generator Lorem ipsum is a text generator ",
         class:"AboveContainer",
     },
+    
+]
+export const dataTwo = [
     {
         Image:"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1lbiUyMGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
         Name:"Demo",
@@ -35,7 +38,8 @@ const Data = [
         Descriptions: "Lorem ipsum is a text generator Lorem ipsum is a text generator Lorem ipsum is a text generator Lorem ipsum is a text generator Lorem ipsum is a text generator ",
         class:"BelowContainer",
     },
+    
 ]
 
 
-export default Data;
+export default dataOne;

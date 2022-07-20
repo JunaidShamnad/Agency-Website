@@ -1,4 +1,5 @@
 import {
+  Section,
   Container,
   Detail,
   DetailIcons,
@@ -137,7 +138,7 @@ const ContactUs = () => {
 ]
   const defaultOption = "Select Service";
   return (
-    <>
+    <Section>
       <Container>
         <UpperSection>
           <TitleContact>Lets Discus Your Project</TitleContact>
@@ -210,7 +211,7 @@ const ContactUs = () => {
           </RightSection>
         </BottomSection>
       </Container>
-    </>
+    </Section>
   );
 };
 

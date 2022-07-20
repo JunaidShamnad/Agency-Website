@@ -1,9 +1,9 @@
 import React, { useState }  from 'react';
 
-import Navbar from './header';
-import Sidebar from "./sidebar";
+import ChildNavbar from './ChildNavbar';
+import Sidebar from "./Sidebar";
 
-function App() {
+function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -13,9 +13,9 @@ function App() {
   return (
     <div style={{width: '100%'}}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <ChildNavbar toggle={toggle} />
     </div>
   );
 }
 
-export default App;
+export default Navbar;

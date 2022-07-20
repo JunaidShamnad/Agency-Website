@@ -4,7 +4,7 @@ export const Screen = styled.div`
   position:relative;
   width: 100%;
   height: 100vh;
-  background: #000;
+  background: #fec9c1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const Container = styled.div`
   text-align: center;
 `;
 export const Title = styled.h1`
-  color: #fff;
+  color: #5928e5;
   font-size: 9rem;
   letter-spacing: 1.1px;
   line-height: 130%;
