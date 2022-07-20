@@ -1,139 +1,125 @@
-import styled from'styled-components';
-import {motion} from 'framer-motion'
+import styled from "styled-components";
+import { GrPrevious, GrNext } from "react-icons/gr";
 
-export const Section = styled.section`
-width: 100vw;
-height: 100%;
-max-width:100%;
-/* z-index:555; */
-`
+export const Section = styled.div`
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  background-color: #fff2f2;
+`;
+
 export const Container = styled.div`
-display:flex;
-flex-direction:row;
-justify-content: center;
-height: 100%;
-overflow:hidden;
-width: 90%;
-max-width:1600px;
-margin:5rem auto;
-margin-top: 150px;
-@media(max-width:767px){
-    flex-direction: column;
-}
-`
-export const LeftContainer = styled.div`
-width:50%;
+  height: 100%;
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  } ;
+`;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-width: 100%;
-padding-right: 0px;
-}
+export const SliderContainer = styled.div`
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 5rem 0;
+`;
 
-`
-export const RightContainer = styled.div`
-width:50%;
-padding-right: 50px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+export const Slider = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ grid-gap:1rem;
+  @media screen and (max-width: 980px) {
+    grid-template-columns: 1fr;
+    grid-gap:5rem;
+  }
+`;
 
-@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-flex-direction: column;
-justify-content: center;
-width: 100%;
-padding-right: 0px;
-}
-`
-export const TestimonialDescription = styled.p``
-export const TestimonialFirstContent = styled(motion.div)`
-width:auto;
-height:100%;
-@media(max-width:767px){
-    display:flex;
-    overflow-x:scroll;
-    flex-direction: row;
+export const SliderLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media screen and (max-width: 980px) {
+   align-items:center;
+  }
+`;
 
+export const SliderTitle = styled.h2`
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+`;
 
-}
-&::-webkit-scrollbar{
-    display: none;
-}
-`
-export const TestimonialAvatarImage = styled.img`
-width:75px;
-height:75px;
-border-radius:50%;
-box-shadow: -11px 7px 21px -14px rgba(254,201,193,0.79);
-@media(max-width:768px){
-    width:50px;
-    height:50px;
-}
-`
-export const Testimonial = styled(motion.div)`
-background-color: #5928e5;
-margin-bottom: 30px;
-padding: 20px;
-z-index:2;
-border-radius:10px;
-margin: 15px 15px;
-color:#fff2f2;
-min-width:250px;
-`
-export const TestimonialAvatar = styled.div`
-display: flex;
-flex-direction: row;
-align-items:center;
-margin-bottom: 20px;
-`
-export const TestimonialAvatarName = styled.h1`
-margin-left:20px;
-font-size:18px;
-color:#fec9c1;
-@media(max-width:767px){
-    margin-left:15px;
-}
-`
-export const LeftContainerContent = styled.div`
-padding:20px;
-@media(max-width:767){
-    padding: 50px;
-}
-`
-export const TesimonialSecondContent = styled.div`
-margin-top:15%;
-margin-left: 50px;
-width:auto;
-height:100%;
-@media(max-width:767px){
-    display:flex;
-    overflow-x:scroll;
-    flex-direction: row;
-}
-&::-webkit-scrollbar{
-    display: none;
-}
-`
-export const LeftContainerTitle = styled.h4`
-font-size:32px;
-`
-export const LeftContainerMainHeading = styled.h1`
-width:60%;
-font-size:64px;
-@media(max-width:767px){
-    font-size:30px;
-    width:100%;
-}
-`
-export const LeftContainerButton = styled.button`
-padding:10px 20px;
-border:none;
-background-color:transparent;
-border: 1px solid #000;
-outline:none;
-margin-top: 25px;
-font-size: 18px;
-`
+export const SliderContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin:5rem 0;
+`;
+
+export const SliderReview = styled.p`
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  line-height:140%;
+  width: 55%;
+  @media screen and (max-width: 980px) {
+   width:90%;
+  }
+  @media screen and (max-width: 780px) {
+    font-size:26px;
+  }
+  @media screen and (max-width: 580px) {
+    font-size:24px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size:22px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size:20px;
+  }
+`;
+
+export const SliderReviewer = styled.h3`
+font-weight:400;
+font-size:16px;
+letter-spacing:0.5px;
+`;
+
+export const SliderRight = styled.div``;
+
+export const SliderImage = styled.img`
+  object-fit: cover;
+  object-position: center;
+    width: 100%;
+    height:100%;
+`;
+
+export const SliderIconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:1rem;
+`;
+
+export const PrevArrow = styled(GrPrevious)`
+  cursor: pointer;
+  margin-right: 1.2rem;
+`;
+
+export const NextArrow = styled(GrNext)`
+  cursor: pointer;
+`;
