@@ -81,20 +81,7 @@ const HeroSection = () => {
     <Section id="hero-section">
       <Container>
         <Hero>
-          <Heading aria-label={text} role="heading">
-            {text.split("&nbsp;").map((character, index) => (
-              <Character
-                ref={ref}
-                aria-hidden="true"
-                key={index}
-                initial="hidden"
-                animate={ctrls}
-                variants={characterAnimation}
-              >
-                {character}
-              </Character>
-            ))}
-          </Heading>
+          <Heading>Build,Grow and Manage Your Brand</Heading>
 
           <HeroDescription>
             We Provide financial planning, wealth managment and investment
