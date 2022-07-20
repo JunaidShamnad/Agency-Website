@@ -224,5 +224,8 @@ export const UpperSection = styled.div`
 export const BottomSection = styled.div`
 display: flex;
 align-items: center;
+@media(max-width:768px){
+  flex-direction: column;
+}
 `;
 
