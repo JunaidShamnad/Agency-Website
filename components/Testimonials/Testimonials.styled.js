@@ -12,6 +12,7 @@ export const Container = styled.div`
   height: 100%;
   width: 90%;
   max-width: 1600px;
+  overflow-x:hidden;
   display: flex;
   align-items: center;
   justify-content: center;
