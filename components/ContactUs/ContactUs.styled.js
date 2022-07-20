@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { HeadingH3,flexColumn,flexRow,flexColumnCenter } from "../cssHelper";
 import {HiOutlineMail,HiOutlineLocationMarker} from 'react-icons/hi';
-
+// import Dropdown from 'react-dropdown'; 
+import { Dropdown } from 'semantic-ui-react'
 export const Section = styled.section`
    width: 100vw;
     height: 100%;
@@ -12,6 +13,7 @@ export const Container = styled.div`
   width: 90%;
   max-width:1600px;
 display: flex;
+flex-direction: column;
 justify-content: space-evenly;
 margin:5rem auto;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -39,7 +41,8 @@ height:90%;
 export const TitleContact = styled.h1`
   font-size:64px;
   ${flexColumn}
-  margin-bottom:100px;
+  width: 50%;
+  margin-bottom:25px;
   position: relative;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width:100%;
@@ -161,7 +164,7 @@ outline:none;
 font-size:32px;
 `;
 
-export const ServiceInput = styled.input`
+export const Dropdowns = styled.input`
 width:300px;
 height:40px;
 border:none;
@@ -170,6 +173,15 @@ color:#000;
 outline:none;
 font-size:32px;
 `;
+// export const ServiceInput = styled.input`
+// width:300px;
+// height:40px;
+// border:none;
+// border-bottom:2px solid #000; 
+// color:#000;
+// outline:none;
+// font-size:32px;
+// `;
 export const GetaQuote = styled.h1`
 font-size:22px;
 color: #000;
@@ -204,5 +216,12 @@ margin-left:15px;
 `;
 export const Checkbox = styled.input`
 
+`;
+export const UpperSection = styled.div`
+
+`;
+export const BottomSection = styled.div`
+display: flex;
+align-items: center;
 `;
 
