@@ -141,6 +141,10 @@ font-weight:600;
 letter-spacing:1.5;
 color:#000;
 line-height:75px;
+@media (max-width: 768px) {
+  font-size: 18px;
+  line-height: 35px;
+}
 
 
 `;
@@ -153,6 +157,15 @@ border-bottom:2px solid #000;
 color: #000;
 outline:none;
 font-size:32px;
+background-color: transparent;
+@media (max-width: 768px) {
+  font-size: 18px;
+  line-height: 35px;
+  width: 175px;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
 `;
 
 export const EmailInput = styled.input`
@@ -163,6 +176,15 @@ border-bottom:2px solid #000;
 color:#000;
 outline:none;
 font-size:32px;
+background-color: transparent;
+@media (max-width: 768px) {
+  font-size: 18px;
+  line-height: 35px;
+  width: 250px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
 `;
 
 export const Dropdowns = styled.input`
@@ -173,6 +195,15 @@ border-bottom:2px solid #000;
 color:#000;
 outline:none;
 font-size:32px;
+background-color: transparent;
+@media (max-width: 768px) {
+  font-size: 18px;
+  line-height: 35px;
+  width: 150px;
+  height: 20px;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
 `;
 // export const ServiceInput = styled.input`
 // width:300px;
@@ -207,12 +238,19 @@ border-radius: 5px;
 margin:20px 0 50px 0;
 background-color:#000;
 color:#fff;
+@media (max-width:767px){
+    padding: 8px 20px;
+    font-size: 12px;
+}
 
 `;
 export const CheckboxTitle = styled.h1`
 font-size:22px;
 margin-left:15px;
-
+@media (max-width: 768px) {
+  font-size: 14px;
+  
+}
 
 `;
 export const Checkbox = styled.input`

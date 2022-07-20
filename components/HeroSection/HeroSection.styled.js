@@ -59,7 +59,7 @@ export const Heading = styled(motion.h1)`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
-  } ;
+  } 
 `;
 export const HeroDescription = styled.p`
   ${Paragraph};
