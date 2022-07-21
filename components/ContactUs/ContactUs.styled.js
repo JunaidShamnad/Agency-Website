@@ -7,6 +7,7 @@ export const Section = styled.section`
   width: 100vw;
   height: 100%;
   max-width: 100%;
+  
 `;
 export const Container = styled.div`
   height: 100%;
@@ -34,12 +35,12 @@ export const LeftSection = styled.div`
 `;
 export const RightSection = styled.div`
   max-width: 50%;
-
+ padding:1rem;
   height: 90%;
   /* max-height:90%; */
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
-    max-width:90%;
+    max-width:98%;
   }
 `;
 export const TitleContact = styled.h1`
@@ -66,7 +67,7 @@ export const Contact = styled.div`
   ${flexRow}
   height:215px;
   align-items: center;
-  border-top: 4px solid #000;
+  border-top: 1px solid #0d0a19;
   line-height:150%;
   width: 85%;
   justify-content: space-between;
@@ -146,7 +147,7 @@ export const ContactForm = styled.div`
 font-size:22px;
 font-weight:600;
 letter-spacing:1.5;
-color:#000;
+color:#0d0a19;
 line-height:75px;
 @media (max-width: 768px) {
   font-size: 18px;
@@ -161,8 +162,8 @@ width:300px;
 height:40px;
 max-width:100%;
 border:none;
-border-bottom:2px solid #000; 
-color: #000;
+border-bottom:2px solid #0d0a19; 
+color: #0d0a19;
 outline:none;
 font-size:22px;
 background-color: transparent;
@@ -176,7 +177,7 @@ background-color: transparent;
   width: 175px;
   height: 20px;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #0d0a19;
 }
 `;
 
@@ -185,8 +186,8 @@ width:550px;
 max-width:100%;
 height:40px;
 border:none;
-border-bottom:2px solid #000; 
-color:#000;
+border-bottom:2px solid #0d0a19; 
+color:#0d0a19;
 outline:none;
 font-size:22px;
 background-color: transparent;
@@ -196,17 +197,18 @@ background-color: transparent;
   width: 250px;
     height: 20px;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #0d0a19;
 }
 `;
 
-export const Dropdowns = styled.input`
+export const Dropdowns = styled.select`
 width:300px;
 max-width:100%;
 height:40px;
 border:none;
-border-bottom:2px solid #000; 
-color:#000;
+background-color:#fff2f2;
+border-bottom:2px solid #0d0a19; 
+color:#0d0a19;
 outline:none;
 font-size:22px;
 background-color: transparent;
@@ -215,7 +217,7 @@ background-color: transparent;
   line-height: 35px;
   width: 150px;
   height: 20px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #0d0a19;
   background-color: transparent;
 }
 `;
@@ -223,15 +225,16 @@ background-color: transparent;
 // width:300px;
 // height:40px;
 // border:none;
-// border-bottom:2px solid #000; 
-// color:#000;
+// border-bottom:2px solid #0d0a19; 
+// color:#0d0a19;
 // outline:none;
 // font-size:32px;
 // `;
 export const GetaQuote = styled.h1`
 font-size:24px;
 font-weight:600;
-color: #000;
+
+color: #0d0a19;
 margin:30px 0 15px 0px;
 `;
 
@@ -247,12 +250,13 @@ margin:30px 0 10px 0;
 `;
 export const SubmitForm = styled.button`
 padding:15px 35px;
+cursor:pointer;
 font-weight:500;
 font-size:18px;
 letter-spacing:0.8px;
 border-radius: 5px;
 margin:20px 0 50px 0;
-background-color:#000;
+background-color:#0d0a19;
 color:#fff;
 @media (max-width:767px){
     padding: 8px 20px;
@@ -272,7 +276,10 @@ opacity:0.8;
 
 `;
 export const Checkbox = styled.input`
-
+width:25px;
+height:18px;
+border-radius:5px;
+cursor:pointer;
 `;
 export const UpperSection = styled.div`
 

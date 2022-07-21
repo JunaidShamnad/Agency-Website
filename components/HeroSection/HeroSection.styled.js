@@ -16,7 +16,7 @@ export const Section = styled.section`
   background-color: #5928e5;
 `;
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   height: 100%;
   width: 90%;
   max-width:1600px;

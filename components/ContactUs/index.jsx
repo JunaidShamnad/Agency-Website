@@ -176,7 +176,7 @@ const ContactUs = () => {
               <GetaQuote>Get a quote</GetaQuote>
               {/* <ScheduleP>Schedule an Appointment</ScheduleP> */}
               <ContactForm>
-                Hey👋my name is{" "}
+                Hey👋my name is{" "}&nbsp;
                 <NameInput
                   type="text"
                   value={sender_name}
@@ -185,17 +185,21 @@ const ContactUs = () => {
                     set_sender_name(e.target.value);
                     setName(e.target.value);
                   }}
-                />
-                and I&apos;m looking for{" "}
+                />&nbsp;
+                and I&apos;m looking for{" "}&nbsp;
                 <Dropdowns
-                  type="text"
+                 
                   value={sender_service}
                   placeholder="&nbsp; Select a service"
                   onChange={(e) => {
                     set_sender_service(e.target.value);
                   }}
-                />
-                Ping us at 😉
+                >
+                  <option value="Web Development">Web Development</option>
+                  <option value="App Developement">App Development</option>
+                  <option value="Branding">Branding</option>
+                </Dropdowns><br/>
+                Ping us at 😉&nbsp;
                 <EmailInput
                   type="email"
                   value={sender_email}

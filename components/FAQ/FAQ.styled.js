@@ -7,7 +7,6 @@ export const Section = styled.section`
    width: 100vw;
     height: 100%;
     max-width:100%;
-   
 `;
 
 export const Container = styled.div`
@@ -65,17 +64,18 @@ font-size:50px;
 `;
 export const FaqQuestion = styled.div`
 width:100%;
-font-size:30px;
-font-weight:800;
+font-size:25px;
+font-weight:700;
 margin-top:15px;
 display: flex;
 align-items: center;
 margin-bottom: 2px;
 justify-content: space-between;
+line-height:140%;
 gap:1rem;
 cursor: pointer;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 20px;
+    font-size: 18px;
     gap:8px;
 }
 `;
@@ -101,19 +101,20 @@ color:#fff;
 
 `;
 
-export const FaqHeader = styled.h1`
-color: #070707;
-line-height:120%;
+export const FaqHeader = styled.h2`
+color: #0D0A19;
+line-height:140%;
 margin-top: 0 !important;
 font-size: 60px;
 margin-bottom: 2.5rem;
 text-align: center;
 
-@media (max-width: 600px) {
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
   font-size: 33px;
 }
-
-color: #070707;
+@media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
+  font-size: 25px;
+}
 `;
 
 export const QuestionWrapper = styled.div`

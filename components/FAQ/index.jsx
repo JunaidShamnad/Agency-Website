@@ -5,6 +5,7 @@ import {
   Faq,
   FaqAnswer,
   FaqHeader,
+  FaqHeaderMobile,
   FaqQuestion,
   FaqsSection,
   LeftSection,
@@ -30,12 +31,11 @@ const FAQ = () => {
     <Section>
       <Container>
         <FaqHeader>Frequently Asked Questions</FaqHeader>
-
         {data.map((item, index) => {
           return (
             <FaqsSection key={item.id}>
               <LeftSection>
-                <Faq >
+                <Faq>
                   <QuestionWrapper onClick={() => toggle(index)}>
                     <FaqQuestion>
                       {item.question}
