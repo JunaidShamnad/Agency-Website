@@ -57,6 +57,7 @@ export const SliderLeft = styled(motion.div)`
 export const SliderTitle = styled.h2`
   text-transform: uppercase;
   font-size: 18px;
+  font-weight:400;
   letter-spacing: 0.8px;
 `;
 
@@ -96,6 +97,7 @@ export const SliderReviewer = styled.h3`
 font-weight:400;
 font-size:16px;
 letter-spacing:0.5px;
+opacity:0.8;
 `;
 
 export const SliderRight = styled(motion.div)`

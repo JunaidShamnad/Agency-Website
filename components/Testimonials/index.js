@@ -62,9 +62,8 @@ function Testimonials() {
                         <SliderContent
                           key={slide.Name}
                           layout
-                          initial={{ opacity: 0}}
+                          initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
-
                           exit={{ opacity: 0 }}
                         >
                           <SliderReview>
@@ -82,20 +81,23 @@ function Testimonials() {
                       <SliderRight
                         key={slide.Name}
                         layout
-                        initial={{ opacity: 0, scale: 0.5, x: 500 }}
-                        animate={{
-                          opacity: 1,
-                          scale: 1,
-                          x: 0,
-                        }}
-                        transition={{
-                          duration: 0.5,
-                          ease: "easeInOut",
-                          type: "spring",
-                          stiffness: 200,
-                          damping: 15,
-                        }}
-                        exit={{ opacity: 0 }}
+                        // initial={{ opacity: 0, scale: 0.5, x: 500 }}
+                        // animate={{
+                        //   opacity: 1,
+                        //   scale: 1,
+                        //   x: 0,
+                        // }}
+                        // transition={{
+                        //   duration: 0.5,
+                        //   ease: "easeInOut",
+                        //   type: "spring",
+                        //   stiffness: 200,
+                        //   damping: 15,
+                        // }}
+                        // exit={{ opacity: 0 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 1}}
                       >
                         <SliderImage src={slide.Image} alt="Image" />
                       </SliderRight>

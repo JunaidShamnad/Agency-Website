@@ -34,7 +34,7 @@ import {
 import "react-dropdown/style.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import {send} from 'emailjs-com'
+import { send } from "emailjs-com";
 // import DropdownInput from 'react-dropdown-input'
 const ContactUs = () => {
   const [sender_email, set_sender_email] = useState("");
@@ -50,7 +50,7 @@ const ContactUs = () => {
   const [senderDate, setSenderDate] = useState(
     date + "-" + CurrentMonth + "-" + year
   );
-  const[check,setCheck]= useState(false)
+  const [check, setCheck] = useState(false);
   const [senderTime, setSenderTime] = useState(hour + ":" + minute);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -91,19 +91,24 @@ const ContactUs = () => {
       Date: senderDate,
       Time: senderTime,
     };
-    axios.post("https://sheet.best/api/sheets/69f079ba-8f87-4135-a184-a6709080c738", data).then((response) => {
-      console.log(response);
-      setName("");
-      setEmail("");
-      set_sender_name("");
-      set_sender_email("");
-      set_sender_service("");
-      setService("");
-      set_sender_service("");
-      setSenderTime("");
-      setSenderDate("");
-      setCheck(false);
-    });
+    axios
+      .post(
+        "https://sheet.best/api/sheets/69f079ba-8f87-4135-a184-a6709080c738",
+        data
+      )
+      .then((response) => {
+        console.log(response);
+        setName("");
+        setEmail("");
+        set_sender_name("");
+        set_sender_email("");
+        set_sender_service("");
+        setService("");
+        set_sender_service("");
+        setSenderTime("");
+        setSenderDate("");
+        setCheck(false);
+      });
   };
   const submit = (e) => {
     SheetSubmit(e);
@@ -117,25 +122,25 @@ const ContactUs = () => {
     "SEO ",
   ];
   const options = [
-  { key: 'angular', text: 'Angular', value: 'angular' },
-  { key: 'css', text: 'CSS', value: 'css' },
-  { key: 'design', text: 'Graphic Design', value: 'design' },
-  { key: 'ember', text: 'Ember', value: 'ember' },
-  { key: 'html', text: 'HTML', value: 'html' },
-  { key: 'ia', text: 'Information Architecture', value: 'ia' },
-  { key: 'javascript', text: 'Javascript', value: 'javascript' },
-  { key: 'mech', text: 'Mechanical Engineering', value: 'mech' },
-  { key: 'meteor', text: 'Meteor', value: 'meteor' },
-  { key: 'node', text: 'NodeJS', value: 'node' },
-  { key: 'plumbing', text: 'Plumbing', value: 'plumbing' },
-  { key: 'python', text: 'Python', value: 'python' },
-  { key: 'rails', text: 'Rails', value: 'rails' },
-  { key: 'react', text: 'React', value: 'react' },
-  { key: 'repair', text: 'Kitchen Repair', value: 'repair' },
-  { key: 'ruby', text: 'Ruby', value: 'ruby' },
-  { key: 'ui', text: 'UI Design', value: 'ui' },
-  { key: 'ux', text: 'User Experience', value: 'ux' },
-]
+    { key: "angular", text: "Angular", value: "angular" },
+    { key: "css", text: "CSS", value: "css" },
+    { key: "design", text: "Graphic Design", value: "design" },
+    { key: "ember", text: "Ember", value: "ember" },
+    { key: "html", text: "HTML", value: "html" },
+    { key: "ia", text: "Information Architecture", value: "ia" },
+    { key: "javascript", text: "Javascript", value: "javascript" },
+    { key: "mech", text: "Mechanical Engineering", value: "mech" },
+    { key: "meteor", text: "Meteor", value: "meteor" },
+    { key: "node", text: "NodeJS", value: "node" },
+    { key: "plumbing", text: "Plumbing", value: "plumbing" },
+    { key: "python", text: "Python", value: "python" },
+    { key: "rails", text: "Rails", value: "rails" },
+    { key: "react", text: "React", value: "react" },
+    { key: "repair", text: "Kitchen Repair", value: "repair" },
+    { key: "ruby", text: "Ruby", value: "ruby" },
+    { key: "ui", text: "UI Design", value: "ui" },
+    { key: "ux", text: "User Experience", value: "ux" },
+  ];
   const defaultOption = "Select Service";
   return (
     <Section>
@@ -169,39 +174,46 @@ const ContactUs = () => {
           <RightSection>
             <Form onSubmit={submit}>
               <GetaQuote>Get a quote</GetaQuote>
-              <ScheduleP>Schedule an Appointment</ScheduleP>
+              {/* <ScheduleP>Schedule an Appointment</ScheduleP> */}
               <ContactForm>
-                Hey, my name is{" "}
+                Hey👋my name is{" "}
                 <NameInput
                   type="text"
                   value={sender_name}
-                  placeholder="Type Here"
+                  placeholder="&nbsp; Your name"
                   onChange={(e) => {
                     set_sender_name(e.target.value);
                     setName(e.target.value);
                   }}
                 />
-                and I'm looking for{" "}
-                <Dropdowns type="text" value={sender_service} placeholder="Search Services" onChange={(e)=>{
-                  set_sender_service(e.target.value);
-                }}/>
-              
-                ; Ping me up at{" "}
+                and I&apos;m looking for{" "}
+                <Dropdowns
+                  type="text"
+                  value={sender_service}
+                  placeholder="&nbsp; Select a service"
+                  onChange={(e) => {
+                    set_sender_service(e.target.value);
+                  }}
+                />
+                Ping us at 😉
                 <EmailInput
                   type="email"
                   value={sender_email}
-                  placeholder="Your Email Address"
+                  placeholder="&nbsp; Your Email Address"
                   onChange={(e) => {
                     set_sender_email(e.target.value);
                     setEmail(e.target.value);
                   }}
                 />
-                !
               </ContactForm>
               <TermsCheckbox>
-                <Checkbox type="checkbox" required onchange={(e)=>{
-                  setCheck(e.target.checked);
-                }}/>
+                <Checkbox
+                  type="checkbox"
+                  required
+                  onchange={(e) => {
+                    setCheck(e.target.checked);
+                  }}
+                />
                 <CheckboxTitle>
                   I have accepted all the terms and conditions
                 </CheckboxTitle>

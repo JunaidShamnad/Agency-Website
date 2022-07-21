@@ -29,14 +29,17 @@ export const LeftSection = styled.div`
   ${flexColumn}
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
+    max-width:90%;
   }
 `;
 export const RightSection = styled.div`
-  width: 50%;
+  max-width: 50%;
+
   height: 90%;
   /* max-height:90%; */
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
+    max-width:90%;
   }
 `;
 export const TitleContact = styled.h1`
@@ -64,6 +67,7 @@ export const Contact = styled.div`
   height:215px;
   align-items: center;
   border-top: 4px solid #000;
+  line-height:150%;
   width: 85%;
   justify-content: space-between;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -134,10 +138,12 @@ export const Title = styled.h1`
 export const Form = styled.form`
 height: 100%;
 width:100%;
+display:flex;
+flex-direction:column;
 `;
 
-export const ContactForm = styled.p`
-font-size:32px;
+export const ContactForm = styled.div`
+font-size:22px;
 font-weight:600;
 letter-spacing:1.5;
 color:#000;
@@ -153,12 +159,17 @@ line-height:75px;
 export const NameInput = styled.input`
 width:300px;
 height:40px;
+max-width:100%;
 border:none;
 border-bottom:2px solid #000; 
 color: #000;
 outline:none;
-font-size:32px;
+font-size:22px;
 background-color: transparent;
+&::placeholder {
+  opacity:0.8;
+  
+}
 @media (max-width: 768px) {
   font-size: 18px;
   line-height: 35px;
@@ -171,12 +182,13 @@ background-color: transparent;
 
 export const EmailInput = styled.input`
 width:550px;
+max-width:100%;
 height:40px;
 border:none;
 border-bottom:2px solid #000; 
 color:#000;
 outline:none;
-font-size:32px;
+font-size:22px;
 background-color: transparent;
 @media (max-width: 768px) {
   font-size: 18px;
@@ -190,12 +202,13 @@ background-color: transparent;
 
 export const Dropdowns = styled.input`
 width:300px;
+max-width:100%;
 height:40px;
 border:none;
 border-bottom:2px solid #000; 
 color:#000;
 outline:none;
-font-size:32px;
+font-size:22px;
 background-color: transparent;
 @media (max-width: 768px) {
   font-size: 18px;
@@ -216,7 +229,8 @@ background-color: transparent;
 // font-size:32px;
 // `;
 export const GetaQuote = styled.h1`
-font-size:22px;
+font-size:24px;
+font-weight:600;
 color: #000;
 margin:30px 0 15px 0px;
 `;
@@ -234,7 +248,8 @@ margin:30px 0 10px 0;
 export const SubmitForm = styled.button`
 padding:15px 35px;
 font-weight:500;
-font-size:15px;
+font-size:18px;
+letter-spacing:0.8px;
 border-radius: 5px;
 margin:20px 0 50px 0;
 background-color:#000;
@@ -246,8 +261,10 @@ color:#fff;
 
 `;
 export const CheckboxTitle = styled.h1`
-font-size:22px;
+font-size:16px;
 margin-left:15px;
+font-weight:400;
+opacity:0.8;
 @media (max-width: 768px) {
   font-size: 14px;
   
