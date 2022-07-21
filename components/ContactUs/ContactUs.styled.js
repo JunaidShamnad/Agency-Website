@@ -65,7 +65,7 @@ export const TitleContact = styled.h1`
 // `;
 export const Contact = styled.div`
   ${flexRow}
-  height:215px;
+  height:220px;
   align-items: center;
   border-top: 1px solid #0d0a19;
   line-height:150%;
@@ -74,6 +74,7 @@ export const Contact = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     justify-content: space-evenly;
     width: 100%;
+
   }
 `;
 

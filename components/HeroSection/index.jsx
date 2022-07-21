@@ -17,6 +17,7 @@ import {
   Heading,
 } from "./HeroSection.styled";
 import styled from "styled-components";
+import Link from "next/link";
 
 const Character = styled(motion.span)`
   display: inline-block;
@@ -81,15 +82,14 @@ const HeroSection = () => {
     <Section id="hero-section">
       <Container>
         <Hero>
-          <Heading>Build,Grow and Manage Your Brand</Heading>
+          <Heading>Build,Grow and Manage your Brand</Heading>
 
           <HeroDescription>
-            We Provide financial planning, wealth managment and investment
-            services
+            Make brand identities from scratch and help big brands stay mighty
           </HeroDescription>
 
           <HeroButtons>
-            <HeaderButton>Lets Talk</HeaderButton>
+            <Link href="#contact-form" passHref><a><HeaderButton>Lets Talk</HeaderButton></a></Link>
           </HeroButtons>
 
           <ImageContainer>

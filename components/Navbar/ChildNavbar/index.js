@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from "react";
 import Links from "../../../data/menuLinks";
-import LogoImage from "../../../assets/images/62375b2bd5c8856bf9e4f5df_Logo.png";
+import LogoImage from "/public/images/62375b2bd5c8856bf9e4f5df_Logo.png";
 import {
   Logo,
   LogoText,

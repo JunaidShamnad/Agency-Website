@@ -143,7 +143,7 @@ const ContactUs = () => {
   ];
   const defaultOption = "Select Service";
   return (
-    <Section>
+    <Section id="contact-us">
       <Container>
         <UpperSection>
           <TitleContact>Lets Discus Your Project</TitleContact>
@@ -172,7 +172,7 @@ const ContactUs = () => {
             </ContactDetails>
           </LeftSection>
           <RightSection>
-            <Form onSubmit={submit}>
+            <Form onSubmit={submit} id="contact-form">
               <GetaQuote>Get a quote</GetaQuote>
               {/* <ScheduleP>Schedule an Appointment</ScheduleP> */}
               <ContactForm>
@@ -195,9 +195,10 @@ const ContactUs = () => {
                     set_sender_service(e.target.value);
                   }}
                 >
+                    <option value="Branding">Branding</option>
                   <option value="Web Development">Web Development</option>
                   <option value="App Developement">App Development</option>
-                  <option value="Branding">Branding</option>
+                
                 </Dropdowns><br/>
                 Ping us at 😉&nbsp;
                 <EmailInput

@@ -109,7 +109,12 @@ export const ServiceHeading = styled.h3`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
-    font-size:41px;
+    font-size:38px;
+    line-height:3rem;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    margin: 5px 0;
+    font-size:35px;
     line-height:3rem;
   }
 `;
@@ -173,6 +178,17 @@ export const ServiceTitle = styled.h2`
   font-weight: 600;
   flex-direction: column;
   margin-bottom: 2rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    
+    font-size:28px;
+   
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+  
+    font-size:25px;
+
+  }
 `;
 export const Span = styled.span`
   font-size: ${({ theme }) => theme.fontSizes?.xxxs};

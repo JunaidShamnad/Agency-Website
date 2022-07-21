@@ -32,11 +32,20 @@ export const Container = styled.div`
 export const WorkOne = styled.div`
   place-content: center;
 `;
-export const WorkTitle = styled.h1`
+export const WorkTitle = styled.h2`
   width: 100%;
   line-height: 140%;
+  margin-top:1rem;
   margin-bottom: 10px;
   color:#fff2f2;
+  font-weight:500;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size:25px;
+   
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smalestMobile}) {
+    font-size: 20px;
+  }
 `;
 export const Work = styled.div`
   border-top: 1px solid #fec9c1;
@@ -55,16 +64,21 @@ export const WorkTwo = styled.div`
 export const WorkThree = styled.div``;
 
 export const WorkDescription = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 25px;
   line-height: 140%;
+  opacity:0.8;
 `;
 export const WorkHeading = styled.h1`
   font-size: 64px;
   width: 100%;
   margin-bottom: 50px;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 40px;
+    font-size: 38px;
+    width: 50%;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smalestMobile}) {
+    font-size: 35px;
     width: 50%;
   }
 `;

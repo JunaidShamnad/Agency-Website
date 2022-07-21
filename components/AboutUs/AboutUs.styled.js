@@ -46,7 +46,11 @@ export const AboutTitle = styled.h1`
   text-transform: uppercase;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
-    font-size:65px;
+    font-size:55px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    margin: 5px 0;
+    font-size:48px;
   }
 `;
 
@@ -107,6 +111,8 @@ export const AboutQuote = styled.p`
 
 export const AboutLink = styled.p`
 color:#0d0a19;
+cursor:pointer;
+text-decoration:underline;
 `;
 
 export const AboutImage = styled.img`

@@ -268,4 +268,30 @@ font-weight:300;
 color:#fff2f2;
 `
 
+export const PerfectionImage = styled.img`
+width:6rem;
+height:auto;
+object-fit:cover;
+object-position:center;
+`
+
+export const DeadlineImage = styled.img`
+width:6rem;
+height:auto;
+object-fit:cover;
+object-position:center;
+`
+export const UpdatedeImage = styled.img`
+width:6rem;
+height:auto;
+object-fit:cover;
+object-position:center;
+`
+export const TransparentImage = styled.img`
+width:6rem;
+height:auto;
+object-fit:cover;
+object-position:center;
+`
+
 //=========================== Values Right Section *end==============================//

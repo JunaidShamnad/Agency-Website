@@ -65,7 +65,7 @@ font-size:50px;
 export const FaqQuestion = styled.div`
 width:100%;
 font-size:25px;
-font-weight:700;
+font-weight:600;
 margin-top:15px;
 display: flex;
 align-items: center;
@@ -121,20 +121,22 @@ export const QuestionWrapper = styled.div`
 margin-bottom:1rem;`
 
 export const PlusIcon = styled(FiPlusCircle)`
-font-size:25px;
+font-size:24px;
 min-width:25px;
 min-height:25px;
 max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
+opacity:0.9;
 color:#1D1A26;
 `
 export const MinusIcon = styled(FiMinusCircle)`
-font-size:25px;
+font-size:24px;
 min-width:25px;
 min-height:25px;
 max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
+opacity:0.9;
 color:#1D1A26;
 `

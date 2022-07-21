@@ -36,10 +36,7 @@ const Services = () => {
               </ServiceHeading>
 
               <ServiceDescription>
-                <HorizontalLine>―</HorizontalLine>We help ambitious business
-                like your generate more profits by building owerness, driving,
-                web traffic, connecting with customers and growing overall
-                sales.
+                <HorizontalLine>―</HorizontalLine>Let&apos;s create a fully integrated digital product to solve your problem
               </ServiceDescription>
 
             </ServicesText>
@@ -56,7 +53,7 @@ const Services = () => {
               <ServiceTextMainContainer>
               <ServiceIndex>01/</ServiceIndex>
               <ServiceTitle>
-                Web UI/UX Design
+                Web Development
               </ServiceTitle>
               </ServiceTextMainContainer>
               <ServiceLinkContainer>
@@ -69,7 +66,7 @@ const Services = () => {
             <ServiceTextMainContainer>
               <ServiceIndex>02/</ServiceIndex>
               <ServiceTitle>
-                Mobile App UI/ UX Design
+               App Development
               </ServiceTitle>
               </ServiceTextMainContainer>
               <ServiceLinkContainer>
@@ -81,7 +78,7 @@ const Services = () => {
             <ServiceTextMainContainer>
               <ServiceIndex>03/</ServiceIndex>
               <ServiceTitle>
-                Dashboard and Saas Design
+                Brand Design
               </ServiceTitle>
               </ServiceTextMainContainer>
               <ServiceLinkContainer>

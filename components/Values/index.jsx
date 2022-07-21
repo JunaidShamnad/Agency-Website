@@ -20,6 +20,10 @@ import {
   ValuesRightIconContiner,
   ValuesRightCardTitle,
   ValuesRightSection,
+  PerfectionImage,
+  DeadlineImage,
+  UpdatedeImage,
+  TransparentImage,
 } from "./Values.styled";
 
 const Values = () => {
@@ -47,7 +51,7 @@ const Values = () => {
               {/*-------------------------* 1st Card --------------------------*/}
               <ValuesRightCard>
                 <ValuesRightIconContiner>
-              <FirstIcon/>
+              {/* <FirstIcon/> */}<PerfectionImage src="/images/target-2997217-2516255.png" alt="image"/> 
               </ValuesRightIconContiner>
                 <ValuesRightTextContiner>
                 <ValuesRightCardTitle>Pixel Perfection</ValuesRightCardTitle>
@@ -60,7 +64,7 @@ const Values = () => {
               {/*-------------------------* 2nd Card --------------------------*/}
               <ValuesRightCard>
               <ValuesRightIconContiner>
-              <FirstIcon/>
+              {/* <FirstIcon/> */}<DeadlineImage src="/images/task-deadline-4721435-3926023.png" alt="image"/>
               </ValuesRightIconContiner>
                 <ValuesRightTextContiner>
                 <ValuesRightCardTitle>Consistent Deadline</ValuesRightCardTitle>
@@ -73,7 +77,7 @@ const Values = () => {
               {/*-------------------------* 3rd Card --------------------------*/}
               <ValuesRightCard>
               <ValuesRightIconContiner>
-              <FirstIcon/>
+              {/* <FirstIcon/> */}<UpdatedeImage src="/images/design-shape-4119272-3420376.png" alt="image"/>
               </ValuesRightIconContiner>
                 <ValuesRightTextContiner>
                 <ValuesRightCardTitle>Updated Style</ValuesRightCardTitle>
@@ -86,7 +90,7 @@ const Values = () => {
               {/*-------------------------* 4th Card --------------------------*/}
               <ValuesRightCard>
               <ValuesRightIconContiner>
-              <FirstIcon/>
+              {/* <FirstIcon/> */}<TransparentImage src="/images/customer-reviews-4861322-4051644.png" alt="image"/>
               </ValuesRightIconContiner>
                 <ValuesRightTextContiner>
                 <ValuesRightCardTitle>Transparency</ValuesRightCardTitle>
