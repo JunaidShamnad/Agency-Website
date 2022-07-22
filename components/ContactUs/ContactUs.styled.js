@@ -165,7 +165,7 @@ line-height:400%;
 export const NameInput = styled.input`
 /* width:300px; */
 height:40px;
-max-width:100%;
+min-width:100%;
 border:none;
 border-bottom:2px solid #0d0a19; 
 color: #0d0a19;
@@ -188,7 +188,7 @@ background-color: transparent;
 
 export const EmailInput = styled.input`
 /* width:550px; */
-max-width:100%;
+min-width:100%;
 height:40px;
 border:none;
 border-bottom:2px solid #0d0a19; 
@@ -208,7 +208,7 @@ background-color: transparent;
 
 export const Dropdowns = styled.select`
 /* width:300px; */
-max-width:100%;
+min-width:100%;
 height:40px;
 border:none;
 background-color:#fff2f2;
