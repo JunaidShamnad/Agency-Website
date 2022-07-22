@@ -1,7 +1,7 @@
 import React, { useState }  from 'react';
 
 import ChildNavbar from './ChildNavbar';
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar/index";
 
 function Navbar() {
 
