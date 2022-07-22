@@ -127,7 +127,8 @@ export const HeadingH3 = css`
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
-    line-height: ${({ theme }) => theme.fontSizes?.xs};
+    letter-spacing:1px;
+    line-height: 140%;
   }
 `;
 

@@ -66,6 +66,7 @@ export const FaqQuestion = styled.div`
 width:100%;
 font-size:25px;
 font-weight:600;
+letter-spacing:0.8;
 margin-top:15px;
 display: flex;
 align-items: center;
@@ -83,8 +84,9 @@ export const FaqAnswer = styled.p`
 font-size:20px;
 color:#656665;
 margin-top:15px;
+line-height:140%;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 14px;
+    font-size: 15px;
 }
 `;
 export const Icon = styled.p`

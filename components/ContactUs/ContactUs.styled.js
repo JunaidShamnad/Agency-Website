@@ -86,6 +86,7 @@ export const ContactDetails = styled.div`
 `;
 export const Detail = styled.div`
   margin-left: 50px;
+  user-select: text;
   width: 75%;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin-left: 0;
@@ -123,6 +124,7 @@ export const PhoneIcon = styled(BsTelephone)`
 `;
 export const DetailDescription = styled.p`
   font-size: 25px;
+  user-select:text;
   font-weight: 600;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 15px;
@@ -150,10 +152,11 @@ font-size:22px;
 font-weight:600;
 letter-spacing:1.5;
 color:#0d0a19;
-line-height:75px;
+line-height:400%;
+
 @media (max-width: 768px) {
   font-size: 18px;
-  line-height: 35px;
+  line-height:290%;
 }
 
 
@@ -234,7 +237,7 @@ background-color: transparent;
 // `;
 export const GetaQuote = styled.h1`
 font-size:24px;
-font-weight:600;
+font-weight:700;
 
 color: #0d0a19;
 margin:30px 0 15px 0px;
@@ -251,24 +254,25 @@ margin:30px 0 10px 0;
 
 `;
 export const SubmitForm = styled.button`
-padding:15px 35px;
+padding:16px 36px;
 cursor:pointer;
 font-weight:500;
 font-size:18px;
 letter-spacing:0.8px;
 border-radius: 5px;
-margin:20px 0 50px 0;
+margin:30px 0 50px 0;
 background-color:#0d0a19;
 color:#fff;
 @media (max-width:767px){
-    padding: 8px 20px;
-    font-size: 12px;
+    padding: 12px 25px;
+    font-size: 14px;
 }
 
 `;
 export const CheckboxTitle = styled.h1`
 font-size:16px;
 margin-left:15px;
+letter-spacing:0.8;
 font-weight:400;
 opacity:0.8;
 @media (max-width: 768px) {
@@ -280,7 +284,9 @@ opacity:0.8;
 export const Checkbox = styled.input`
 width:25px;
 height:18px;
+background:transparent ;
 border-radius:5px;
+outline:none;
 cursor:pointer;
 `;
 export const UpperSection = styled.div`

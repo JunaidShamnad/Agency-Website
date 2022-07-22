@@ -49,7 +49,7 @@ export const SidebarMenuLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-
+margin:0.5rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
@@ -61,7 +61,18 @@ export const SidebarMenuLink = styled(Link)`
     transition: 0.2s ease-in-out;
   }`;
 export const SidebarMenuLinkA = styled(motion.a)`
- color:#000;
- font-size: 1.4rem;
-  font-weight:400;
+ color:#0d0a19;
+ opacity:0.8;
+ font-size: 1.8rem;
+ text-decoration: underline;
+  font-weight:600;
+  letter-spacing:0.8;
+  line-height:180%;
+  transition: all 2s ease-in-out;
+
+  &:hover {
+    opacity:1;
+    transition:all  2s ease-in-out;
+    font-style: italic;
+  }
 `;

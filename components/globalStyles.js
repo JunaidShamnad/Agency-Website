@@ -39,6 +39,7 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    letter-spacing:0.8;
     /* transition: all 0.2s ease-in-out ; */
     font-family: 'Syne', sans-serif;
     /* overflow-x:hidden; */

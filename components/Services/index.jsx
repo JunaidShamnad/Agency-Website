@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ServiceContent,
   ServicesText,
@@ -57,7 +58,7 @@ const Services = () => {
               </ServiceTitle>
               </ServiceTextMainContainer>
               <ServiceLinkContainer>
-              <ServiceLink>Explore</ServiceLink><ArrowIcon/>
+             <ServiceLink>Explore</ServiceLink> <Link href="#contact-us" passHref><a><ArrowIcon/></a></Link>
               </ServiceLinkContainer>
 
             </Service>
@@ -70,7 +71,7 @@ const Services = () => {
               </ServiceTitle>
               </ServiceTextMainContainer>
               <ServiceLinkContainer>
-              <ServiceLink>Explore</ServiceLink><ArrowIcon/>
+              <ServiceLink>Explore</ServiceLink><Link href="#contact-us" passHref><a><ArrowIcon/></a></Link>
               </ServiceLinkContainer>
             </Service>
 
@@ -82,7 +83,7 @@ const Services = () => {
               </ServiceTitle>
               </ServiceTextMainContainer>
               <ServiceLinkContainer>
-              <ServiceLink>Explore</ServiceLink><ArrowIcon/>
+             <ServiceLink>Explore</ServiceLink> <Link href="#contact-us" passHref><a><ArrowIcon/></a></Link>
               </ServiceLinkContainer>
             </Service>
             

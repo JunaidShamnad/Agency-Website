@@ -156,8 +156,12 @@ const ContactUs = () => {
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Email</DetailTitle>
-                 <Link href="mailto:intelpik@gmail.com" passHref><a> <DetailDescription>admin@intelpik.com</DetailDescription></a></Link>
-                 
+                  <Link href="mailto:intelpik@gmail.com" passHref>
+                    <a>
+                      {" "}
+                      <DetailDescription>admin@intelpik.com</DetailDescription>
+                    </a>
+                  </Link>
                 </Detail>
               </Contact>
               <Contact>
@@ -166,7 +170,11 @@ const ContactUs = () => {
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Phone</DetailTitle>
-                  <Link href="tel:+918590302905" passHref><a><DetailDescription>+91 8590302905</DetailDescription></a></Link>
+                  <Link href="tel:+918590302905" passHref>
+                    <a>
+                      <DetailDescription>+91 8590302905</DetailDescription>
+                    </a>
+                  </Link>
                 </Detail>
               </Contact>
             </ContactDetails>
@@ -176,7 +184,7 @@ const ContactUs = () => {
               <GetaQuote>Get a quote</GetaQuote>
               {/* <ScheduleP>Schedule an Appointment</ScheduleP> */}
               <ContactForm>
-                Hey👋my name is{" "}&nbsp;
+                Hey👋my name is &nbsp;
                 <NameInput
                   type="text"
                   value={sender_name}
@@ -185,21 +193,21 @@ const ContactUs = () => {
                     set_sender_name(e.target.value);
                     setName(e.target.value);
                   }}
-                />&nbsp;
-                and I&apos;m looking for{" "}&nbsp;
+                />
+               
+                &nbsp; and I&apos;m looking for &nbsp;
                 <Dropdowns
-                 
                   value={sender_service}
                   placeholder="&nbsp; Select a service"
                   onChange={(e) => {
                     set_sender_service(e.target.value);
                   }}
                 >
-                    <option value="Branding">Branding</option>
+                  <option value="Branding">Branding</option>
                   <option value="Web Development">Web Development</option>
                   <option value="App Developement">App Development</option>
-                
-                </Dropdowns><br/>
+                </Dropdowns>
+                <br />
                 Ping us at 😉&nbsp;
                 <EmailInput
                   type="email"

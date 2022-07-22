@@ -1,7 +1,7 @@
 const data = [
     {
         "id": 1,
-        "question": "What services do you offer",
+        "question": "What services do you offer?",
         "answer": "Brand Designing, Web Development, and App Development are the services that we provide"
        },
        {

@@ -40,7 +40,7 @@ export const ValuesParentWrapper = styled.div`
 
 padding:2.1rem 0;
  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
-  grid-template-rows:0.4fr 1fr;
+  grid-template-rows:0.4fr auto;
  grid-template-columns:1fr;
  grid-gap:4rem;
  padding:1rem 0;
@@ -209,7 +209,7 @@ display:flex;
 flex-direction:column;
 justify-content:space-evenly;
 align-items: center;
-margin:0 1rem;
+margin:2rem 1rem;
 `
 
 // export const ValuesRightTextContiner = styled.div``
