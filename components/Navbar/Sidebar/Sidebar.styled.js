@@ -63,7 +63,7 @@ margin:0.5rem;
 export const SidebarMenuLinkA = styled(motion.a)`
  color:#0d0a19;
  opacity:0.8;
- font-size: 2rem;
+ font-size: 1.8rem;
  text-decoration: underline;
   font-weight:600;
   letter-spacing:0.8;
