@@ -31,6 +31,7 @@ a {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    letter-spacing:0.8;
     user-select:none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
