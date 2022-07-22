@@ -28,7 +28,7 @@ export const IconContainer = styled(motion.div)`
 `;
 export const CloseIcon = styled(MdOutlineClose)`
 color:#000;
-font-size:25px;
+font-size:29px;
 font-weight:600;
 `;
 export const SidebarMenuWrapper = styled(motion.div)`
@@ -63,7 +63,7 @@ margin:0.5rem;
 export const SidebarMenuLinkA = styled(motion.a)`
  color:#0d0a19;
  opacity:0.8;
- font-size: 1.8rem;
+ font-size: 2rem;
  text-decoration: underline;
   font-weight:600;
   letter-spacing:0.8;
