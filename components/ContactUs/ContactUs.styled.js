@@ -41,7 +41,7 @@ export const RightSection = styled.div`
   /* max-height:90%; */
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
-    max-width:98%;
+    max-width:100%;
   }
 `;
 export const TitleContact = styled.h1`
@@ -156,7 +156,7 @@ line-height:400%;
 
 @media (max-width: 768px) {
   font-size: 18px;
-  line-height:290%;
+  line-height:300%;
 }
 
 

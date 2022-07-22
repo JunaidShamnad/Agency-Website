@@ -19,16 +19,32 @@ export const SidebarContainer = styled.aside`
 `;
 export const IconContainer = styled(motion.div)`
   position: absolute;
-  top: 1.2rem;
+  top: 1.5rem;
   right: 1.5rem;
   background: transparent;
   font-size: 2rem;
   cursor: pointer;
   outline: none;
 `;
+export const LogoContainer = styled(motion.div)`
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+`;
+
+export const LogoText = styled.h1`
+ font-size:25px;
+ font-weight:600;
+ /* color:#5928e5; */
+`
+
 export const CloseIcon = styled(MdOutlineClose)`
 color:#000;
-font-size:29px;
+font-size:28px;
 font-weight:600;
 `;
 export const SidebarMenuWrapper = styled(motion.div)`
