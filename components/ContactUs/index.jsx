@@ -35,6 +35,7 @@ import "react-dropdown/style.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { send } from "emailjs-com";
+import Link from "next/link";
 // import DropdownInput from 'react-dropdown-input'
 const ContactUs = () => {
   const [sender_email, set_sender_email] = useState("");
@@ -157,7 +158,7 @@ const ContactUs = () => {
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Email</DetailTitle>
-                  <DetailDescription>admin@intelpik.com</DetailDescription>
+                 <Link href="mailto:intelpik@gmail.com" passHref><a> <DetailDescription>admin@intelpik.com</DetailDescription></a></Link>
                  
                 </Detail>
               </Contact>
@@ -167,7 +168,7 @@ const ContactUs = () => {
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Phone</DetailTitle>
-                  <DetailDescription>+91 8590302905</DetailDescription>
+                  <Link href="tel:+918590302905" passHref><a><DetailDescription>+91 8590302905</DetailDescription></a></Link>
                 </Detail>
               </Contact>
             </ContactDetails>
