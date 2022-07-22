@@ -31,6 +31,14 @@ a {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    user-select:none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     /* transition: all 0.2s ease-in-out ; */
     font-family: 'Syne', sans-serif;
     /* overflow-x:hidden; */
