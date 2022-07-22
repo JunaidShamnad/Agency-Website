@@ -15,7 +15,7 @@ import {
   TitleContact,
   MailIcon,
   ContactForm,
-  LocationIcon,
+  PhoneIcon,
   EmailInput,
   NameInput,
   ServiceInput,
@@ -158,15 +158,16 @@ const ContactUs = () => {
                 <Detail>
                   <DetailTitle>Email</DetailTitle>
                   <DetailDescription>admin@intelpik.com</DetailDescription>
+                 
                 </Detail>
               </Contact>
               <Contact>
                 <DetailIcons>
-                  <LocationIcon />
+                  <PhoneIcon />
                 </DetailIcons>
                 <Detail>
-                  <DetailTitle>Location</DetailTitle>
-                  <DetailDescription>Kerala, India</DetailDescription>
+                  <DetailTitle>Phone</DetailTitle>
+                  <DetailDescription>+91 8590302905</DetailDescription>
                 </Detail>
               </Contact>
             </ContactDetails>

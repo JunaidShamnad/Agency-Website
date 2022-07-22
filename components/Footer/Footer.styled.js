@@ -11,14 +11,16 @@ export const Container = styled.div`
  grid-template-columns: 1fr 1fr 1fr;
  width:90%;
  max-width:1600px;
- margin-left: auto;
- margin-right: auto;
- padding-top: 50px;
- 
+margin:0 auto;
+ padding-top: 45px;
+ text-align:center;
 
  @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr ;
+    place-items:center;
+    padding-top: 20px;
  }
 `;
 
@@ -28,12 +30,13 @@ export const FooterTitles = styled.h1`
  margin-bottom:50px;
  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}){
     font-size:11px;
-    width:78%;
-    margin-bottom: 25px;
+    width:90%;
+    margin-bottom: 12px;
+    text-align:center;
  }
 
  :nth-child(3){
-   text-align:right;
+   text-align:center;
  }
 `;
 

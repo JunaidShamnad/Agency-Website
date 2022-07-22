@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { HeadingH3,flexColumn,flexRow,flexColumnCenter } from "../cssHelper";
-import {HiOutlineMail,HiOutlineLocationMarker} from 'react-icons/hi';
-// import Dropdown from 'react-dropdown'; 
-import { Dropdown } from 'semantic-ui-react'
+import { flexColumn,flexRow } from "../cssHelper";
+import {HiOutlineMail} from 'react-icons/hi';
+import {BsTelephone} from 'react-icons/bs';
+
+
 export const Section = styled.section`
   width: 100vw;
   height: 100%;
@@ -115,7 +116,7 @@ export const MailIcon = styled(HiOutlineMail)`
   opacity: 0.7;
   color: #0d0a19;
 `;
-export const LocationIcon = styled(HiOutlineLocationMarker)`
+export const PhoneIcon = styled(BsTelephone)`
   font-size: 25px;
   opacity: 0.7;
   color: #0d0a19;
