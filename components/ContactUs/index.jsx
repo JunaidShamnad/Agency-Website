@@ -31,12 +31,10 @@ import {
   Dropdowns,
 } from "./ContactUs.styled";
 
-import "react-dropdown/style.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { send } from "emailjs-com";
 import Link from "next/link";
-// import DropdownInput from 'react-dropdown-input'
 const ContactUs = () => {
   const [sender_email, set_sender_email] = useState("");
   const [sender_name, set_sender_name] = useState("");
