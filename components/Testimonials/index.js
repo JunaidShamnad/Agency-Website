@@ -57,7 +57,7 @@ function Testimonials() {
                 {index === current && (
                   <>
                     <SliderLeft>
-                      <SliderTitle>Happiness Testimonial</SliderTitle>
+                      <SliderTitle>Loved by Clients</SliderTitle>
                       <AnimatePresence exitBeforeEnter>
                         <SliderContent
                           key={slide.Name}

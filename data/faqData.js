@@ -1,29 +1,20 @@
 const data = [
     {
         "id": 1,
-        "question": "What are the services do you offer",
-        "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis vitae tempora quod provident tenetur culpa dolore facere? Earum, dolor?"
+        "question": "What services do you offer",
+        "answer": "Brand Designing, Web Development, and App Development are the services that we provide"
        },
        {
         "id": 2,
-        "question": "what are our preferred method of payment",
-        "answer": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam"
+        "question": "How much does it cost to get started with a high-performing website?",
+        "answer": "It will depend upon the scope and requirements of the project. On the discovery call, we will seek to identify specifics and objectives that can affect the cost. These are things like the number of pages, specific features, timeline, etc. All these will contribute to the cost and will vary from project to project."
        },
        {
         "id": 3,
-        "question": "Are your services beginners friendly",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores,"
+        "question": "How long will the work take from start to finish?",
+        "answer": "It will depend on the scope of the project. A single landing page may take 1-3 weeks, depending on the amount of copy. A full website with 5-10 pages may take 6-8 weeks."
        },
-       {
-        "id": 4,
-        "question": "what how does it take to upgrade a package",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
-       },
-       {
-        "id": 5,
-        "question": "Where are your offices located around the world",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
-       }
+      
 ]
 
 export default data;
