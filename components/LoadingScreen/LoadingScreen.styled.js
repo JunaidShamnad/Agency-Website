@@ -25,6 +25,7 @@ export const Title = styled.h1`
   color: #5928e5;
   font-size: 9rem;
   letter-spacing: 1.1px;
+  text-shadow: 5px 3px 2px rgba(207,207,207,0.26);
   line-height: 130%;
   margin-bottom: 1rem;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
@@ -49,12 +50,13 @@ export const Title = styled.h1`
   } */
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints?.extraSmallMobile}) {
-    font-size: ${({ theme }) => theme.fontSizes?.s};
+    font-size: ${({ theme }) => theme.fontSizes?.m};
   }
 `;
 export const Tagline = styled.h3`
   color: #fff;
   letter-spacing: 1px;
+  text-shadow: 5px 3px 2px rgba(113,113,113,0.28);
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 160%;
@@ -65,6 +67,6 @@ export const Tagline = styled.h3`
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakpoints?.smallestMobile}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxxxxs};
+    font-size: ${({ theme }) => theme.fontSizes?.xxxxs};
   }
 `;
