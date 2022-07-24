@@ -158,7 +158,7 @@ export const Service = styled.div`
   justify-content: space-between;
   width: 100%;
   height: auto;
-  border-top: 1px solid #000;
+  border-top: 1px solid #0D0A19;
   padding-top: 3rem;
   padding-bottom: 2rem;
 `;

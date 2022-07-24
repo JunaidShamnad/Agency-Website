@@ -26,13 +26,13 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        {/* {!loading ? (
+        {!loading ? (
           <LoadingScreen />
-        ) : ( */}
+        ) : (
           <Layout>
             <Component {...pageProps} />
           </Layout>
-        {/* )} */}
+         )} 
       </ThemeProvider>
     </>
   );

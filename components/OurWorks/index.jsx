@@ -28,7 +28,7 @@ const OurWorks = () => {
           <Work>
             <WorkTitle>Plantshop Landing Page design</WorkTitle>
             <WorkDescription>Web/Landing Page</WorkDescription>
-            <WorkImage src="https://images.unsplash.com/photo-1554232456-8727aae0cfa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"/>
+            <WorkImage src="/images/WhatsApp Image 2022-07-23 at 3.53.53 AM.jpeg"/>
           </Work>
 
         </WorkOne>

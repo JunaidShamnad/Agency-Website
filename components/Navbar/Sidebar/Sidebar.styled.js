@@ -43,7 +43,7 @@ export const LogoText = styled.h1`
 `
 
 export const CloseIcon = styled(MdOutlineClose)`
-color:#000;
+color:#0D0A19;
 font-size:28px;
 font-weight:600;
 `;
@@ -69,7 +69,7 @@ margin:0.5rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  color: #000;
+  color: #0D0A19;
   cursor: pointer;
 
   &:hover {
@@ -77,7 +77,7 @@ margin:0.5rem;
     transition: 0.2s ease-in-out;
   }`;
 export const SidebarMenuLinkA = styled(motion.a)`
- color:#0d0a19;
+ color:#0D0A19;;
  opacity:0.8;
  font-size: 1.8rem;
  text-decoration: underline;

@@ -59,7 +59,7 @@ export const NavItem = styled(motion.li)`
 `;
 
 export const NavLink = styled(Link)`
-  color: #000;
+  color: #0D0A19;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -76,7 +76,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 `;
 export const NavLinkA = styled(motion.a)`
-  color: #000;
+  color: #0D0A19;
   cursor: pointer;
 `;
 
@@ -92,6 +92,6 @@ export const MobileMenu = styled(motion.div)`
 `;
 
 export const MenuIcon = styled(HiOutlineMenuAlt4)`
-  color: #000;
+  color: #0D0A19;
   font-size: 1.8rem;
 `;

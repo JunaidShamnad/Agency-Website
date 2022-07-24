@@ -91,7 +91,7 @@ line-height:140%;
 `;
 export const Icon = styled.p`
 font-size: 40px;
-background-color:#000;
+background-color:#0D0A19;
 padding: 5px 20px;
 border-radius: 50%;
 color:#fff;
@@ -104,7 +104,7 @@ color:#fff;
 `;
 
 export const FaqHeader = styled.h2`
-color: #0D0A19;
+color: #0D0A19;;
 line-height:140%;
 margin-top: 0 !important;
 font-size: 60px;

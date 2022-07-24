@@ -159,7 +159,7 @@ const ContactUs = () => {
                   <Link href="mailto:intelpik@gmail.com" passHref>
                     <a>
                       {" "}
-                      <DetailDescription>admin@intelpik.com</DetailDescription>
+                      <DetailDescription>intelpik@gmail.com</DetailDescription>
                     </a>
                   </Link>
                 </Detail>

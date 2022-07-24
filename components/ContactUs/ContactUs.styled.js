@@ -68,7 +68,7 @@ export const Contact = styled.div`
   ${flexRow}
   height:220px;
   align-items: center;
-  border-top: 1px solid #0d0a19;
+  border-top: 1px solid #0D0A19;;
   line-height:150%;
   width: 85%;
   justify-content: space-between;
@@ -115,12 +115,12 @@ export const DetailIcons = styled.div`
 export const MailIcon = styled(HiOutlineMail)`
   font-size: 25px;
   opacity: 0.7;
-  color: #0d0a19;
+  color: #0D0A19;;
 `;
 export const PhoneIcon = styled(BsTelephone)`
   font-size: 25px;
   opacity: 0.7;
-  color: #0d0a19;
+  color: #0D0A19;;
 `;
 export const DetailDescription = styled.p`
   font-size: 25px;
@@ -151,7 +151,7 @@ export const ContactForm = styled.div`
 font-size:22px;
 font-weight:600;
 letter-spacing:1.5;
-color:#0d0a19;
+color:#0D0A19;;
 line-height:400%;
 
 @media (max-width: 768px) {
@@ -167,8 +167,8 @@ export const NameInput = styled.input`
 height:40px;
 min-width:100%;
 border:none;
-border-bottom:2px solid #0d0a19; 
-color: #0d0a19;
+border-bottom:2px solid #0D0A19;; 
+color: #0D0A19;;
 outline:none;
 font-size:22px;
 background-color: transparent;
@@ -182,7 +182,7 @@ background-color: transparent;
   width: 175px;
   height: 20px;
   border: none;
-  border-bottom: 1px solid #0d0a19;
+  border-bottom: 1px solid #0D0A19;;
 }
 `;
 
@@ -191,8 +191,8 @@ export const EmailInput = styled.input`
 min-width:100%;
 height:40px;
 border:none;
-border-bottom:2px solid #0d0a19; 
-color:#0d0a19;
+border-bottom:2px solid #0D0A19;; 
+color:#0D0A19;;
 outline:none;
 font-size:22px;
 background-color: transparent;
@@ -202,7 +202,7 @@ background-color: transparent;
   width: 250px;
     height: 20px;
     border: none;
-    border-bottom: 1px solid #0d0a19;
+    border-bottom: 1px solid #0D0A19;;
 }
 `;
 
@@ -212,8 +212,8 @@ min-width:100%;
 height:40px;
 border:none;
 background-color:#fff2f2;
-border-bottom:2px solid #0d0a19; 
-color:#0d0a19;
+border-bottom:2px solid #0D0A19;; 
+color:#0D0A19;;
 outline:none;
 font-size:22px;
 background-color: transparent;
@@ -222,7 +222,7 @@ background-color: transparent;
   line-height: 35px;
   width: 150px;
   height: 20px;
-  border-bottom: 1px solid #0d0a19;
+  border-bottom: 1px solid #0D0A19;;
   background-color: transparent;
 }
 `;
@@ -230,8 +230,8 @@ background-color: transparent;
 // width:300px;
 // height:40px;
 // border:none;
-// border-bottom:2px solid #0d0a19; 
-// color:#0d0a19;
+// border-bottom:2px solid #0D0A19;; 
+// color:#0D0A19;;
 // outline:none;
 // font-size:32px;
 // `;
@@ -239,7 +239,7 @@ export const GetaQuote = styled.h1`
 font-size:24px;
 font-weight:700;
 
-color: #0d0a19;
+color: #0D0A19;;
 margin:30px 0 15px 0px;
 `;
 
@@ -261,7 +261,7 @@ font-size:18px;
 letter-spacing:0.8px;
 border-radius: 5px;
 margin:30px 0 50px 0;
-background-color:#0d0a19;
+background-color:#0D0A19;;
 color:#fff;
 @media (max-width:767px){
     padding: 12px 25px;

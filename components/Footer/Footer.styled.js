@@ -4,7 +4,7 @@ export const Section = styled.section`
    width: 100vw;
     height: 100%;
     max-width:100%;
-    border-top:3px solid #000;
+    border-top:3px solid #0D0A19;
 `;
 export const Container = styled.div`
  display:grid;

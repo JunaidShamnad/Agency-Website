@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-
     "axios": "^0.27.2",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^6.3.16",

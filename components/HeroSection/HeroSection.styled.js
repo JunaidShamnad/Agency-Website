@@ -95,7 +95,7 @@ export const HeroButtons = styled.div`
 export const HeaderButton = styled.button`
   ${PrimaryButton}
   background-color:#FEC9C1;
-  color:#0D0A19;
+  color:#0D0A19;;
   padding:16px 42px;
   font-size: 22px;
 `;

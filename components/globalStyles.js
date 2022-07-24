@@ -10,7 +10,7 @@ body {
     padding: 0;
     margin: 0;
     background-color:#fff2f2;
-    color:#0d0a19;
+    color:#0D0A19;;
 }
 
 html {

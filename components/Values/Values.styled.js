@@ -169,7 +169,7 @@ ${SecondaryButton}
 outline:none;
 border-radius:0px;
 background-color:#fec9c1;
-color:#0d0a19;
+color:#0D0A19;;
 padding:12px 25px;
 /* text-transform:uppercase; */
 `
@@ -225,10 +225,12 @@ width:100%;
 display:flex;
 flex-direction:column;
 justify-content:center;
+letter-spacing:0.8;
 align-items:center;`
 
 export const ValuesRightCardTitle = styled.p`
  font-size:25px;
+ letter-spacing:0.8;
  font-weight:600;
  /* font-family:'Archivo', sans-serif; */
  line-height:120%;
@@ -249,6 +251,7 @@ width:80%;
 margin-bottom:5px;
 line-height:150%;
 text-align:center;
+letter-spacing:0.8;
 opacity:0.7;
 color:#fff2f2;
 @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
