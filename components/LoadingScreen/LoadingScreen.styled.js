@@ -56,7 +56,7 @@ export const Title = styled.h1`
 export const Tagline = styled.h3`
   color: #fff;
   letter-spacing: 1px;
-  text-shadow: 5px 3px 2px rgba(113,113,113,0.28);
+  text-shadow: 5px 3px 2px rgba(113,113,113,0.03);
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 160%;
