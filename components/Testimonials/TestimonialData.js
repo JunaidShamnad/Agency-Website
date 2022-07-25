@@ -1,7 +1,7 @@
 const slides = [
     {
         Image:"/images/MOCKUPS/Mockup-13.png",
-        Name:"Rose",
+        Name:"Ann Smith",
         Descriptions: "This guys are awesome! It is hard to find a web design company who can actually listen and understand what you need. I'm 100% satisfied with this guys.",
         class:"AboveContainer",
     },
