@@ -108,6 +108,7 @@ max-width:100%;
 export const SliderImage = styled.img`
   object-fit: cover;
   object-position: center;
+  image-rendering: crisp-edges;
     width: 100%;
     height:100%;
 `;

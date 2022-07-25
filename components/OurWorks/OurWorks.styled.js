@@ -66,6 +66,7 @@ export const WorkThree = styled.div``;
 export const WorkDescription = styled.p`
   font-size: 14px;
   margin-bottom: 25px;
+  letter-spacing:0.8;
   line-height: 140%;
   opacity:0.8;
 `;
@@ -84,8 +85,8 @@ export const WorkHeading = styled.h1`
 `;
 export const WorkLinkImage = styled.img``;
 export const WorkImage = styled.img`
-  width: 100%;
-  /* width:20rem; */
+  width: 20rem;
+  image-rendering: crisp-edges;
   height: 20rem;
   object-fit: cover;
   object-position: center;
