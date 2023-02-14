@@ -26,8 +26,8 @@ const OurWorks = () => {
           
         <WorkHeading>Latest Projects</WorkHeading>
           <Work>
-            <WorkTitle>Orix Store</WorkTitle>
-            <WorkDescription>Ecommerce App</WorkDescription>
+            <WorkTitle>Aadiveda Ayurveda</WorkTitle>
+            <WorkDescription>Ayurveda Clinic</WorkDescription>
             <WorkImage src="/images/MOCKUPS/aadiveda.jpg"/>
           </Work>
 
@@ -37,8 +37,8 @@ const OurWorks = () => {
         <WorkTwo>
 
           <Work>
-            <WorkTitle>Kupit Plants</WorkTitle>
-            <WorkDescription>Ecommerce App</WorkDescription>
+            <WorkTitle>Neocart</WorkTitle>
+            <WorkDescription>Ecommerce Website</WorkDescription>
             <WorkImage src="/images/MOCKUPS/neocart.jpg"/>
           </Work>
 
