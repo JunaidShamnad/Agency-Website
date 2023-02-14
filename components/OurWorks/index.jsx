@@ -28,7 +28,7 @@ const OurWorks = () => {
           <Work>
             <WorkTitle>Orix Store</WorkTitle>
             <WorkDescription>Ecommerce App</WorkDescription>
-            <WorkImage src="/images/MOCKUPS/Mockup-15.png"/>
+            <WorkImage src="/images/MOCKUPS/aadiveda.jpg"/>
           </Work>
 
         </WorkOne>
@@ -39,7 +39,7 @@ const OurWorks = () => {
           <Work>
             <WorkTitle>Kupit Plants</WorkTitle>
             <WorkDescription>Ecommerce App</WorkDescription>
-            <WorkImage src="/images/MOCKUPS/Mockup-3(2)-2.png"/>
+            <WorkImage src="/images/MOCKUPS/neocart.jpg"/>
           </Work>
 
         </WorkTwo>
@@ -50,7 +50,7 @@ const OurWorks = () => {
           <Work>
             <WorkTitle>Corept Construction</WorkTitle>
             <WorkDescription>Web Landing Page</WorkDescription>
-            <WorkImage src="/images/MOCKUPS/Mockup-2.png"/>
+            <WorkImage src="/images/MOCKUPS/corept.png"/>
           </Work>
 {/* 
          <WorkLinkImage/> */}
