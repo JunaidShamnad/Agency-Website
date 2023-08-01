@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { flexColumn,flexRow } from "../cssHelper";
 import {HiOutlineMail} from 'react-icons/hi';
-import {BsTelephone} from 'react-icons/bs';
+import {BsTelephone} from 'react-icons/bs'; 
+import { AiOutlineLike } from "react-icons/ai";
 
 
 export const Section = styled.section`
@@ -34,21 +36,27 @@ export const LeftSection = styled.div`
     max-width:90%;
   }
 `;
-export const RightSection = styled.div`
-  max-width: 50%;
- padding:1rem;
-  height: 90%;
+export const RightSection = styled(motion.div)`
+  max-width: 100%;
+ padding:3rem;
+ border-radius: 20px;
+  height: 100%;
+  background: white;
   /* max-height:90%; */
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
     max-width:100%;
   }
+  @media(max-width: ${({ theme }) => theme.breakpoints.smallTablet}){
+    width: 80%;
+  }
 `;
 export const TitleContact = styled.h1`
   font-size: 64px;
   ${flexColumn}
-  width: 50%;
+  width: 70%;
   margin-bottom:25px;
+  font-family: "Grifter-bold", sans-serif;
   position: relative;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
@@ -122,6 +130,11 @@ export const PhoneIcon = styled(BsTelephone)`
   opacity: 0.7;
   color: #0D0A19;;
 `;
+export const SocialIcon = styled(AiOutlineLike)`
+  font-size: 25px;
+  opacity: 0.7;
+  color: #0D0A19;;
+`;
 export const DetailDescription = styled.p`
   font-size: 25px;
   user-select:text;
@@ -152,7 +165,7 @@ font-size:22px;
 font-weight:600;
 letter-spacing:1.5;
 color:#0D0A19;;
-line-height:400%;
+line-height:300%;
 
 @media (max-width: 768px) {
   font-size: 18px;
@@ -206,6 +219,26 @@ background-color: transparent;
 }
 `;
 
+export const PhoneInput = styled.input`
+/* width:550px; */
+min-width:100%;
+height:40px;
+border:none;
+border-bottom:2px solid #0D0A19;; 
+color:#0D0A19;;
+outline:none;
+font-size:22px;
+background-color: transparent;
+@media (max-width: 768px) {
+  font-size: 18px;
+  line-height: 35px;
+  width: 250px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #0D0A19;;
+}
+`
+
 export const Dropdowns = styled.select`
 /* width:300px; */
 min-width:100%;
@@ -236,11 +269,11 @@ background-color: transparent;
 // font-size:32px;
 // `;
 export const GetaQuote = styled.h1`
-font-size:24px;
+font-size:27px;
 font-weight:700;
+text-align: center;
 
 color: #0D0A19;;
-margin:30px 0 15px 0px;
 `;
 
 export const ScheduleP = styled.p`
@@ -260,7 +293,7 @@ font-weight:500;
 font-size:18px;
 letter-spacing:0.8px;
 border-radius: 5px;
-margin:30px 0 50px 0;
+margin:30px 0 0 0;
 background-color:#0D0A19;;
 color:#fff;
 @media (max-width:767px){

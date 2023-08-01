@@ -48,7 +48,7 @@ function Testimonials() {
   }, [isPresent, safeToRemove]);
 
   return (
-    <>
+    <> 
       <Section>
         <Container>
           <SliderContainer>

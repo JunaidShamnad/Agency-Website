@@ -4,14 +4,15 @@ import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export const Nav = styled.nav`
-background:${({scrollNav}) =>(scrollNav ? '#fff' :'transparent')};
+background:${({scrollNav}) =>(scrollNav ? '#fff' :'#fff')};
+border-radius: 20px;
   height: 80px;
   /* margin-top:-80px; */
   display:flex;
   justify-content: center;
   align-items: center;
   position: sticky;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  /*padding: 0.5rem calc((100vw - 1000px) / 2);*/
   top: 0;
   right:0;
   left:0;
@@ -26,9 +27,9 @@ export const NavContainer = styled(motion.div)`
   justify-content: space-between;
   position: relative;
   z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  width: 90%;
+  /*padding: 0 24px;*/
+  max-width: 1600px;
 `;
 
 export const Logo = styled(motion.img)`

@@ -1,12 +1,19 @@
 //globalStyles
 
 import { createGlobalStyle } from "styled-components";
-
 const GlobalStyle = createGlobalStyle`
+
+@font-face {
+    font-family: 'Grifter-bold';
+    src: url('/fonts/grifterbold-webfont.woff2') format('woff2'),
+         url('/fonts/grifterbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html,
 body {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Grifter-bold', sans-serif;
     padding: 0;
     margin: 0;
     background-color:#fff2f2;
@@ -42,7 +49,7 @@ a {
     user-select: none;
     letter-spacing:0.8;
     /* transition: all 0.2s ease-in-out ; */
-    font-family: 'Syne', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     /* overflow-x:hidden; */
     /* background-color:rgba(27, 245, 49, 0.12);*/
      /* outline: 1px solid red;  */
@@ -62,6 +69,7 @@ section{
         width:90%;
     }
 }
+
 `;
 
 export default GlobalStyle;

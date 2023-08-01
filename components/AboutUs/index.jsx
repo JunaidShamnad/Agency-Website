@@ -10,6 +10,8 @@ import {
   Section,
   Container,
   AboutContentLowerContainer,
+  AboutButton,
+  AboutImageDiv,
 } from "./AboutUs.styled";
 import Link from 'next/link'
 
@@ -17,28 +19,30 @@ const AboutUs = () => {
   return (
     <Section id="about-us">
       <Container>
-        <About>
-          <AboutTitle>About</AboutTitle>
 
           <AboutBelow>
+            <AboutImageDiv
+              initial={{ opacity: 0 ,y:130}}
+              whileInView={{ opacity: 1,y:0 }}
+              transition={{duration:0.7,delay:0.5}}
+              viewport={{ once: true}}
+            >
+              <AboutImage src="/images/about.jpeg" />
+            </AboutImageDiv>
             <AboutContent>
+              <AboutTitle>About US</AboutTitle>
               <AboutDescription>
-                Make brand identities from scratch and help big brands stay
-                mighty.Efficient and high perfoming team to execute all the
-                work.
+                We are a team of freelance web developers in the UK who create innovative and 
+                bespoke websites for businesses of all sizes. Our websites are stunningly designed,
+                seamlessly functional, and SEO-optimized to help our clients succeed. 
+                Partner with us to transform your ideas into captivating online realities.
               </AboutDescription>
-              <AboutContentLowerContainer>
-                <AboutQuote>
-                  We collaborate, we create <br />
-                  We think outside the box
-                </AboutQuote>
-
-               <Link href="#contact-form" passHref><a><AboutLink>SEE HOW ITS WORKS</AboutLink></a></Link> 
-              </AboutContentLowerContainer>
+              <Link href='#contact-us'>
+                <AboutButton>Try Us</AboutButton>
+                </Link>
             </AboutContent>
-            <AboutImage src="https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
           </AboutBelow>
-        </About>
+     
       </Container>
     </Section>
   );

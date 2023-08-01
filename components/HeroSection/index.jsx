@@ -1,7 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
 
-import { useInView } from "react-intersection-observer";
+import Slider from "react-slick";
 
+import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import {
   Hero,
@@ -15,14 +16,25 @@ import {
   HeaderButton,
   HeaderMobileImage,
   Heading,
+  Line,
+  StarDiv,
+  StarImg,
+  ShowText,
+  PeopleFaces,
+  Clients,
+  ClientLogo,
 } from "./HeroSection.styled";
 import styled from "styled-components";
 import Link from "next/link";
+import ContactUs1 from "../ContactUs/index1";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Character = styled(motion.span)`
   display: inline-block;
   margin-right: 0;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
   font-size: 150px;
   line-height: 190px;
@@ -32,6 +44,16 @@ const Character = styled(motion.span)`
 `;
 
 const HeroSection = () => {
+  const settings = {
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    arrows: false,
+  };
   // const control = useAnimation();
   // const [ref, inView] = useInView();
   // useEffect(() => {
@@ -79,37 +101,59 @@ const HeroSection = () => {
   };
 
   return (
+    <>
     <Section id="hero-section">
       <Container>
         <Hero>
-          <Heading>Build,Grow and Manage your Brand</Heading>
+          <Heading
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >Innovative Web Solutions for Modern Brands</Heading>
 
-          <HeroDescription>
-            Make brand identities from scratch and help big brands stay mighty
+          <HeroDescription
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5,delay:1 }}
+          >
+            Craft your website with our proffessional web development services 
           </HeroDescription>
 
           <HeroButtons>
             <Link href="#contact-form" passHref><a><HeaderButton>Lets Talk</HeaderButton></a></Link>
           </HeroButtons>
 
-          <ImageContainer>
-            <HeaderMobileImage></HeaderMobileImage>
-            <Image
-              alt="image"
-              src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            />
-            <ImageBelow
-              alt="image"
-              src="https://images.unsplash.com/photo-1543269665-7821011040ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            />
-            <Image
-              alt="image"
-              src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fG9mZmljZSUyMHBlb3BsZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-            />
-          </ImageContainer>
+          <StarDiv>
+            <StarImg src="/images/star svg.svg"></StarImg>
+            <StarImg src="/images/star svg.svg"></StarImg>
+            <StarImg src="/images/star svg.svg"></StarImg>
+            <StarImg src="/images/star svg.svg"></StarImg>
+            <StarImg src="/images/star svg.svg"></StarImg>
+          </StarDiv>
+          
+          <ShowText>We're not just promising, we're proving.</ShowText>
+          
+          <PeopleFaces src="/images/peopleFacesCopy.png"></PeopleFaces>
+
         </Hero>
+        <ContactUs1 />
       </Container>
+      
+
     </Section>
+    <Clients>
+        <Slider {...settings}>
+          <ClientLogo src="/images/CLIENTS/Client1.svg" />
+          <ClientLogo src="/images/CLIENTS/Client2.svg" />
+          <ClientLogo src="/images/CLIENTS/Client03.svg" />
+          <ClientLogo src="/images/CLIENTS/Client04.svg" />
+          <ClientLogo src="/images/CLIENTS/Client05.svg" />
+          <ClientLogo src="/images/CLIENTS/Client06.svg" />
+          <ClientLogo src="/images/CLIENTS/Client07.svg" />
+          <ClientLogo src="/images/CLIENTS/Client08.svg" />
+        </Slider>
+      </Clients>
+    </>
   );
 };
 

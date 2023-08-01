@@ -29,6 +29,8 @@ import {
   UpperSection,
   BottomSection,
   Dropdowns,
+  PhoneInput,
+  SocialIcon,
 } from "./ContactUs.styled";
 
 import { useState, useEffect } from "react";
@@ -36,7 +38,9 @@ import axios from "axios";
 import { send } from "emailjs-com";
 import Link from "next/link";
 const ContactUs = () => {
+
   const [sender_email, set_sender_email] = useState("");
+  const [sender_phone, set_sender_phone] = useState("");
   const [sender_name, set_sender_name] = useState("");
   const Newdate = new Date();
   const date = Newdate.getDate();
@@ -54,6 +58,7 @@ const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
+  const [phone, setPhone] = useState("")
 
   const sendMail = (e) => {
     e.preventDefault();
@@ -72,11 +77,13 @@ const ContactUs = () => {
     set_sender_name("");
     set_sender_email("");
     set_sender_service("");
+    set_sender_phone("");
     setSenderDate("");
     setSenderTime("");
     setService("");
     setEmail("");
     setName("");
+    setPhone("");
     setCheck(false);
   };
 
@@ -86,6 +93,7 @@ const ContactUs = () => {
     const data = {
       Name: sender_name,
       Email: sender_email,
+      Phone: sender_phone,
       Service: sender_service,
       Date: senderDate,
       Time: senderTime,
@@ -99,9 +107,11 @@ const ContactUs = () => {
         console.log(response);
         setName("");
         setEmail("");
+        setPhone("");
         set_sender_name("");
         set_sender_email("");
         set_sender_service("");
+        set_sender_phone("");
         setService("");
         set_sender_service("");
         setSenderTime("");
@@ -145,7 +155,7 @@ const ContactUs = () => {
     <Section id="contact-us">
       <Container>
         <UpperSection>
-          <TitleContact>Lets Discus Your Project</TitleContact>
+          <TitleContact>Lets Discuss Your Project</TitleContact>
         </UpperSection>
         <BottomSection>
           <LeftSection>
@@ -177,6 +187,27 @@ const ContactUs = () => {
                   </Link>
                 </Detail>
               </Contact>
+              <Contact>
+                <DetailIcons>
+                  <SocialIcon/>
+                </DetailIcons>
+                <Detail>
+                  <DetailTitle>Social</DetailTitle>
+                  <div style={{display:'flex',gap:"20px"}}>
+                  <Link href="tel:+918590302905" passHref>
+                    <a>
+                      <DetailDescription>LinkedIn</DetailDescription>
+                    </a>
+                  </Link>
+                  <Link href="tel:+918590302905" passHref>
+                    <a>
+                      <DetailDescription>Instagram</DetailDescription>
+                    </a>
+                  </Link>
+                  </div>
+                </Detail>
+                
+              </Contact>
             </ContactDetails>
           </LeftSection>
           <RightSection>
@@ -194,7 +225,7 @@ const ContactUs = () => {
                     setName(e.target.value);
                   }}
                 />
-               
+
                 &nbsp; and I&apos;m looking for &nbsp;
                 <Dropdowns
                   value={sender_service}
@@ -216,6 +247,16 @@ const ContactUs = () => {
                   onChange={(e) => {
                     set_sender_email(e.target.value);
                     setEmail(e.target.value);
+                  }}
+                />
+                Contact number📞&nbsp;
+                <PhoneInput
+                  type="tel"
+                  value={sender_phone}
+                  placeholder="Your Phone Number"
+                  onChange={(e) => {
+                    set_sender_phone(e.target.value);
+                    setPhone(e.target.value);
                   }}
                 />
               </ContactForm>

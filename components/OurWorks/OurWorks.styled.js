@@ -1,15 +1,18 @@
 import styled from "styled-components";
-import { HeadingH3, flexRow, flexColumn } from "../cssHelper";
+import { HeadingH3, flexRow, flexColumn, PrimaryButton } from "../cssHelper";
+import { theme } from "../Theme";
+import Slider from "react-slick";
 
 export const Section = styled.section`
   width: 100vw;
   height: 100%;
   max-width: 100%;
   display: flex;
+  color:white;
   align-items: center;
   justify-content: center;
-  background-color: #5928e5;
-  color:#fff2f2;
+  padding: 40px 0 80px 0;
+  background: ${theme.colors.primaryBackground}
 `;
 
 export const Container = styled.div`
@@ -17,8 +20,7 @@ export const Container = styled.div`
   width: 90%;
   max-width: 1600px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -29,7 +31,35 @@ export const Container = styled.div`
   } ;
 `;
 
+export const WorkHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-right: 40px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    flex-direction: column;
+    align-items: start;
+  }
+`
+
+export const ArrowDiv = styled.div`
+  display: flex;
+  gap: 50px;
+  font-size: xxx-large;
+  & > * {
+    cursor: pointer;
+  }
+  & > *:hover {
+    color: gray;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin-top:20px;
+  }
+`
+
 export const WorkOne = styled.div`
+  width: 100%;
   place-content: center;
 `;
 export const WorkTitle = styled.h2`
@@ -48,7 +78,6 @@ export const WorkTitle = styled.h2`
   }
 `;
 export const Work = styled.div`
-  border-top: 1px solid #fec9c1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +102,7 @@ export const WorkDescription = styled.p`
 export const WorkHeading = styled.h1`
   font-size: 64px;
   width: 100%;
-  margin-bottom: 50px;
+  font-family: "Grifter-bold", sans-serif;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 38px;
     width: 50%;
@@ -83,26 +112,68 @@ export const WorkHeading = styled.h1`
     width: 50%;
   }
 `;
+
+export const SubHeading = styled.p`
+  font-size: 25px;
+  margin-top:15px;
+`
 export const WorkLinkImage = styled.img``;
-export const WorkImage = styled.img`
-  width: 20rem;
+
+export const StyledSlider = styled(Slider)`
+  
+`;
+
+export const ImageDiv = styled.div`
+  width:95%;
+  height:450px;
+  display:flex;
+    flex-direction: column-reverse;
+  padding: 40px;
+  border-radius: 10px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    padding-right:0;
+  }
+`
+
+export const ViewButton = styled.button`
+  ${PrimaryButton}
+  width:fit-content;
+  padding: 15px 60px;
+    border-radius:10px;
+    background: white;
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        padding: 15px 30px;
+  } ;
+`
+
+export const WorkImage = styled.div`
+  width: 100%;
   image-rendering: crisp-edges;
   height: 20rem;
   object-fit: cover;
   object-position: center;
+  @media(max-width: ${({ theme }) => theme.breakpoints.tablet}){
+    height: 25rem;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.smallTablet}){
+    height: 25rem;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
+    height: 20rem;
+  }
 `;
 
 export const WorkInnerContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 2rem;
+  width:100%;
   max-width: 100%;
+  overflow:hidden;
   height: 100%;
-  margin-bottom: 2rem;
+  padding-top:2rem;
+  padding-bottom:1rem;
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr;
     place-items: center;
     /* ${flexColumn} */
   } ;

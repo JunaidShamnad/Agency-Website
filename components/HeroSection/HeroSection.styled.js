@@ -8,12 +8,22 @@ import {
   flexColumnCenter,
   PrimaryButton,
 } from "../cssHelper";
+import { theme } from "../Theme";
 
 export const Section = styled.section`
     width: 100vw;
     height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-column: 1fr 1fr;
     max-width:100%;
   background-color: #5928e5;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  } ;
 `;
 
 export const Container = styled(motion.div)`
@@ -22,23 +32,22 @@ export const Container = styled(motion.div)`
   max-width:1600px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
   padding-top: 5rem;
   padding-bottom: 4rem;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    flex-direction: column;
+    width: 90%;
     padding-top: 1rem;
     padding-bottom: 1rem;
   } ;
 `;
 export const Hero = styled(motion.div)`
-  ${flexColumnCenter};
-  margin-top: 4.9rem;
+  margin-top: 1.9rem;
   width: 100%;
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    /* padding-bottom:0;
-    margin-bottom:0; */
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding-bottom:0;
+    margin-bottom:70px;
   } ;
 `;
 export const Heading = styled(motion.h1)`
@@ -48,37 +57,37 @@ export const Heading = styled(motion.h1)`
   word-wrap: break-word;
   word-spacing:1px;
   color:#FFF2F2;
-  text-align: center;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Grifter-bold", sans-serif;
   font-weight:800;
-  font-size:150px;
-  line-height:190px;
+  font-size:50px;
+  line-height:80px;
   letter-spacing: 1.2px;
-  padding: 10px;
+  padding-right: 140px;
   margin: 1rem 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
+    padding-right: 0px;
   }   
 `;
-export const HeroDescription = styled.p`
+export const HeroDescription = styled(motion.p)`
   ${Paragraph};
   color:#FFF2F2;
   opacity:0.9;
-  font-family: 'Syne', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight:500;
   margin-top: 25px;
-  font-size: 28px;
+  font-size: 20px;
   line-height:45px;
   padding: 5px;
   letter-spacing: 0.5px;
   opacity: 0.8;
-  width: 60%;
-  text-align: center;
+  width: 80%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin-top: 8px;
     width: 85%;
+    line-height:20px;
   } ;
 `;
 export const HeroButtons = styled.div`
@@ -87,8 +96,7 @@ export const HeroButtons = styled.div`
   justify-content: space-between;
   margin-top: 40px;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    ${flexColumnCenter}
-    margin-top:8px;
+    margin-top:28px;
   }
 `;
 
@@ -96,9 +104,55 @@ export const HeaderButton = styled.button`
   ${PrimaryButton}
   background-color:#FEC9C1;
   color:#0D0A19;;
-  padding:16px 42px;
+  padding:16px 62px;
+  border-radius: 10px;
   font-size: 22px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 `;
+
+export const StarDiv = styled.div`
+  border-top:0.1px solid #ada9a9;
+  width:60%;
+  margin-top:110px;
+  padding-top:40px;
+  padding-bottom:15px;
+  display:flex;
+  gap:10px; 
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin-top:30px;
+  }
+`
+
+export const StarImg = styled.img`
+  width:30px;
+`
+
+export const ShowText = styled.p`
+  color: #ada9a9;
+  font-size:18px;
+`
+
+export const PeopleFaces = styled.img`
+  margin-top:15px;
+  width: 30%;
+  height:60px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:40%;
+  }
+`
+
+export const Clients = styled.div`
+  width:100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 30px 0px;
+    background: ${theme.colors.primaryBackground}
+`
+
+export const ClientLogo = styled.img`
+  height: 50px;
+`
+
 export const ImageContainer = styled.div`
   display: flex;
   align-items: center;

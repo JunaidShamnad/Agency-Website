@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
+import { colors, theme } from '../Theme'
 
 import {
   HeadingH2,
   HeadingH3,
+  PrimaryButton,
   flexColumn,
 
   flexColumnCenter,
@@ -14,33 +17,102 @@ export const Section = styled.section`
     width: 100vw;
     height: 100%;
     max-width:100%;
+    background: #fff2f2;
+    padding: 50px 0;
 `;
 
 export const Container = styled.div`
   height: 100%;
   width: 90%;
   max-width:1600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
+  padding: 2rem 0rem;
+  background: #fff2f2;
+  border-radius: 40px;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
   } ;
 `;
 
+export const ServiceHeader = styled.div`
+  width: ${({ theme }) => theme.width[10]};
+  margin-top: 3rem;
+  font-family: "Grifter-bold", sans-serif;
+  margin-bottom: 0.1rem;
+  color: #1d1a26;
+  margin-bottom: 2rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin: 5px 0;
+    font-size:38px;
+    line-height:3rem;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    margin: 5px 0;
+    font-size:35px;
+    line-height:3rem;
+    font-size: 28px;
+  }
+`;
+
+export const WhatWeDo = styled.h6`
+  color: gray;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 22px;
+`;
+
+export const ServiceHeadingDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+  }
+`
+export const ServiceHeading = styled.h3`
+width: ${({ theme }) => theme.width[7]};
+font-size: 48px;
+font-family: "Grifter-bold", sans-serif;
+color: #1d1a26;
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  margin: 5px 0;
+  font-size:38px;
+  line-height:3rem;
+}
+@media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+  margin: 5px 0;
+  font-size:35px;
+  line-height:3rem;
+  font-size: 28px;
+}
+`
+export const ContactButton = styled.button`
+  ${PrimaryButton}
+  width: 220px;
+  padding: 18px 0;
+  margin-bottom: 5px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+`
+
 export const ServiceContent = styled.div`
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 2rem;
   width: 100%;
   height:100%;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     grid-template-columns: 1fr;
     grid-template-rows:  1fr;
@@ -78,6 +150,21 @@ export const ServiceContent = styled.div`
 export const ServiceDetails = styled.div`
   width: 100%;
   height: auto;
+  color: gray;
+  line-height: 25px;
+  text-align: center;
+  padding: 10px 0px;
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
+    width: 60%;
+
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.mobile}) {
+    width: 80%;
+
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
+    width: 80%;
+  }
 `;
 
 export const ServicesText = styled.div`
@@ -96,26 +183,6 @@ export const ServicesText = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
    margin-bottom:1rem;
 
-  }
-`;
-export const ServiceHeading = styled.h3`
-  font-size:64px;
-  width: ${({ theme }) => theme.width[10]};
-  line-height: 140%;
-  text-align: left;
-  margin-bottom: 0.1rem;
-  color: #1d1a26;
-  margin-bottom: 2rem;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin: 5px 0;
-    font-size:38px;
-    line-height:3rem;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-    margin: 5px 0;
-    font-size:35px;
-    line-height:3rem;
   }
 `;
 
@@ -150,34 +217,52 @@ export const HorizontalLine = styled.span`
 // `;
 
 export const ServiceList = styled.div`
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    
+    grid-template-columns: 1fr;
+   
+  }
 `;
-export const Service = styled.div`
+export const Service = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:space-evenly;
+  align-items: center;
   width: 100%;
   height: auto;
-  border-top: 1px solid #0D0A19;
+  border: 1px solid black;
+  padding: 2rem;
+  color: black;
+  border-radius: 25px;
   padding-top: 3rem;
   padding-bottom: 2rem;
 `;
 export const ServiceIndex = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes?.xxs};
 
-  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxxs};
   }
 `;
+
+export const ServiceImage = styled(motion.img)`
+  width:4rem;
+  height: auto;
+  object-fit: cover;
+`
 export const ServiceTitle = styled.h2`
 
-  display: flex;
   font-size: 30px;
-  width: 90%;
+  word-break: break-word;
   line-height: 120%;
   font-weight: 600;
-  flex-direction: column;
-  margin-bottom: 2rem;
+  width: 100%;
+  padding: 20px 0px 5px 0px;
+  text-align: center;
+  font-family: "Plus Jakarta sans",sans-serif;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     
@@ -197,7 +282,7 @@ export const ServiceLink = styled.p`
   font-size: ${({ theme }) => theme.fontSizes?.xxxs};
   font-weight: 500;
   margin-top: 20px;
-  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxxxs};
   }
 `;
@@ -207,6 +292,8 @@ export const ServiceTextMainContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
 `;
 export const ServiceLinkContainer = styled.div`
   display: flex;
@@ -222,14 +309,14 @@ export const ArrowIcon = styled(BsFillArrowUpRightCircleFill)`
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.s};
   }
-  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallTablet}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.xs};
   }
 
-  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
   }
-  @media screen and (max-width: ${({ theme }) =>theme.breakpoints?.smallestMobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
   }
 `;

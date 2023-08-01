@@ -36,7 +36,7 @@ export const gridCenter = css`
 
 export const MainHeading = css`
   font-size: ${({ theme }) => theme.fontSizes?.xxxl};
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: ${({ theme }) => theme.fontWeights?.black};
   line-height: ${({ theme }) => theme.fontSizes?.xxxxl};
   letter-spacing: 1px;

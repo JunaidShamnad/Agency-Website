@@ -232,7 +232,7 @@ export const ValuesRightCardTitle = styled.p`
  font-size:25px;
  letter-spacing:0.8;
  font-weight:600;
- /* font-family:'Archivo', sans-serif; */
+ /* font-family:'Poppins', sans-serif; */
  line-height:120%;
  margin-bottom:16px;
  color:#fff2f2;

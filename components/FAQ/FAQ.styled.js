@@ -1,12 +1,18 @@
 import styled from "styled-components";
 import { HeadingH3,flexColumn,flexRow, } from "../cssHelper";
 import {FiPlusCircle,FiMinusCircle} from "react-icons/fi";
+import { theme } from "../Theme";
 
 
 export const Section = styled.section`
    width: 100vw;
     height: 100%;
     max-width:100%;
+    display:grid;
+    place-items: center;
+    background:${theme.colors.primaryBackground};
+    color:white;
+    border-top: 1px solid gray;
 `;
 
 export const Container = styled.div`
@@ -17,9 +23,7 @@ export const Container = styled.div`
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  margin:5rem auto;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 4rem 0;
   user-select: none;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     padding-top: 0.9rem;
@@ -82,7 +86,6 @@ cursor: pointer;
 `;
 export const FaqAnswer = styled.p`
 font-size:20px;
-color:#656665;
 margin-top:15px;
 line-height:140%;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -104,10 +107,10 @@ color:#fff;
 `;
 
 export const FaqHeader = styled.h2`
-color: #0D0A19;;
 line-height:140%;
 margin-top: 0 !important;
 font-size: 60px;
+font-family: "Grifter-bold", sans-serif;
 margin-bottom: 2.5rem;
 text-align: center;
 
@@ -130,7 +133,6 @@ max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
 opacity:0.9;
-color:#1D1A26;
 `
 export const MinusIcon = styled(FiMinusCircle)`
 font-size:24px;
@@ -140,5 +142,4 @@ max-width:25.01px;
 max-height:25.01px;
 margin-left:5px;
 opacity:0.9;
-color:#1D1A26;
 `
