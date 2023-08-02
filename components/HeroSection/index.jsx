@@ -131,7 +131,7 @@ const HeroSection = () => {
             <StarImg src="/images/star svg.svg"></StarImg>
           </StarDiv>
           
-          <ShowText>We're not just promising, we're proving.</ShowText>
+          <ShowText>We&aposre not just promising, we&aposre proving.</ShowText>
           
           <PeopleFaces src="/images/peopleFacesCopy.png"></PeopleFaces>
 

@@ -68,7 +68,7 @@ function Testimonial() {
                 <Testimonials>
                     <Slider {...settings} ref={sliderRef}>
                         {data.map((obj) => (
-                            <div>
+                            <div key={obj.key}>
                             <TestimonialDiv>
                                 <Review>
                                     &quot;&nbsp;{obj.Descriptions}&nbsp;&quot;

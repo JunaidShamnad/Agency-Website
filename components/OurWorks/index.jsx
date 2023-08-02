@@ -81,7 +81,7 @@ const OurWorks = () => {
         <WorkInnerContainer>
           <StyledSlider {...settings} ref={sliderRef}>
             {works.map(work => (
-              <div style={{paddingRight:"10px"}}>
+              <div key={work.id} style={{paddingRight:"10px"}}>
               <ImageDiv 
                 style={{background:`url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <Link href={work.url} target="_blank">

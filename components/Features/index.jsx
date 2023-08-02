@@ -12,7 +12,7 @@ function Features() {
                 <LeftDescription>Here are 3 reasons you should partner with us!</LeftDescription>
                 </LeftHeader>
                     <LeftImg>
-                        <BeginButton>Let's Begin</BeginButton>
+                        <BeginButton>Let&aposs Begin</BeginButton>
                     </LeftImg>
 
             </Left>

@@ -6,11 +6,7 @@ function TrustedClients() {
   return (
     <Section>
         <Container>
-            {clients.map(obj =>(
-                <ClientItem src={obj}>
-
-                </ClientItem>
-            ))}
+            
         </Container>
     </Section>
   )
