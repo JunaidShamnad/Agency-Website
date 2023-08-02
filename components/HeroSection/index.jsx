@@ -46,7 +46,7 @@ const Character = styled(motion.span)`
 const HeroSection = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 5, 
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
