@@ -10,31 +10,30 @@ export const Section = styled.div`
 `
 
 export const Container = styled.div`
-    width: 80%;
+    width: 90%;
+    max-width: 1600px;
     display: flex;
     gap: 40px;
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    flex-direction: column;
-    width:80%;
-    padding:20px;
-  } ;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+        flex-direction: column;
+    };
     @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
-    gap:20px;
-  } ;
+        gap:30px;
+    };
 `
 
 export const Left = styled.div`
     width:45%;
     display:flex;
     flex-direction: column;
-    padding-bottom: 20px;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-      width: 100%;
-      height:850px;
-  } ;
-  @media (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-    width: 100%;
-    height:650px;
+        width:50%;
+    } ;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+        width: 100%;
+      height:750px;
+    };
+    
 } ;
   
 `
@@ -44,6 +43,9 @@ export const Right = styled.div`
     display: grid;
     grid-templates-row: 1fr 1fr 1fr;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width:50%;
+    } ;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
         width:100%;
   } ;
 `
@@ -84,13 +86,16 @@ export const LeftImg = styled.div`
     background-position: center;
     display:flex;
     flex-direction: column-reverse;
-    padding:10px;
+    padding:20px;
+     @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+        width:100%;
+        padding:30px;
+    };
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width:100%;
-  } ;
-  @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
-    width:95%;
-  } ;
+        padding:20px;
+    };
+   
 `
 
 export const BeginButton = styled.button`
@@ -99,7 +104,7 @@ export const BeginButton = styled.button`
     background: white;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         padding: 15px 0px;
-  } ;
+    };
 `
 
 export const RightSections = styled.div`
@@ -112,8 +117,12 @@ export const RightSections = styled.div`
     &:first-child {
         border-top:   .5px solid #c6c4c4;
     }
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+        padding: 30px 0px;
+    };
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         flex-direction: column;
+        padding: 50px 0px;
   } ;
 `
 
@@ -126,9 +135,24 @@ export const Numbers = styled.div`
         font-size: 3rem;
     }
     text-align: center;
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        & h2 {
+            font-size: 2rem;
+        }
+    };
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+        padding: 40px 20px;
+        & h2 {
+            font-size: 1.6rem;
+        }
+    };
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width:80%;
-  } ;
+        width:100%;
+        padding: 50px 30px;
+        & h2 {
+            font-size: 3rem;
+        }
+    };
 `
 export const RightParagraph = styled.p`
     padding-left: 0.6rem;

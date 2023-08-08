@@ -19,6 +19,9 @@ export const Section = styled.section`
     max-width:100%;
     background: #fff2f2;
     padding: 50px 0;
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      padding: 0px 0;
+    } ;
 `;
 
 export const Container = styled.div`
@@ -48,12 +51,12 @@ export const ServiceHeader = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 5px 0;
     font-size:38px;
-    line-height:3rem;
+    
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
     margin: 5px 0;
     font-size:35px;
-    line-height:3rem;
+    
     font-size: 28px;
   }
 `;
@@ -63,6 +66,12 @@ export const WhatWeDo = styled.h6`
   text-align: left;
   text-transform: uppercase;
   font-size: 22px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size:16px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    font-size:12px;
+  }
 `;
 
 export const ServiceHeadingDiv = styled.div`
@@ -71,30 +80,28 @@ export const ServiceHeadingDiv = styled.div`
   align-items: center;
   margin-top: 1.5rem;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    
+    margin-top: 0rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: normal;
   }
 `
 export const ServiceHeading = styled.h3`
 width: ${({ theme }) => theme.width[7]};
-font-size: 48px;
+font-size: 3rem;
 font-family: "Grifter-bold", sans-serif;
 color: #1d1a26;
 
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
   margin: 5px 0;
-  font-size:38px;
+  font-size: 2rem;
   line-height:3rem;
 }
 @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+  width: ${({ theme }) => theme.width[5]};
   margin: 5px 0;
-  font-size:35px;
-  line-height:3rem;
-  font-size: 28px;
+  font-size: 1.2rem;
+  line-height:2rem;
 }
 `
 export const ContactButton = styled.button`
@@ -106,6 +113,13 @@ export const ContactButton = styled.button`
   color: white;
   border-radius: 10px;
   outline: none;
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    flex:1;
+    height:30px;
+    display:grid;
+    place-items: center;
+    padding:0 5px;
+  }
 `
 
 export const ServiceContent = styled.div`

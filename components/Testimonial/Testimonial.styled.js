@@ -12,9 +12,11 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     color:white;
-
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
       padding: 60px 25px;
+    }
+    @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
+      padding: 40px 25px;
     }
  `;
 

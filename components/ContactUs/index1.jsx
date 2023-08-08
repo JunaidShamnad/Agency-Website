@@ -30,6 +30,7 @@ import {
   BottomSection,
   Dropdowns,
   PhoneInput,
+  HeroForm,
 } from "./ContactUs.styled";
 
 import { useState, useEffect } from "react";
@@ -150,7 +151,7 @@ const ContactUs1 = () => {
   ];
   const defaultOption = "Select Service";
   return (
-    <RightSection
+    <HeroForm
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay:2}}
@@ -218,7 +219,7 @@ const ContactUs1 = () => {
         </TermsCheckbox>
         <SubmitForm type="Submit">Send Enquiry</SubmitForm>
       </Form>
-    </RightSection>
+    </HeroForm>
   );
 };
 

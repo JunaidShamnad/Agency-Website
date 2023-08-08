@@ -12,7 +12,10 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   padding: 40px 0 80px 0;
-  background: ${theme.colors.primaryBackground}
+  background: ${theme.colors.primaryBackground};
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 40px 0;
+  } ;
 `;
 
 export const Container = styled.div`
@@ -105,17 +108,23 @@ export const WorkHeading = styled.h1`
   font-family: "Grifter-bold", sans-serif;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 38px;
-    width: 50%;
+    width: 100%;
   }
-  @media (max-width: ${({ theme }) => theme.breakpoints.smalestMobile}) {
-    font-size: 35px;
-    width: 50%;
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    font-size: 28px;
+    width: 100%;
   }
 `;
 
 export const SubHeading = styled.p`
   font-size: 25px;
   margin-top:15px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 18px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    font-size: 16px;
+  }
 `
 export const WorkLinkImage = styled.img``;
 

@@ -10,9 +10,11 @@ function Navbar() {
   const NavbarHeader = styled.div`
     width: 100%;
     background: ${theme.colors.primaryBackground};
-    padding: 15px 30px;
+    padding: 15px 0px;
+    display: grid;
+    place-items:center;
     @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
-      padding: 15px 20px;
+      padding: 15px 0px;
     }
   `
   const [isOpen, setIsOpen] = useState(false);

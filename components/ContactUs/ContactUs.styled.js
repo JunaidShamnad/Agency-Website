@@ -36,7 +36,27 @@ export const LeftSection = styled.div`
     max-width:90%;
   }
 `;
-export const RightSection = styled(motion.div)`
+export const RightSection = styled.div`
+  max-width: 100%;
+ padding:3rem;
+ border-radius: 20px;
+  height: 100%;
+  background: white;
+  /* max-height:90%; */
+  @media(max-width: ${({ theme }) => theme.breakpoints.smallTablet}){
+    width: 80%;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 100%;
+    max-width:100%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    padding:1rem;
+  }
+`;
+
+export const HeroForm = styled(motion.div)`
   max-width: 100%;
  padding:3rem;
  border-radius: 20px;
@@ -48,9 +68,11 @@ export const RightSection = styled(motion.div)`
     max-width:100%;
   }
   @media(max-width: ${({ theme }) => theme.breakpoints.smallTablet}){
-    width: 80%;
+    width: 100%;
+    padding:2rem
   }
-`;
+`
+
 export const TitleContact = styled.h1`
   font-size: 64px;
   ${flexColumn}

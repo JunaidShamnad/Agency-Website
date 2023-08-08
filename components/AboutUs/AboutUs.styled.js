@@ -61,7 +61,7 @@ export const AboutTitle = styled.h1`
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
     margin: 5px 0;
-    font-size:48px;
+    font-size:40px;
   }
 `;
 
@@ -93,9 +93,9 @@ export const AboutDescription = styled.p`
   line-height: 155%;
   font-family: "Plus Jakarta Sans", sans-serif;
   text-align: left;
-  color:#0D0A19;;
+  color:#0D0A19;
   margin-bottom:10px;
-  opacity:0.9;
+  opacity:0.6;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes?.xxs};
     margin-bottom:0px; 

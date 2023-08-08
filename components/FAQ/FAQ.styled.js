@@ -10,6 +10,7 @@ export const Section = styled.section`
     max-width:100%;
     display:grid;
     place-items: center;
+    padding: 25px 0;
     background:${theme.colors.primaryBackground};
     color:white;
     border-top: 1px solid gray;
@@ -119,6 +120,7 @@ text-align: center;
 }
 @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
   font-size: 25px;
+  margin-bottom: 0rem;
 }
 `;
 

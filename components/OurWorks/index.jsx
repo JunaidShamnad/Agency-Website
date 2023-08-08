@@ -28,7 +28,6 @@ import Link from "next/link";
 
 const OurWorks = () => {
   const settings = {
-    dots: true,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -41,7 +40,6 @@ const OurWorks = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
         }
       },
       {

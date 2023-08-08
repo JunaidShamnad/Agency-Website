@@ -23,6 +23,8 @@ import {
   PeopleFaces,
   Clients,
   ClientLogo,
+  ClientSection,
+  ClientsContainer,
 } from "./HeroSection.styled";
 import styled from "styled-components";
 import Link from "next/link";
@@ -30,6 +32,7 @@ import ContactUs1 from "../ContactUs/index1";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { theme } from "../Theme";
 
 const Character = styled(motion.span)`
   display: inline-block;
@@ -46,13 +49,34 @@ const Character = styled(motion.span)`
 const HeroSection = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 5, 
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
     arrows: false,
+    responsive: [
+      {
+        breakpoint: theme.breakpoints.smallestMobile, // Change this to your desired breakpoint
+        settings: {
+          slidesToShow: 2, // Adjust the number of slides to show at this breakpoint
+        },
+      },
+      {
+        breakpoint: theme.breakpoints.tablet, // Change this to your desired breakpoint
+        settings: {
+          slidesToShow: 3, // Adjust the number of slides to show at this breakpoint
+        },
+      },
+      {
+        breakpoint: theme.breakpoints.laptop, // Change this to your desired breakpoint
+        settings: {
+          slidesToShow: 4, // Adjust the number of slides to show at this breakpoint
+        },
+      },
+      // Add more responsive breakpoints as needed
+    ],
   };
   // const control = useAnimation();
   // const [ref, inView] = useInView();
@@ -102,57 +126,59 @@ const HeroSection = () => {
 
   return (
     <>
-    <Section id="hero-section">
-      <Container>
-        <Hero>
-          <Heading
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >Innovative Web Solutions for Modern Brands</Heading>
+      <Section id="hero-section">
+        <Container>
+          <Hero>
+            <Heading
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >Innovative Web Solutions for Modern Brands</Heading>
 
-          <HeroDescription
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5,delay:1 }}
-          >
-            Craft your website with our proffessional web development services 
-          </HeroDescription>
+            <HeroDescription
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1 }}
+            >
+              Craft your website with our proffessional web development services
+            </HeroDescription>
 
-          <HeroButtons>
-            <Link href="#contact-form" passHref><a><HeaderButton>Lets Talk</HeaderButton></a></Link>
-          </HeroButtons>
+            <HeroButtons>
+              <Link href="#contact-form" passHref><a><HeaderButton>Lets Talk</HeaderButton></a></Link>
+            </HeroButtons>
 
-          <StarDiv>
-            <StarImg src="/images/star svg.svg"></StarImg>
-            <StarImg src="/images/star svg.svg"></StarImg>
-            <StarImg src="/images/star svg.svg"></StarImg>
-            <StarImg src="/images/star svg.svg"></StarImg>
-            <StarImg src="/images/star svg.svg"></StarImg>
-          </StarDiv>
-          
-          <ShowText>We&aposre not just promising, we&aposre proving.</ShowText>
-          
-          <PeopleFaces src="/images/peopleFacesCopy.png"></PeopleFaces>
+            <StarDiv>
+              <StarImg src="/images/star svg.svg"></StarImg>
+              <StarImg src="/images/star svg.svg"></StarImg>
+              <StarImg src="/images/star svg.svg"></StarImg>
+              <StarImg src="/images/star svg.svg"></StarImg>
+              <StarImg src="/images/star svg.svg"></StarImg>
+            </StarDiv>
 
-        </Hero>
-        <ContactUs1 />
-      </Container>
-      
+            <ShowText>We&apos;re not just promising, we&apo;sre proving.</ShowText>
 
-    </Section>
-    <Clients>
-        <Slider {...settings}>
-          <ClientLogo src="/images/CLIENTS/Client1.svg" />
-          <ClientLogo src="/images/CLIENTS/Client2.svg" />
-          <ClientLogo src="/images/CLIENTS/Client03.svg" />
-          <ClientLogo src="/images/CLIENTS/Client04.svg" />
-          <ClientLogo src="/images/CLIENTS/Client05.svg" />
-          <ClientLogo src="/images/CLIENTS/Client06.svg" />
-          <ClientLogo src="/images/CLIENTS/Client07.svg" />
-          <ClientLogo src="/images/CLIENTS/Client08.svg" />
-        </Slider>
-      </Clients>
+            <PeopleFaces src="/images/peopleFacesCopy.png"></PeopleFaces>
+
+          </Hero>
+          <ContactUs1 />
+        </Container>
+
+
+      </Section>
+      <ClientSection>
+        <ClientsContainer>
+          <Slider {...settings}>
+            <ClientLogo src="/images/CLIENTS/Client1.svg" />
+            <ClientLogo src="/images/CLIENTS/Client2.svg" />
+            <ClientLogo src="/images/CLIENTS/Client03.svg" />
+            <ClientLogo src="/images/CLIENTS/Client04.svg" />
+            <ClientLogo src="/images/CLIENTS/Client05.svg" />
+            <ClientLogo src="/images/CLIENTS/Client06.svg" />
+            <ClientLogo src="/images/CLIENTS/Client07.svg" />
+            <ClientLogo src="/images/CLIENTS/Client08.svg" />
+          </Slider>
+        </ClientsContainer>
+      </ClientSection>
     </>
   );
 };

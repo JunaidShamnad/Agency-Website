@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import {
   HeadingH3,
@@ -59,13 +59,19 @@ export const Heading = styled(motion.h1)`
   color:#FFF2F2;
   font-family: "Grifter-bold", sans-serif;
   font-weight:800;
-  font-size:50px;
+  font-size:3rem;
   line-height:80px;
   letter-spacing: 1.2px;
   padding-right: 140px;
   margin: 1rem 0;
-
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    font-size:2.5rem;
+  } 
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size:3rem;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size:2.5rem;
     margin: 5px 0;
     padding-right: 0px;
   }   
@@ -108,6 +114,9 @@ export const HeaderButton = styled.button`
   border-radius: 10px;
   font-size: 22px;
   font-family: "Plus Jakarta Sans", sans-serif;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding:16px 62px;
+  }
 `;
 
 export const StarDiv = styled.div`
@@ -124,7 +133,10 @@ export const StarDiv = styled.div`
 `
 
 export const StarImg = styled.img`
-  width:30px;
+  width:1.5rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width:1.2rem;
+  }
 `
 
 export const ShowText = styled.p`
@@ -134,19 +146,41 @@ export const ShowText = styled.p`
 
 export const PeopleFaces = styled.img`
   margin-top:15px;
-  width: 30%;
+  width: 18%;
   height:60px;
+  object-fit: contain;
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    width:27%;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    width:18%;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width:40%;
+    width:27%;
   }
 `
 
-export const Clients = styled.div`
+export const ClientSection = styled.section`
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-column: 1fr;
+    max-width:100%;
+  background-color: #5928e5;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    flex-direction: column;
+    align-items: center;
+  } ;
+`;
+
+export const ClientsContainer = styled.div`
   width:100%;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 30px 0px;
-    background: ${theme.colors.primaryBackground}
+  max-width: 1600px;
+  overflow: hidden;
+  padding: 30px 0px;
+  background: ${theme.colors.primaryBackground}
 `
 
 export const ClientLogo = styled.img`

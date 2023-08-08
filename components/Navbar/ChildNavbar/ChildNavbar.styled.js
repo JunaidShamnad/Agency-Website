@@ -5,8 +5,10 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export const Nav = styled.nav`
 background:${({scrollNav}) =>(scrollNav ? '#fff' :'#fff')};
+width: 90%;
+max-width: 1600px;
 border-radius: 20px;
-  height: 80px;
+  height: 66px;
   /* margin-top:-80px; */
   display:flex;
   justify-content: center;
@@ -27,8 +29,8 @@ export const NavContainer = styled(motion.div)`
   justify-content: space-between;
   position: relative;
   z-index: 1;
-  width: 90%;
-  /*padding: 0 24px;*/
+  width: 100%;
+  padding: 0 24px;
   max-width: 1600px;
 `;
 
