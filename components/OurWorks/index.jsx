@@ -86,7 +86,7 @@ const OurWorks = () => {
                   <ViewButton>{work.name}</ViewButton> 
                 </Link>
               </ImageDiv>
-            </div>
+            </div> 
             ))}
             
           </StyledSlider>
