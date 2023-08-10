@@ -23,7 +23,7 @@ export const Container = styled.div`
   margin:5rem auto;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
       flex-direction: column;
-      margin: 1rem auto;
+      margin: 3rem auto;
     }
 `;
 export const LeftSection = styled.div`
@@ -43,8 +43,8 @@ export const RightSection = styled.div`
   height: 100%;
   background: white;
   /* max-height:90%; */
-  @media(max-width: ${({ theme }) => theme.breakpoints.smallTablet}){
-    width: 80%;
+  @media(max-width: ${({ theme }) => theme.breakpoints.tablet}){
+    width: 70%;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
@@ -105,6 +105,10 @@ export const Contact = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     justify-content: space-evenly;
     width: 100%;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    justify-content: space-evenly;
+    width: 100%;
 
   }
 `;
@@ -118,6 +122,9 @@ export const Detail = styled.div`
   margin-left: 50px;
   user-select: text;
   width: 75%;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    margin-left: 0;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin-left: 0;
     width: 50%;
@@ -127,6 +134,9 @@ export const DetailTitle = styled.h1`
   font-size: 19px;
   font-weight: normal;
   margin-bottom: 10px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: 19px;
+  }
 `;
 export const DetailIcons = styled.div`
   width: 50px;
@@ -161,6 +171,9 @@ export const DetailDescription = styled.p`
   font-size: 25px;
   user-select:text;
   font-weight: 600;
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: 18px;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 15px;
     width: 100%;

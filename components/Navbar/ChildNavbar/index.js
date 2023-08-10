@@ -13,6 +13,7 @@ import {
   NavLinkA,
   NavMenu,
 } from "./ChildNavbar.styled";
+import Link from "next/link";
 
 
 const ChildNavbar = ({ toggle}) => {
@@ -38,7 +39,7 @@ const ChildNavbar = ({ toggle}) => {
     <Nav  scrollNav={scrollNav} >
       <NavContainer>
         <NavLink href="/">
-         <NavLinkA>{LogoValue === "text" ?<LogoText>Intelpik.</LogoText> :<Logo src={LogoImage.src} alt="logo" />}</NavLinkA>
+         <NavLinkA>{LogoValue === "text" ? <Link href="https://intelpik.com/"><LogoText>Intelpik.</LogoText></Link> :<Logo src={LogoImage.src} alt="logo" />}</NavLinkA>
         </NavLink>
         <MobileMenu onClick={toggle}>
           <MenuIcon />

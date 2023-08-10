@@ -194,12 +194,12 @@ const ContactUs = () => {
                 <Detail>
                   <DetailTitle>Social</DetailTitle>
                   <div style={{display:'flex',gap:"20px"}}>
-                  <Link href="tel:+918590302905" passHref>
+                  <Link href="https://www.linkedin.com/company/intelpik/" passHref>
                     <a>
                       <DetailDescription>LinkedIn</DetailDescription>
                     </a>
                   </Link>
-                  <Link href="tel:+918590302905" passHref>
+                  <Link href="https://www.instagram.com/intelpik.official/" passHref>
                     <a>
                       <DetailDescription>Instagram</DetailDescription>
                     </a>

@@ -1,13 +1,16 @@
 
+import Link from 'next/link';
 import{Container,FooterTitles, Section} from './Footer.styled'
 
 const Footer = () => {
+  const d = new Date();
+  let year = d.getFullYear();
     return (
       <Section>
       <Container>
-        <FooterTitles>&copy; 2022 All Rights Reserved</FooterTitles>
-        <FooterTitles>Designed And Developed By <strong>Intelpik</strong></FooterTitles>
-        <FooterTitles>intelpik@gmail.com</FooterTitles>
+        <FooterTitles>&copy; {year} All Rights Reserved</FooterTitles>
+        <FooterTitles>Designed And Developed By <strong><Link href="https://intelpik.com/">Intelpik</Link></strong></FooterTitles>
+        <Link href="mailto:intelpik@gmail.com"><FooterTitles>intelpik@gmail.com</FooterTitles></Link>
       </Container>
       </Section>
     )

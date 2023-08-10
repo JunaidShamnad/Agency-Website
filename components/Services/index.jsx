@@ -104,7 +104,7 @@ const Services = () => {
                 src="/images/digital marketing.png"></ServiceImage>
               
                 <ServiceTitle>
-                  Brand Design
+                Digital Marketing
                 </ServiceTitle>
               
               <ServiceDetails>

@@ -176,15 +176,25 @@ export const ClientSection = styled.section`
 `;
 
 export const ClientsContainer = styled.div`
-  width:100%;
+  width:90%;
   max-width: 1600px;
   overflow: hidden;
   padding: 30px 0px;
   background: ${theme.colors.primaryBackground}
 `
 
+export const ClientLogoDiv = styled.div`
+  display: grid;
+  place-items: center;
+  height: 70px;
+  padding:10px 10px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    height: 60px;
+  } ;
+`
+
 export const ClientLogo = styled.img`
-  height: 50px;
+
 `
 
 export const ImageContainer = styled.div`

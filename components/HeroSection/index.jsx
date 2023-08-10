@@ -25,6 +25,7 @@ import {
   ClientLogo,
   ClientSection,
   ClientsContainer,
+  ClientLogoDiv,
 } from "./HeroSection.styled";
 import styled from "styled-components";
 import Link from "next/link";
@@ -168,14 +169,32 @@ const HeroSection = () => {
       <ClientSection>
         <ClientsContainer>
           <Slider {...settings}>
-            <ClientLogo src="/images/CLIENTS/Client1.svg" />
-            <ClientLogo src="/images/CLIENTS/Client2.svg" />
-            <ClientLogo src="/images/CLIENTS/Client03.svg" />
-            <ClientLogo src="/images/CLIENTS/Client04.svg" />
-            <ClientLogo src="/images/CLIENTS/Client05.svg" />
-            <ClientLogo src="/images/CLIENTS/Client06.svg" />
-            <ClientLogo src="/images/CLIENTS/Client07.svg" />
-            <ClientLogo src="/images/CLIENTS/Client08.svg" />
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client1.png" />
+            </ClientLogoDiv>
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client2.png" />
+            </ClientLogoDiv>
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client03.png" />
+            </ClientLogoDiv>
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client04.png" />
+            </ClientLogoDiv>
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client05.png" />
+            </ClientLogoDiv>
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client06.png" />
+            </ClientLogoDiv>
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client07.png" />
+            </ClientLogoDiv>
+            <ClientLogoDiv>
+              <ClientLogo src="/images/CLIENTS/Client08.png" />
+            </ClientLogoDiv>
+
+
           </Slider>
         </ClientsContainer>
       </ClientSection>

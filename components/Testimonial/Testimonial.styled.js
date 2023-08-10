@@ -52,8 +52,11 @@ export const TestimonialDiv = styled.div`
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
       height: auto;
       padding:25px 22px 20px 0px;
-   
     }
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+      height: auto;
+      padding:0px;
+    };
  `;
 
 export const StarDiv = styled.div`
@@ -109,6 +112,7 @@ export const Review = styled.p`
     font-size:20px;
   }
   @media screen and (max-width: 480px) {
+    width:100%;
     font-size:20px;
   }
   @media screen and (max-width: 320px) {

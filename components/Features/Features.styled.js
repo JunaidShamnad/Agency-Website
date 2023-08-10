@@ -27,7 +27,7 @@ export const Left = styled.div`
     display:flex;
     flex-direction: column;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width:50%;
+        width:60%;
     } ;
     @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
         width: 100%;
@@ -43,7 +43,7 @@ export const Right = styled.div`
     display: grid;
     grid-templates-row: 1fr 1fr 1fr;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width:50%;
+        width:40%;
     } ;
     @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
         width:100%;
@@ -122,8 +122,12 @@ export const RightSections = styled.div`
     };
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         flex-direction: column;
-        padding: 50px 0px;
-  } ;
+        padding: 20px 0px;
+    };
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+        flex-direction: column;
+        padding: 40px 0px;
+    };
 `
 
 export const Numbers = styled.div`
@@ -148,10 +152,13 @@ export const Numbers = styled.div`
     };
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width:100%;
-        padding: 50px 30px;
+        padding: 20px 30px;
         & h2 {
             font-size: 3rem;
         }
+    };
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+        padding: 40px 0px;
     };
 `
 export const RightParagraph = styled.p`
