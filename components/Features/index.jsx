@@ -11,11 +11,12 @@ function Features() {
                 <LeftHeading>Still unsure?</LeftHeading>
                 <LeftDescription>Here are 3 reasons you should partner with us!</LeftDescription>
                 </LeftHeader>
-                    <LeftImg>
-                        <BeginButton>Let&apos;s Begin</BeginButton>
-                    </LeftImg>
+                   
 
             </Left>
+            <LeftImg>
+                        <BeginButton>Let&apos;s Begin</BeginButton>
+                    </LeftImg>
             <Right>
                 <RightSections>
                     <Numbers>

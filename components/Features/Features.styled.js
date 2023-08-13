@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../Theme";
-import { PrimaryButton, QuaternaryButton, SecondaryButton, TeritaryButton } from "../cssHelper";
+import { MainHeading, PrimaryButton, QuaternaryButton, SecondaryButton, TeritaryButton } from "../cssHelper";
 
 export const Section = styled.div`
     width: 100%;
@@ -12,42 +12,42 @@ export const Section = styled.div`
 export const Container = styled.div`
     width: 90%;
     max-width: 1600px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Define columns for desktop layout */
+    grid-template-rows: auto 1fr;
+    grid-auto-flow: column;
     gap: 40px;
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-        flex-direction: column;
+    @media (max-width: 990px) {
+        gap: 30px;
     };
     @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
         gap:30px;
     };
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: 2fr 2fr;
+    };
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        grid-template-rows: 160px 3fr 2fr;
+        grid-auto-flow: unset;
+    };
 `
 
 export const Left = styled.div`
-    width:45%;
     display:flex;
     flex-direction: column;
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width:60%;
-    } ;
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-        width: 100%;
-      height:750px;
-    };
     
 } ;
   
 `
 
 export const Right = styled.div`
-    width: 60%;
     display: grid;
     grid-templates-row: 1fr 1fr 1fr;
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width:40%;
-    } ;
+    grid-row: span 2 / span 2;
     @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-        width:100%;
-  } ;
+        grid-row: auto;
+    } ;
 `
 
 export const LeftHeader = styled.div`
@@ -63,18 +63,17 @@ export const LeftCaption = styled.p`
 `
 
 export const LeftHeading = styled.h1`
-    font-size: 3.5rem;
-    font-family: "Grifter-bold", sans-serif;
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        font-size: 3rem;
-  } ;
+    ${MainHeading}
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+        font-size: 2.5rem;
+    };
 `
 
 export const LeftDescription = styled.p`
     width: 70%;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width:90%;
-  } ;
+        width:90%;
+    } ;
 `;
 
 export const LeftImg = styled.div`
@@ -87,23 +86,27 @@ export const LeftImg = styled.div`
     display:flex;
     flex-direction: column-reverse;
     padding:20px;
+    @media (max-width: 950px) {
+        width:100%;
+    };
      @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
         width:100%;
         padding:30px;
     };
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
         width:100%;
         padding:20px;
+        order: 3;
     };
    
 `
 
 export const BeginButton = styled.button`
     ${PrimaryButton}
-    border-radius:10px;
+    width: 100%;
     background: white;
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        padding: 15px 0px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+        padding: 16px 35px;
     };
 `
 
@@ -118,7 +121,7 @@ export const RightSections = styled.div`
         border-top:   .5px solid #c6c4c4;
     }
     @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
-        padding: 30px 0px;
+        padding: 30px 20px;
     };
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         flex-direction: column;
@@ -166,8 +169,15 @@ export const RightParagraph = styled.p`
     line-height: 1.5rem;
     width: 60%;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width:80%;
+        width:100%;
         text-align: center;
+        padding-left: 0rem;
+        line-height: 1.3rem;
+    } ;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+        width:85%;
+        padding-left: 0.6rem;
+        line-height: 1.5rem;
     } ;
 `
 

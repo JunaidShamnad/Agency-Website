@@ -5,9 +5,9 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export const Nav = styled.nav`
 background:${({scrollNav}) =>(scrollNav ? '#fff' :'#fff')};
-width: 90%;
+width: 95%;
 max-width: 1600px;
-border-radius: 20px;
+border-radius: 10px;
   height: 66px;
   /* margin-top:-80px; */
   display:flex;

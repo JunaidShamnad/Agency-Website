@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { flexColumn, divCenter, HeadingH3, HeadingH2, flexRowCenter, flexColumnCenter, PrimaryButton } from "../cssHelper";
+import { flexColumn, divCenter, HeadingH3, HeadingH2, flexRowCenter, flexColumnCenter, PrimaryButton, MainHeading } from "../cssHelper";
 
 export const Section = styled.section`
   width: 100vw;
@@ -40,14 +40,13 @@ export const About = styled.div`
   margin-bottom: 2.5rem;
 `;
 export const AboutTitle = styled.h1`
-  ${HeadingH2};
+  /*${HeadingH2};
   width: ${({ theme }) => theme.width[8]};
   word-wrap: break-word;
   color: #5928e5;
   text-align: left;
   font-family: "Grifter-bold", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 3.5rem;
   letter-spacing: 1px;
   padding-bottom:1px;
   text-transform: uppercase;
@@ -62,7 +61,11 @@ export const AboutTitle = styled.h1`
   @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
     margin: 5px 0;
     font-size:40px;
-  }
+  }*/
+  ${MainHeading}
+  color: #5928e5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 `;
 
 export const AboutContent = styled.div`
@@ -77,42 +80,40 @@ export const AboutContent = styled.div`
   text-align: left;
   padding:0 10px;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
-    grid-template-rows: 1fr 0.8fr;
-    height:72%;
-    gap: 20px;
+    gap: 30px;
+    margin-top:1rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.mobile}) {
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    
+    gap: 20px;  
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
+    gap: 30px;  
   }
 `;
+
 export const AboutDescription = styled.p`
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 30px;
   width: ${({ theme }) => theme.width[10]};
-  line-height: 155%;
   font-family: "Plus Jakarta Sans", sans-serif;
   text-align: left;
   color:#0D0A19;
   margin-bottom:10px;
-  opacity:0.6;
+  opacity:0.4;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxs};
     margin-bottom:0px; 
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxs};
-  margin-bottom:0px;
-    
+    font-size: 16px;
+    margin-bottom:0px; 
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.mobile}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxs};
   margin-bottom:0px;
     
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxxs};
+   
     margin-bottom:0px;
 
   }
@@ -135,19 +136,16 @@ text-decoration:underline;
 
 export const AboutButton = styled.button`
 ${PrimaryButton}
-background-color:#5928e5;
-color:white;
-border-radius:10px;
-font-size: 22px;
-width: 200px;
-@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-height:60px;
-  }
+  background-color:#5928e5;
+  color:white;
 `;
 
 export const AboutImageDiv = styled(motion.div)`
   height: auto;
   padding-right: 30px;
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
+    padding-right: 0px;
+  }
 `;
 
 export const AboutImage = styled.img`

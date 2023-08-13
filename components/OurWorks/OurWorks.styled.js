@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeadingH3, flexRow, flexColumn, PrimaryButton } from "../cssHelper";
+import { HeadingH3, flexRow, flexColumn, PrimaryButton, MainHeading } from "../cssHelper";
 import { theme } from "../Theme";
 import Slider from "react-slick";
 
@@ -103,17 +103,7 @@ export const WorkDescription = styled.p`
   opacity:0.8;
 `;
 export const WorkHeading = styled.h1`
-  font-size: 64px;
-  width: 100%;
-  font-family: "Grifter-bold", sans-serif;
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 38px;
-    width: 100%;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-    font-size: 28px;
-    width: 100%;
-  }
+  ${MainHeading}
 `;
 
 export const SubHeading = styled.p`
@@ -129,7 +119,14 @@ export const SubHeading = styled.p`
 export const WorkLinkImage = styled.img``;
 
 export const StyledSlider = styled(Slider)`
-  
+ 
+`;
+
+export const WorkDiv = styled.div`
+   padding-right: 10px;
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    padding-right:0;
+  }
 `;
 
 export const ImageDiv = styled.div`
@@ -139,10 +136,10 @@ export const ImageDiv = styled.div`
     flex-direction: column-reverse;
   padding: 40px;
   border-radius: 10px;
-
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    padding-right:0;
-  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width:98%;
+  } ;
+  
 `
 
 export const ViewButton = styled.button`

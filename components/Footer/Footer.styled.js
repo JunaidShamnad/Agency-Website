@@ -28,6 +28,7 @@ export const FooterTitles = styled.h1`
  font-size: 20px;
  font-weight: 500;
  margin-bottom:50px;
+ cursor:pointer;
  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}){
     font-size:11px;
     width:90%;

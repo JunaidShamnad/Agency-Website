@@ -6,6 +6,7 @@ import { colors, theme } from '../Theme'
 import {
   HeadingH2,
   HeadingH3,
+  MainHeading,
   PrimaryButton,
   flexColumn,
 
@@ -70,7 +71,7 @@ export const WhatWeDo = styled.h6`
     font-size:16px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-    font-size:12px;
+    font-size:16px;
   }
 `;
 
@@ -87,38 +88,16 @@ export const ServiceHeadingDiv = styled.div`
   }
 `
 export const ServiceHeading = styled.h3`
-width: ${({ theme }) => theme.width[7]};
-font-size: 3rem;
-font-family: "Grifter-bold", sans-serif;
-color: #1d1a26;
-
-@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-  margin: 5px 0;
-  font-size: 2rem;
-  line-height:3rem;
-}
-@media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-  width: ${({ theme }) => theme.width[5]};
-  margin: 5px 0;
-  font-size: 1.2rem;
-  line-height:2rem;
+  ${MainHeading}
+  color: #1d1a26;
 }
 `
 export const ContactButton = styled.button`
   ${PrimaryButton}
-  width: 220px;
-  padding: 18px 0;
-  margin-bottom: 5px;
   background: black;
   color: white;
-  border-radius: 10px;
-  outline: none;
-  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-    flex:1;
-    height:30px;
-    display:grid;
-    place-items: center;
-    padding:0 5px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    display:none;
   }
 `
 

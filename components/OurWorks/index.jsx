@@ -18,6 +18,7 @@ import {
   ArrowDiv,
   ViewButton,
   StyledSlider,
+  WorkDiv,
 
 } from "./OurWorks.styled";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
@@ -79,14 +80,14 @@ const OurWorks = () => {
         <WorkInnerContainer>
           <StyledSlider {...settings} ref={sliderRef}>
             {works.map(work => (
-              <div key={work.id} style={{paddingRight:"10px"}}>
+              <WorkDiv key={work.id} style={{paddingRight:"10px"}}>
               <ImageDiv 
                 style={{background:`url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <Link href={work.url} target="_blank">
                   <ViewButton>{work.name}</ViewButton> 
                 </Link>
               </ImageDiv>
-            </div> 
+            </WorkDiv> 
             ))}
             
           </StyledSlider>

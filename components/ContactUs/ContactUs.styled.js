@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { flexColumn,flexRow } from "../cssHelper";
-import {HiOutlineMail} from 'react-icons/hi';
-import {BsTelephone} from 'react-icons/bs'; 
+import { MainHeading, flexColumn, flexRow } from "../cssHelper";
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsTelephone } from 'react-icons/bs';
 import { AiOutlineLike } from "react-icons/ai";
 
 
@@ -31,20 +31,26 @@ export const LeftSection = styled.div`
   height: 90%;
   /* max-height:90%; */
   ${flexColumn}
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width: 100%;
-    max-width:90%;
+  @media(max-width:1250px){
+    width: 70%;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+     width: 50%;
+  }
+  @media (max-width: 768px) {
+    width:100%;
   }
 `;
 export const RightSection = styled.div`
   max-width: 100%;
- padding:3rem;
+ padding:4rem;
  border-radius: 20px;
   height: 100%;
   background: white;
   /* max-height:90%; */
   @media(max-width: ${({ theme }) => theme.breakpoints.tablet}){
     width: 70%;
+    padding:2rem;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
@@ -52,7 +58,7 @@ export const RightSection = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-    padding:1rem;
+    padding:1.5rem;
   }
 `;
 
@@ -63,27 +69,38 @@ export const HeroForm = styled(motion.div)`
   height: 100%;
   background: white;
   /* max-height:90%; */
+  @media(max-width: ${({ theme }) => theme.breakpoints.tablet}){
+    width: 100%;
+    padding: 5rem 4rem;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
+    padding:3rem;
     max-width:100%;
   }
-  @media(max-width: ${({ theme }) => theme.breakpoints.smallTablet}){
-    width: 100%;
-    padding:2rem
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    padding:2rem;
   }
+  
 `
 
 export const TitleContact = styled.h1`
-  font-size: 64px;
+  ${MainHeading}
+  width: 70%;
+  margin-bottom: 4rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 100%;
+  }
+  /*font-size: 3.5rem;
   ${flexColumn}
   width: 70%;
-  margin-bottom:25px;
+  margin-bottom:5rem;
   font-family: "Grifter-bold", sans-serif;
   position: relative;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
     font-size: 40px;
-  }
+  }*/
 `;
 // export const Span = styled.span`
 // font-size:${({theme})=>theme.fontSizes?.xxxs};
@@ -96,20 +113,20 @@ export const TitleContact = styled.h1`
 // `;
 export const Contact = styled.div`
   ${flexRow}
-  height:220px;
   align-items: center;
   border-top: 1px solid #0D0A19;;
   line-height:150%;
-  width: 85%;
+  width: 95%;
+  gap: 20px;
+  padding: 60px 10px;
   justify-content: space-between;
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    justify-content: space-evenly;
-    width: 100%;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: 30px 10px;
+    ${flexColumn}
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     justify-content: space-evenly;
     width: 100%;
-
   }
 `;
 
@@ -119,23 +136,22 @@ export const ContactDetails = styled.div`
   }
 `;
 export const Detail = styled.div`
-  margin-left: 50px;
   user-select: text;
-  width: 75%;
+  flex:1;
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin-left: 0;
+    text-align: center;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin-left: 0;
-    width: 50%;
   }
 `;
 export const DetailTitle = styled.h1`
   font-size: 19px;
   font-weight: normal;
   margin-bottom: 10px;
-  @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
-    font-size: 19px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      font-size: 20px;
   }
 `;
 export const DetailIcons = styled.div`
@@ -167,16 +183,26 @@ export const SocialIcon = styled(AiOutlineLike)`
   opacity: 0.7;
   color: #0D0A19;;
 `;
+
+export const SocialDiv = styled.div`
+  display:flex;
+  width:100%;
+  gap:20px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    justify-content: center;
+  }
+`;
+
 export const DetailDescription = styled.p`
   font-size: 25px;
   user-select:text;
   font-weight: 600;
   @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
-    font-size: 18px;
+    font-size: 22px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 15px;
     width: 100%;
+    font-size: 23px;
   }
 `;
 export const ContactLinkImage = styled.img`
@@ -200,11 +226,11 @@ font-size:22px;
 font-weight:600;
 letter-spacing:1.5;
 color:#0D0A19;;
-line-height:300%;
+line-height:260%;
 
 @media (max-width: 768px) {
   font-size: 18px;
-  line-height:300%;
+  line-height:270%;
 }
 
 
@@ -218,6 +244,7 @@ border:none;
 border-bottom:2px solid #0D0A19;; 
 color: #0D0A19;;
 outline:none;
+margin-bottom: 40px;
 font-size:22px;
 background-color: transparent;
 &::placeholder {
@@ -244,6 +271,7 @@ color:#0D0A19;;
 outline:none;
 font-size:22px;
 background-color: transparent;
+margin-bottom: 40px;
 @media (max-width: 768px) {
   font-size: 18px;
   line-height: 35px;
@@ -263,6 +291,7 @@ border-bottom:2px solid #0D0A19;;
 color:#0D0A19;;
 outline:none;
 font-size:22px;
+margin-bottom: 40px;
 background-color: transparent;
 @media (max-width: 768px) {
   font-size: 18px;
@@ -285,6 +314,7 @@ color:#0D0A19;;
 outline:none;
 font-size:22px;
 background-color: transparent;
+margin-bottom: 40px;
 @media (max-width: 768px) {
   font-size: 18px;
   line-height: 35px;
@@ -363,6 +393,10 @@ export const UpperSection = styled.div`
 export const BottomSection = styled.div`
 display: flex;
 align-items: center;
+gap:6rem;
+@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    gap:2rem;
+}
 @media(max-width:768px){
   flex-direction: column;
 }

@@ -144,9 +144,9 @@ const HeroSection = () => {
               Craft your website with our proffessional web development services
             </HeroDescription>
 
-            <HeroButtons>
+            
               <Link href="#contact-form" passHref><a><HeaderButton>Lets Talk</HeaderButton></a></Link>
-            </HeroButtons>
+            
 
             <StarDiv>
               <StarImg src="/images/star svg.svg"></StarImg>

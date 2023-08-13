@@ -109,14 +109,8 @@ export const HeroButtons = styled.div`
 export const HeaderButton = styled.button`
   ${PrimaryButton}
   background-color:#FEC9C1;
-  color:#0D0A19;;
-  padding:16px 62px;
-  border-radius: 10px;
-  font-size: 22px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding:16px 62px;
-  }
+  color:#0D0A19;
+  margin-top: 40px;
 `;
 
 export const StarDiv = styled.div`
@@ -146,17 +140,17 @@ export const ShowText = styled.p`
 
 export const PeopleFaces = styled.img`
   margin-top:15px;
-  width: 18%;
+  width: 10rem;
   height:60px;
   object-fit: contain;
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    width:27%;
+    
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    width:18%;
+    
   }
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width:27%;
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    width: 9rem;
   }
 `
 

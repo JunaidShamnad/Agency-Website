@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { flexColumnCenter, flexRowCenter } from '../cssHelper';
+import { MainHeading, flexColumnCenter, flexRowCenter } from '../cssHelper';
 import Slider from 'react-slick';
 import { theme } from '../Theme';
 
@@ -13,10 +13,10 @@ export const Section = styled.section`
     justify-content: center;
     color:white;
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-      padding: 60px 25px;
+      padding: 60px 0px;
     }
     @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
-      padding: 40px 25px;
+      padding: 40px 0px;
     }
  `;
 
@@ -41,7 +41,7 @@ export const Testimonials = styled(Slider)`
 `;
 
 export const TestimonialDiv = styled.div`
-    padding:25px 50px 10px 50px;
+    padding:25px 50px 10px 0px;
     margin-bottom: 40px;
     border-radius: 15px;
     height: 300px;
@@ -50,11 +50,10 @@ export const TestimonialDiv = styled.div`
     align-items: stretch;
     justify-content: space-between;
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-      height: auto;
-      padding:25px 22px 20px 0px;
+      padding:25px 50px 20px 0px;
+      height: 400px;
     }
     @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
-      height: auto;
       padding:0px;
     };
  `;
@@ -68,14 +67,16 @@ export const StarDiv = styled.div`
 `
 
 export const TestimonialHeader = styled.div`
-    width:100%;
-    line-height:140%;
-    margin-top: 0 !important;
-    font-size: 60px;
-    margin-bottom: 2.5rem;
+    ${MainHeading}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2.5rem;
+    /*width:100%;
+    line-height:140%;
+    margin-top: 0 !important;
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
     font-family: "Grifter-bold", sans-serif;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
@@ -83,15 +84,39 @@ export const TestimonialHeader = styled.div`
     }
     @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
     font-size: 25px;
-    }
+    }*/
 `;
 
-export const ArrowDiv = styled.div`
+export const Arrow = styled.div`
   display: flex;
   gap: 50px;
   font-size: xxx-large;
   & > * {
     cursor: pointer;
+  }
+`;
+
+export const ArrowDiv = styled.div`
+display: flex;
+gap: 50px;
+font-size: xxx-large;
+& > * {
+  cursor: pointer;
+}
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+      display:none;
+  }
+`
+
+export const MobileArrowDiv = styled.div`
+  display: none;
+  gap: 50px;
+  font-size: xxx-large;
+  & > * {
+    cursor: pointer;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+      display:flex;
   }
 `
 

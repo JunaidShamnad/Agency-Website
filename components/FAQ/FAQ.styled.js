@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeadingH3,flexColumn,flexRow, } from "../cssHelper";
+import { HeadingH3,MainHeading,flexColumn,flexRow, } from "../cssHelper";
 import {FiPlusCircle,FiMinusCircle} from "react-icons/fi";
 import { theme } from "../Theme";
 
@@ -69,9 +69,9 @@ font-size:50px;
 `;
 export const FaqQuestion = styled.div`
 width:100%;
-font-size:25px;
+font-size:1.6rem;
 font-weight:600;
-letter-spacing:0.8;
+letter-spacing:1.2;
 margin-top:15px;
 display: flex;
 align-items: center;
@@ -81,7 +81,7 @@ line-height:140%;
 gap:1rem;
 cursor: pointer;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 18px;
+    font-size: 1.2rem;
     gap:8px;
 }
 `;
@@ -89,6 +89,7 @@ export const FaqAnswer = styled.p`
 font-size:20px;
 margin-top:15px;
 line-height:140%;
+opacity: 0.8;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 15px;
 }
@@ -108,9 +109,10 @@ color:#fff;
 `;
 
 export const FaqHeader = styled.h2`
-line-height:140%;
+${MainHeading}
+/*line-height:140%;
 margin-top: 0 !important;
-font-size: 60px;
+font-size: 3.5rem;
 font-family: "Grifter-bold", sans-serif;
 margin-bottom: 2.5rem;
 text-align: center;
@@ -121,7 +123,7 @@ text-align: center;
 @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
   font-size: 25px;
   margin-bottom: 0rem;
-}
+}*/
 `;
 
 export const QuestionWrapper = styled.div`

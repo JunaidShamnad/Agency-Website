@@ -31,6 +31,7 @@ import {
   Dropdowns,
   PhoneInput,
   SocialIcon,
+  SocialDiv,
 } from "./ContactUs.styled";
 
 import { useState, useEffect } from "react";
@@ -193,7 +194,7 @@ const ContactUs = () => {
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Social</DetailTitle>
-                  <div style={{display:'flex',gap:"20px"}}>
+                  <SocialDiv>
                   <Link href="https://www.linkedin.com/company/intelpik/" passHref>
                     <a>
                       <DetailDescription>LinkedIn</DetailDescription>
@@ -204,7 +205,7 @@ const ContactUs = () => {
                       <DetailDescription>Instagram</DetailDescription>
                     </a>
                   </Link>
-                  </div>
+                  </SocialDiv>
                 </Detail>
                 
               </Contact>
@@ -234,8 +235,8 @@ const ContactUs = () => {
                     set_sender_service(e.target.value);
                   }}
                 >
-                  <option value="Branding">Branding</option>
                   <option value="Web Development">Web Development</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
                   <option value="App Developement">App Development</option>
                 </Dropdowns>
                 <br />

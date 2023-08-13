@@ -35,7 +35,7 @@ export const gridCenter = css`
 `;
 
 export const MainHeading = css`
-  font-size: ${({ theme }) => theme.fontSizes?.xxxl};
+  /*font-size: ${({ theme }) => theme.fontSizes?.xxxl};
   font-family: 'Poppins', sans-serif;
   font-weight: ${({ theme }) => theme.fontWeights?.black};
   line-height: ${({ theme }) => theme.fontSizes?.xxxxl};
@@ -65,7 +65,18 @@ export const MainHeading = css`
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.extraSmallMobile}) {
     font-size: ${({ theme }) => theme.fontSizes?.xs};
     line-height: ${({ theme }) => theme.fontSizes?.s};
-  }
+  }*/
+  font-size: 3.5rem;
+  font-family: "Grifter-bold", sans-serif;
+  @media (max-width: 1031px) {
+    font-size: 3rem;
+  };
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+    font-size: 2.5rem;
+  };
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    font-size: 1.9rem;
+  };
 `;
 
 export const HeadingH2 = css`
@@ -155,6 +166,7 @@ export const PrimaryButton = css`
   text-align: ${({ theme }) => theme.buttons.primary?.textAlign};
   padding: ${({ theme }) => theme.buttons.primary?.padding};
   color: ${({ theme }) => theme.buttons.primary?.color};
+  width: ${({ theme }) => theme.buttons.primary?.width};
   background-color: ${({ theme }) => theme.buttons.primary?.backgroundColor};
   border: ${({ theme }) => theme.buttons.primary?.border};
   border-color: ${({ theme }) => theme.buttons.primary?.borderColor};
@@ -169,14 +181,14 @@ export const PrimaryButton = css`
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
     font-size: ${({ theme }) =>
       theme.buttons.primary?.mediaQuery.tablet.fontSize};
-    padding: ${({ theme }) => theme.buttons.primary?.mediaQuery.tablet.padding};
+    /*padding: ${({ theme }) => theme.buttons.primary?.mediaQuery.tablet.padding};*/
     font-weight: ${({ theme }) =>
       theme.buttons.primary?.mediaQuery.tablet.fontWeight};
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.extraSmallMobile}) {
     font-size: ${({ theme }) =>
       theme.buttons.primary?.mediaQuery.mobile.fontSize};
-    padding: ${({ theme }) => theme.buttons.primary?.mediaQuery.mobile.padding};
+    /*padding: ${({ theme }) => theme.buttons.primary?.mediaQuery.mobile.padding};*/
     font-weight: ${({ theme }) =>
       theme.buttons.primary?.mediaQuery.mobile.fontWeight};
   }

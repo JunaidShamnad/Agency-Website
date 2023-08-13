@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import data from './TestimonialData'
-import { ArrowDiv, Avatar, Container, CustomNextArrow, CustomPrevArrow, Review, Reviewer, ReviewerDetails, ReviewerPosition, Section, StarDiv, TestimonialDiv, TestimonialHeader, Testimonials } from './Testimonial.styled'
+import { ArrowDiv, Avatar, Container, CustomNextArrow, CustomPrevArrow, MobileArrowDiv, Review, Reviewer, ReviewerDetails, ReviewerPosition, Section, StarDiv, TestimonialDiv, TestimonialHeader, Testimonials } from './Testimonial.styled'
 //import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
@@ -85,8 +85,11 @@ function Testimonial() {
                             </div>
                         ))}
                     </Slider>
-
                 </Testimonials>
+                <MobileArrowDiv>
+                        <BsFillArrowLeftCircleFill onClick={handlePrev}></BsFillArrowLeftCircleFill>
+                        <BsFillArrowRightCircleFill onClick={handleNext}></BsFillArrowRightCircleFill>
+                </MobileArrowDiv>
             </Container>
         </Section>
     )

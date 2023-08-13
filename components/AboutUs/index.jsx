@@ -22,10 +22,6 @@ const AboutUs = () => {
 
           <AboutBelow>
             <AboutImageDiv
-              initial={{ opacity: 0 ,y:130}}
-              whileInView={{ opacity: 1,y:0 }}
-              transition={{duration:0.7,delay:0.5}}
-              viewport={{ once: true}}
             >
               <AboutImage src="/images/about.jpeg" />
             </AboutImageDiv>
