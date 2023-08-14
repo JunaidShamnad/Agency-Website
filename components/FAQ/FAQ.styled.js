@@ -39,7 +39,7 @@ export const Faq = styled.div`
 
 `;
 export const FaqsSection = styled.div`
-width:90%;
+width:100%;
 ${flexRow};
 border-bottom:1px solid #c4c4c4;
 display:flex;

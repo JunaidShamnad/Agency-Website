@@ -230,7 +230,7 @@ line-height:260%;
 
 @media (max-width: 768px) {
   font-size: 18px;
-  line-height:270%;
+  line-height:200%;
 }
 
 
@@ -259,6 +259,9 @@ background-color: transparent;
   border: none;
   border-bottom: 1px solid #0D0A19;;
 }
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const EmailInput = styled.input`
@@ -279,6 +282,9 @@ margin-bottom: 40px;
     height: 20px;
     border: none;
     border-bottom: 1px solid #0D0A19;;
+}
+@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  margin-bottom: 30px;
 }
 `;
 
@@ -301,6 +307,9 @@ background-color: transparent;
     border: none;
     border-bottom: 1px solid #0D0A19;;
 }
+@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  margin-bottom: 30px;
+}
 `
 
 export const Dropdowns = styled.select`
@@ -322,6 +331,9 @@ margin-bottom: 40px;
   height: 20px;
   border-bottom: 1px solid #0D0A19;;
   background-color: transparent;
+}
+@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+  margin-bottom: 30px;
 }
 `;
 // export const ServiceInput = styled.input`

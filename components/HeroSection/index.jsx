@@ -170,28 +170,28 @@ const HeroSection = () => {
         <ClientsContainer>
           <Slider {...settings}>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client1.png" />
+              <ClientLogo src="/images/CLIENTS/Client1.svg" />
             </ClientLogoDiv>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client2.png" />
+              <ClientLogo src="/images/CLIENTS/client2.svg" />
             </ClientLogoDiv>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client03.png" />
+              <ClientLogo src="/images/CLIENTS/client03.svg" />
             </ClientLogoDiv>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client04.png" />
+              <ClientLogo src="/images/CLIENTS/client04.svg" />
             </ClientLogoDiv>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client05.png" />
+              <ClientLogo src="/images/CLIENTS/client05.svg" />
             </ClientLogoDiv>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client06.png" />
+              <ClientLogo src="/images/CLIENTS/Client06.svg" />
             </ClientLogoDiv>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client07.png" />
+              <ClientLogo src="/images/CLIENTS/client07.svg" />
             </ClientLogoDiv>
             <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client08.png" />
+              <ClientLogo src="/images/CLIENTS/client08.svg" />
             </ClientLogoDiv>
 
 
