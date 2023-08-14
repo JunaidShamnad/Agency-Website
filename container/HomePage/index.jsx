@@ -26,7 +26,7 @@ const HomePage = () => {
     left: 40px;
     background-color: #25d366;
     color: #fff;
-    padding: 12px 14px;
+    padding: 11px 16px;
     border-radius: 50%;
     display: grid;
     place-items:center;
@@ -38,7 +38,7 @@ const HomePage = () => {
   `;
 
   const FloatingButtonIcon = styled.span`
-    font-size: 24px;
+    font-size: 30px;
   `;
 
   return (

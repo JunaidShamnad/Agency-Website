@@ -1,5 +1,6 @@
 import React from 'react'
 import { BeginButton, Container, Left, LeftCaption, LeftDescription, LeftHeader, LeftHeading, LeftImg, LeftImgDiv, Numbers, Right, RightParagraph, RightSections, Section } from './Features.styled'
+import Link from 'next/link'
 
 function Features() {
   return (
@@ -15,7 +16,7 @@ function Features() {
 
             </Left>
             <LeftImg>
-                        <BeginButton>Let&apos;s Begin</BeginButton>
+            <Link href="#contact-form" passHref><BeginButton>Let&apos;s Begin</BeginButton></Link>
                     </LeftImg>
             <Right>
                 <RightSections>
