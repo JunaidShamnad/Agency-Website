@@ -99,7 +99,7 @@ export const AboutDescription = styled.p`
   text-align: left;
   color:#0D0A19;
   margin-bottom:10px;
-  opacity:0.4;
+  opacity:0.8;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     margin-bottom:0px; 
   }
@@ -136,6 +136,8 @@ text-decoration:underline;
 
 export const AboutButton = styled.button`
 ${PrimaryButton}
+font-size: 18px;
+font-weight:500;
   background-color:#5928e5;
   color:white;
 `;

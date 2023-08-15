@@ -6,6 +6,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { theme } from '../Theme'
+import { IconContext } from "react-icons";
 import { AiFillStar } from 'react-icons/ai'
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs'
 
@@ -14,7 +15,7 @@ function Testimonial() {
         dots: true,
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 1, 
         adaptiveHeight: true,
         responsive: [
             {
@@ -87,8 +88,10 @@ function Testimonial() {
                     </Slider>
                 </Testimonials>
                 <MobileArrowDiv>
+                    <IconContext.Provider value={{size: 40.8 }}>
                         <BsFillArrowLeftCircleFill onClick={handlePrev}></BsFillArrowLeftCircleFill>
                         <BsFillArrowRightCircleFill onClick={handleNext}></BsFillArrowRightCircleFill>
+                    </IconContext.Provider>
                 </MobileArrowDiv>
             </Container>
         </Section>

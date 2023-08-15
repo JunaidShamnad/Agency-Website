@@ -134,14 +134,14 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-            >Innovative Web Solutions for Modern Brands</Heading>
+            >We Build Solutions, Not Just Websites</Heading>
 
             <HeroDescription
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
-              Craft your website with our proffessional web development services
+              We build solutions that get results, not just a pretty website
             </HeroDescription>
 
             

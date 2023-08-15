@@ -69,7 +69,7 @@ font-size:50px;
 `;
 export const FaqQuestion = styled.div`
 width:100%;
-font-size:1.6rem;
+font-size:1.4rem;
 font-weight:600;
 letter-spacing:1.2;
 margin-top:15px;
@@ -86,10 +86,11 @@ cursor: pointer;
 }
 `;
 export const FaqAnswer = styled.p`
-font-size:20px;
+font-size:18px;
 margin-top:15px;
 line-height:140%;
 opacity: 0.8;
+padding-left:15px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 15px;
 }

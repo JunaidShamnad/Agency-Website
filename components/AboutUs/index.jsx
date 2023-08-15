@@ -28,13 +28,15 @@ const AboutUs = () => {
             <AboutContent>
               <AboutTitle>About US</AboutTitle>
               <AboutDescription>
-                We are a team of freelance web developers in the UK who create innovative and 
-                bespoke websites for businesses of all sizes. Our websites are stunningly designed,
-                seamlessly functional, and SEO-optimized to help our clients succeed. 
-                Partner with us to transform your ideas into captivating online realities.
+              We focus on developing solutions that can help you grow your business, 
+              increase your sales, and improve your bottom line. We do this by understanding
+              your specific needs and challenges, developing custom solutions, and being 
+              passionate about our work.If you are looking for a web development agency that 
+              can help you achieve your business goals, then Intelpik is the 
+              solution for you.
               </AboutDescription>
               <Link href='#contact-us'>
-                <AboutButton>Try Us</AboutButton>
+                <AboutButton>Accelerate your growth</AboutButton>
                 </Link>
             </AboutContent>
           </AboutBelow>

@@ -44,6 +44,9 @@ export const WorkHeader = styled.div`
     flex-direction: column;
     align-items: start;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+    margin-bottom: 25px;
+  }
 `
 
 export const ArrowDiv = styled.div`

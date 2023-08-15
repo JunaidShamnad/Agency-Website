@@ -111,7 +111,7 @@ font-size: xxx-large;
 export const MobileArrowDiv = styled.div`
   display: none;
   gap: 50px;
-  font-size: xxx-large;
+  font-size: xx-large;
   & > * {
     cursor: pointer;
   }
@@ -122,7 +122,7 @@ export const MobileArrowDiv = styled.div`
 
 export const Review = styled.p`
   flex:1;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 2rem;
   line-height:180%;
@@ -164,12 +164,24 @@ export const Avatar = styled.img`
 `
 export const Reviewer = styled.h3`
     font-weight:700;
-    font-size:32px;
+    font-size:25px;
     letter-spacing:0.5px;
     opacity:0.8;
     margin-bottom: 15px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+      font-size: 20px;
+    };
+    @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
+      font-size: 20px; 
+    }
 `;
 
 export const ReviewerPosition = styled.small`
     font-size: 18px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
+      font-size: 17px;
+    };
+    @media(max-width: ${({ theme }) => theme.breakpoints.smallestMobile}){
+      font-size: 16px; 
+    }
 `
