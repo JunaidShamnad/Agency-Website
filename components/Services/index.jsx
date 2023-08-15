@@ -54,7 +54,7 @@ const Services = () => {
                 whileInView={{ opacity: 1,x:0 }}
                 transition={{duration:0.7,delay:0.8}}
                 viewport={{ once: true}}
-                src="/images/website development.png"></ServiceImage>
+                src="/images/website development.svg"></ServiceImage>
            
                 <ServiceTitle>
                   Web Development
@@ -78,7 +78,7 @@ const Services = () => {
                               whileInView={{ opacity: 1,x:0 }}
                               transition={{duration:0.7,delay:0.8}}
                               viewport={{ once: true}}
-                src="/images/app development.png"></ServiceImage>
+                src="/images/app development.svg"></ServiceImage>
               
                 <ServiceTitle>
                   App Development
@@ -101,7 +101,7 @@ const Services = () => {
                 whileInView={{ opacity: 1,x:0 }}
                 transition={{duration:0.7,delay:0.8}}
                 viewport={{ once: true}}
-                src="/images/digital marketing.png"></ServiceImage>
+                src="/images/digital marketing.svg"></ServiceImage>
               
                 <ServiceTitle>
                 Digital Marketing

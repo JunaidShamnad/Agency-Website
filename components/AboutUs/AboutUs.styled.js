@@ -140,6 +140,9 @@ font-size: 18px;
 font-weight:500;
   background-color:#5928e5;
   color:white;
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
+    font-size: 16px;
+  }
 `;
 
 export const AboutImageDiv = styled(motion.div)`

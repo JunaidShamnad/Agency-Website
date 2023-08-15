@@ -158,7 +158,7 @@ const HeroSection = () => {
 
             <ShowText>We&apos;re not just promising, we&apos;re proving.</ShowText>
 
-            <PeopleFaces src="/images/peopleFacesCopy.png"></PeopleFaces>
+            <PeopleFaces src="/images/clients-intelpik.png"></PeopleFaces>
 
           </Hero>
           <ContactUs1 />
