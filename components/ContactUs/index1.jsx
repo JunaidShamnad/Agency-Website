@@ -37,7 +37,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { send } from "emailjs-com";
 import Link from "next/link";
-const ContactUs1 = () => {
+const ContactUs1 = (props) => {
   const [sender_email, set_sender_email] = useState("");
   const [sender_phone, set_sender_phone] = useState("");
   const [sender_name, set_sender_name] = useState("");
@@ -151,7 +151,7 @@ const ContactUs1 = () => {
   ];
   const defaultOption = "Select Service";
   return (
-    <HeroForm
+    <HeroForm id="heroContact"
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay:2}}
@@ -169,6 +169,7 @@ const ContactUs1 = () => {
               set_sender_name(e.target.value);
               setName(e.target.value);
             }}
+            ref={props.inputRef}
           />
 
           &nbsp; and I&apos;m looking for &nbsp;

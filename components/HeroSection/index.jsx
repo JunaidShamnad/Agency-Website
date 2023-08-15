@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import Slider from "react-slick";
 
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Hero,
   HeroDescription,
@@ -48,6 +48,7 @@ const Character = styled(motion.span)`
 `;
 
 const HeroSection = () => {
+  const inputRef = useRef(null)
   const settings = {
     infinite: true,
     slidesToShow: 5,
@@ -145,7 +146,7 @@ const HeroSection = () => {
             </HeroDescription>
 
             
-              <Link href="#contact-form" passHref><a><HeaderButton>Lets Talk</HeaderButton></a></Link>
+              <Link href="#heroContact" passHref><a><HeaderButton onClick={()=>inputRef.current.focus()}>Lets Talk</HeaderButton></a></Link>
             
 
             <StarDiv>
@@ -161,7 +162,7 @@ const HeroSection = () => {
             <PeopleFaces src="/images/clients-intelpik.png"></PeopleFaces>
 
           </Hero>
-          <ContactUs1 />
+          <ContactUs1 inputRef={inputRef} />
         </Container>
 
 
