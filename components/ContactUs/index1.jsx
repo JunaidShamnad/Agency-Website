@@ -169,7 +169,6 @@ const ContactUs1 = (props) => {
               set_sender_name(e.target.value);
               setName(e.target.value);
             }}
-            ref={props.inputRef}
           />
 
           &nbsp; and I&apos;m looking for &nbsp;

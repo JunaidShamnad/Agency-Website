@@ -48,7 +48,7 @@ const Character = styled(motion.span)`
 `;
 
 const HeroSection = () => {
-  const inputRef = useRef(null)
+ // const inputRef = useRef(null)
   const settings = {
     infinite: true,
     slidesToShow: 5,
@@ -162,7 +162,7 @@ const HeroSection = () => {
             <PeopleFaces src="/images/clients-intelpik.png"></PeopleFaces>
 
           </Hero>
-          <ContactUs1 inputRef={inputRef} />
+          <ContactUs1 />
         </Container>
 
 
