@@ -3,13 +3,13 @@ const works = [
         id: 1,
         name: 'Aadiveda Ayurveda',
         image: '/images/MOCKUPS1/aadiveda-mockup1.png',
-        url: 'http://www.hitoq.com'
+        url: 'https://www.aadivedaayurveda.com/'
     },
     {
         id: 2,
         name: 'Hitoq',
         image: '/images/MOCKUPS1/hitoq-mockup3.png',
-        url: 'https://www.aadivedaayurveda.com/'
+        url: 'http://www.hitoq.com'
     },
     {
         id: 3,
