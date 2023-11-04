@@ -83,9 +83,9 @@ const OurWorks = () => {
               <WorkDiv key={work.id} style={{paddingRight:"10px"}}>
               <ImageDiv 
                 style={{background:`url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-                <Link href="#" passHref>
-                  <ViewButton onClick={() => { window.open(work.url, '_blank'); }}> {work.name}</ViewButton> 
-                </Link>
+              <Link href={work.url} as="a" target="_blank" rel="noopener noreferrer">
+  <ViewButton>{work.name}</ViewButton> 
+</Link>
               </ImageDiv>
             </WorkDiv> 
             ))}
