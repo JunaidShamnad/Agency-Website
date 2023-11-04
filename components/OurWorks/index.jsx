@@ -83,7 +83,7 @@ const OurWorks = () => {
               <WorkDiv key={work.id} style={{paddingRight:"10px"}}>
               <ImageDiv 
                 style={{background:`url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-                <Link href={work.url} as="a" target="_blank">
+                <Link href={work.url} as="a" target="_blank" passHref>
                   <ViewButton> {work.name}</ViewButton> 
                 </Link>
               </ImageDiv>
