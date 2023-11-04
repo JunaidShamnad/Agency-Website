@@ -84,7 +84,7 @@ const OurWorks = () => {
               <ImageDiv 
                 style={{background:`url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <Link href={work.url} as="a" target="_blank">
-                  <ViewButton> <a>{work.name}</a></ViewButton> 
+                  <ViewButton> {work.name}</ViewButton> 
                 </Link>
               </ImageDiv>
             </WorkDiv> 
