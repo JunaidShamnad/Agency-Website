@@ -122,7 +122,7 @@ export const SubHeading = styled.p`
 export const WorkLinkImage = styled.img``;
 
 export const StyledSlider = styled(Slider)`
- 
+  cursor: grab;
 `;
 
 export const WorkDiv = styled.div`
@@ -177,7 +177,6 @@ export const WorkInnerContainer = styled.div`
   width:100%;
   max-width: 100%;
   overflow:hidden;
-  cursor: grab;
   height: 100%;
   padding-top:2rem;
   padding-bottom:1rem;
