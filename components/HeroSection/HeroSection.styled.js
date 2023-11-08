@@ -180,6 +180,8 @@ export const ClientsContainer = styled.div`
 export const ClientLogoDiv = styled.div`
   display: grid;
   place-items: center;
+  border:0px;
+  cursor:grab;
   height: 70px;
   padding:10px 10px;
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
