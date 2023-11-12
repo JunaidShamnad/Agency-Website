@@ -1,10 +1,10 @@
 const works = [
-    {
-        id: 1,
-        name: 'Aadiveda Ayurveda',
-        image: '/images/MOCKUPS1/aadiveda-mockup1.png',
-        url: 'https://www.aadivedaayurveda.com/'
-    },
+    // {
+    //     id: 1,
+    //     name: 'Aadiveda Ayurveda',
+    //     image: '/images/MOCKUPS1/aadiveda-mockup1.png',
+    //     url: 'https://www.aadivedaayurveda.com/'
+    // },
     {
         id: 2,
         name: 'Hitoq',
