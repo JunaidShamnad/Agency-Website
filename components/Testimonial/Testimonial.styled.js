@@ -165,6 +165,7 @@ export const Avatar = styled.img`
 export const Reviewer = styled.h3`
     font-weight:700;
     font-size:25px;
+    color:#fff2f2;
     letter-spacing:0.5px;
     // opacity:0.8;
     margin-bottom: 15px;

@@ -112,6 +112,7 @@ export const WorkHeading = styled.h2`
 export const SubHeading = styled.h4`
   font-size: 25px;
   margin-top:15px;
+  font-weight:500;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 18px;
   }

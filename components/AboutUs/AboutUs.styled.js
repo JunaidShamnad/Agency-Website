@@ -73,7 +73,7 @@ export const AboutContent = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  color:#0D0A19;
+  color:#232323;
   position: relative;
   width: 100%;
   height:100%;

@@ -78,12 +78,12 @@ export const theme = {
         tablet: {
           fontSize: "0.999rem",
           padding: "11px 26px",
-          fontWeight: "500",
+          fontWeight: "600",
         },
         mobile: {
           fontSize: "0.875rem",
           padding: "8px 22x",
-          fontWeight: "500",
+          fontWeight: "600",
         },
       },
 

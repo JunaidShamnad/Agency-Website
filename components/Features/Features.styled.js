@@ -189,6 +189,7 @@ export const RightParagraph = styled.p`
     padding-left: 0.6rem;
     line-height: 1.5rem;
     width: 60%;
+    color:#2f2f2f;
     font-weight: 500;
 font-size: 16px;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
