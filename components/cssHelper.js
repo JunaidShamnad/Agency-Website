@@ -150,12 +150,12 @@ export const Paragraph = css`
   transition: ${({ theme }) => theme.transition?.base};
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallTablet}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxxxs};
+    font-size: ${({ theme }) => theme.fontSizes?.xxxs};
     line-height: ${({ theme }) => theme.fontSizes?.xxxs};
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallestMobile}) {
-    font-size: ${({ theme }) => theme.fontSizes?.xxxxxs};
+    font-size: ${({ theme }) => theme.fontSizes?.xxxs};
     line-height: ${({ theme }) => theme.fontSizes?.xxxxs};
   }
 `;
