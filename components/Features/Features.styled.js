@@ -86,6 +86,16 @@ export const LeftImg = styled.div`
     display:flex;
     flex-direction: column-reverse;
     padding:20px;
+    /* Add aria-label for accessibility */
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    aria-label: "Image of a female teammate shaking hands with a client";
+  }
     @media (max-width: 950px) {
         width:100%;
     };

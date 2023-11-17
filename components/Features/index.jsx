@@ -15,7 +15,7 @@ function Features() {
                    
 
             </Left>
-            <LeftImg>
+            <LeftImg >
             <Link href="#contact-form" passHref><BeginButton>Let&apos;s Begin</BeginButton></Link>
                     </LeftImg>
             <Right>

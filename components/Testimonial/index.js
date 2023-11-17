@@ -52,7 +52,7 @@ function Testimonial() {
     return (
         <Section>
             <Container>
-                <StarDiv>
+                <StarDiv aria-label="5 out of 5 stars" role="img">
                     <AiFillStar />
                     <AiFillStar />
                     <AiFillStar />
@@ -62,8 +62,10 @@ function Testimonial() {
                 <TestimonialHeader>
                     Loved by Clients
                     <ArrowDiv>
-                        <BsFillArrowLeftCircleFill onClick={handlePrev}></BsFillArrowLeftCircleFill>
-                        <BsFillArrowRightCircleFill onClick={handleNext}></BsFillArrowRightCircleFill>
+                        <BsFillArrowLeftCircleFill onClick={handlePrev}  aria-label="Previous testimonial"
+          role="button"></BsFillArrowLeftCircleFill>
+                        <BsFillArrowRightCircleFill onClick={handleNext} aria-label="Next testimonial"
+          role="button"></BsFillArrowRightCircleFill>
                     </ArrowDiv>
                 </TestimonialHeader>
                 <Testimonials>
@@ -75,7 +77,7 @@ function Testimonial() {
                                     &quot;&nbsp;{obj.Descriptions}&nbsp;&quot;
                                 </Review>
                                 <ReviewerDetails>
-                                    <Avatar src={obj.Image}></Avatar>
+                                    <Avatar src={obj.Image} alt={`${obj.Name}'s profile picture`}></Avatar>
                                     <div>
                                         <Reviewer>{obj.Name}</Reviewer>
                                         <ReviewerPosition>{obj.position}</ReviewerPosition>

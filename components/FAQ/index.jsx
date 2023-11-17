@@ -39,7 +39,9 @@ const FAQ = () => {
                   <QuestionWrapper onClick={() => toggle(index)}>
                     <FaqQuestion>
                       {item.question}
-                      {clicked === index ? <MinusIcon /> : <PlusIcon />}{" "}
+                      {clicked === index ? <MinusIcon aria-label="Collapse FAQ answer"
+                aria-expanded="true"/> : <PlusIcon  aria-label="Expand FAQ answer"
+                aria-expanded="false"/>}{" "}
                     </FaqQuestion>
                   </QuestionWrapper>
                   {clicked === index ? (

@@ -89,7 +89,7 @@ export const FaqAnswer = styled.p`
 font-size:18px;
 margin-top:15px;
 line-height:140%;
-opacity: 0.8;
+color:#dbdbdb;
 padding-left:15px;
 @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 15px;

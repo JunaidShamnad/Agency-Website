@@ -163,12 +163,12 @@ const ContactUs = () => {
             <ContactDetails>
               <Contact>
                 <DetailIcons>
-                  <MailIcon />
+                  <MailIcon aria-label="Send us an email"/>
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Email</DetailTitle>
                   <Link href="mailto:intelpik@gmail.com" passHref>
-                    <a>
+                    <a aria-label="Send an email to intelpik@gmail.com">
                       {" "}
                       <DetailDescription>intelpik@gmail.com</DetailDescription>
                     </a>
@@ -177,12 +177,12 @@ const ContactUs = () => {
               </Contact>
               <Contact>
                 <DetailIcons>
-                  <PhoneIcon />
+                  <PhoneIcon aria-label="Call us"/>
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Phone</DetailTitle>
                   <Link href="tel:+918590302905" passHref>
-                    <a>
+                    <a aria-label="Call +91 8590302905">
                       <DetailDescription>+91 8590302905</DetailDescription>
                     </a>
                   </Link>
@@ -190,18 +190,18 @@ const ContactUs = () => {
               </Contact>
               <Contact>
                 <DetailIcons>
-                  <SocialIcon/>
+                  <SocialIcon aria-label="Follow us on social media"/>
                 </DetailIcons>
                 <Detail>
                   <DetailTitle>Social</DetailTitle>
                   <SocialDiv>
                   <Link href="https://www.linkedin.com/company/intelpik/" passHref>
-                    <a>
+                  <a aria-label="Visit Intelpik LinkedIn page" target="_blank" rel="noopener noreferrer">
                       <DetailDescription>LinkedIn</DetailDescription>
                     </a>
                   </Link>
                   <Link href="https://www.instagram.com/intelpik.official/" passHref>
-                    <a>
+                  <a aria-label="Visit Intelpik Instagram page" target="_blank" rel="noopener noreferrer">
                       <DetailDescription>Instagram</DetailDescription>
                     </a>
                   </Link>
