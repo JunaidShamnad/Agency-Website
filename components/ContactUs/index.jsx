@@ -216,9 +216,9 @@ const ContactUs = () => {
               <GetaQuote>Get a quote</GetaQuote>
               {/* <ScheduleP>Schedule an Appointment</ScheduleP> */}
               <ContactForm>
-              <label htmlFor="name"> Hey👋my name is</label> &nbsp;
+              <label htmlFor="contact-name"> Hey👋my name is</label> &nbsp;
                 <NameInput
-                  id="name"
+                 id="contact-name"
                   type="text"
                   value={sender_name}
                   placeholder="&nbsp; Your name"
@@ -228,9 +228,9 @@ const ContactUs = () => {
                   }}
                 />
 
-                &nbsp;<label htmlFor="service"> and I&apos;m looking for </label>&nbsp;
+                &nbsp;<label htmlFor="contact-service"> and I&apos;m looking for </label>&nbsp;
                 <Dropdowns
-                  id="service"
+                  id="contact-service"
                   value={sender_service}
                   placeholder="&nbsp; Select a service"
                   onChange={(e) => {
@@ -242,9 +242,9 @@ const ContactUs = () => {
                   <option value="App Developement">App Development</option>
                 </Dropdowns>
                 <br />
-                <label htmlFor="email">Ping us at 😉</label>&nbsp;
+                <label htmlFor="contact-email">Ping us at 😉</label>&nbsp;
                 <EmailInput
-                  id="email"
+                  id="contact-email"
                   type="email"
                   value={sender_email}
                   placeholder="&nbsp; Your Email Address"
@@ -253,9 +253,9 @@ const ContactUs = () => {
                     setEmail(e.target.value);
                   }}
                 />
-                <label htmlFor="phone">Contact number📞</label>&nbsp;
+                <label htmlFor="contact-phone">Contact number📞</label>&nbsp;
                 <PhoneInput
-                  id="phone"
+                  id="contact-phone"
                   type="tel"
                   value={sender_phone}
                   placeholder="Your Phone Number"
@@ -266,16 +266,18 @@ const ContactUs = () => {
                 />
               </ContactForm>
               <TermsCheckbox>
+                <label>
                 <Checkbox
                   type="checkbox"
                   required
-                  onchange={(e) => {
+                  onChange={(e) => {
                     setCheck(e.target.checked);
                   }}
                 />
                 <CheckboxTitle>
                   I have accepted all the terms and conditions
                 </CheckboxTitle>
+                </label>
               </TermsCheckbox>
               <SubmitForm type="Submit">Send Enquiry</SubmitForm>
             </Form>

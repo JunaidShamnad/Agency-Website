@@ -210,16 +210,18 @@ const ContactUs1 = (props) => {
           />
         </ContactForm>
         <TermsCheckbox>
+          <label>
           <Checkbox
             type="checkbox"
             required
-            onchange={(e) => {
+            onChange={(e) => {
               setCheck(e.target.checked);
             }}
           />
           <CheckboxTitle>
             I have accepted all the terms and conditions
           </CheckboxTitle>
+          </label>
         </TermsCheckbox>
         <SubmitForm type="Submit">Send Enquiry</SubmitForm>
       </Form>

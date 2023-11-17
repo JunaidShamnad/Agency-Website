@@ -62,8 +62,8 @@ export const ServiceHeader = styled.div`
   }
 `;
 
-export const WhatWeDo = styled.h6`
-  color: gray;
+export const WhatWeDo = styled.h3`
+  color: #696969;
   text-align: left;
   text-transform: uppercase;
   font-size: 22px;
