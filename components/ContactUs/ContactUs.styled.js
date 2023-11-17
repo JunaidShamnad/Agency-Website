@@ -23,7 +23,7 @@ export const Container = styled.div`
   margin:5rem auto;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
       flex-direction: column;
-      margin: 3rem auto;
+      margin: 2.5rem auto;
     }
 `;
 export const LeftSection = styled.div`
