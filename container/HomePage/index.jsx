@@ -51,7 +51,7 @@ const HomePage = () => {
       <Testimonial />
       <FAQ />
       <ContactUs />
-      <a target='_blank' href="https://wa.me/+918590302905">
+      <a target='_blank' href="https://wa.me/+918590302905" aria-label="Chat with us on WhatsApp">
         <FloatingButton 
           initial={{ opacity: 0 , y:25}}
           whileInView={{ opacity: 1, y:0 }}

@@ -16,9 +16,11 @@ const Sidebar = ({ isOpen,toggle}) => {
         <SidebarMenuWrapper>
         {Links.map((link) => (
         <SidebarMenu key={link.id} onClick={toggle}>
+          <li>
         <SidebarMenuLink  href={link.to} >
          <SidebarMenuLinkA> {link.name}</SidebarMenuLinkA>
         </SidebarMenuLink>
+        </li>
         </SidebarMenu>
       ))}
         </SidebarMenuWrapper>

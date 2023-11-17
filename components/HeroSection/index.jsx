@@ -149,17 +149,17 @@ const HeroSection = () => {
               <Link href="#heroContact" passHref><a><HeaderButton onClick={()=>inputRef.current.focus()}>Lets Talk</HeaderButton></a></Link>
             
 
-            <StarDiv>
-              <StarImg src="/images/star svg.svg"></StarImg>
-              <StarImg src="/images/star svg.svg"></StarImg>
-              <StarImg src="/images/star svg.svg"></StarImg>
-              <StarImg src="/images/star svg.svg"></StarImg>
-              <StarImg src="/images/star svg.svg"></StarImg>
+            <StarDiv role="img" aria-label="5 out of 5 stars">
+              <StarImg src="/images/star svg.svg" alt="" aria-hidden="true"></StarImg>
+              <StarImg src="/images/star svg.svg" alt="" aria-hidden="true"></StarImg>
+              <StarImg src="/images/star svg.svg" alt="" aria-hidden="true"></StarImg>
+              <StarImg src="/images/star svg.svg" alt="" aria-hidden="true"></StarImg>
+              <StarImg src="/images/star svg.svg" alt="" aria-hidden="true"></StarImg>
             </StarDiv>
 
             <ShowText>We&apos;re not just promising, we&apos;re proving.</ShowText>
 
-            <PeopleFaces src="/images/clients-intelpik.png"></PeopleFaces>
+            <PeopleFaces src="/images/clients-intelpik.png" alt="clients prfoile images"></PeopleFaces>
 
           </Hero>
           <ContactUs1 />
@@ -170,29 +170,29 @@ const HeroSection = () => {
       <ClientSection>
         <ClientsContainer>
           <Slider {...settings}>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client1.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/Client1.svg" alt="Innovgrab logo"/>
             </ClientLogoDiv>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/client2.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/client2.svg" alt="Dowl logo"/>
             </ClientLogoDiv>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/client03.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/client03.svg" alt="Hitoq logo"/>
             </ClientLogoDiv>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/client04.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/client04.svg" alt="Bellkare logo"/>
             </ClientLogoDiv>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/client05.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/client05.svg" alt="Aadiveda logo"/>
             </ClientLogoDiv>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/Client06.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/Client06.svg" alt="Neocart logo"/>
             </ClientLogoDiv>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/client07.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/client07.svg" alt="Neha group logo"/>
             </ClientLogoDiv>
-            <ClientLogoDiv>
-              <ClientLogo src="/images/CLIENTS/client08.svg" />
+            <ClientLogoDiv tabIndex={-1}>
+              <ClientLogo src="/images/CLIENTS/client08.svg" alt="Neotech logo"/>
             </ClientLogoDiv>
 
 

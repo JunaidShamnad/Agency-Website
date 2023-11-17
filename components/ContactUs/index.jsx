@@ -216,8 +216,9 @@ const ContactUs = () => {
               <GetaQuote>Get a quote</GetaQuote>
               {/* <ScheduleP>Schedule an Appointment</ScheduleP> */}
               <ContactForm>
-                Hey👋my name is &nbsp;
+              <label htmlFor="name"> Hey👋my name is</label> &nbsp;
                 <NameInput
+                  id="name"
                   type="text"
                   value={sender_name}
                   placeholder="&nbsp; Your name"
@@ -227,8 +228,9 @@ const ContactUs = () => {
                   }}
                 />
 
-                &nbsp; and I&apos;m looking for &nbsp;
+                &nbsp;<label htmlFor="service"> and I&apos;m looking for </label>&nbsp;
                 <Dropdowns
+                  id="service"
                   value={sender_service}
                   placeholder="&nbsp; Select a service"
                   onChange={(e) => {
@@ -240,8 +242,9 @@ const ContactUs = () => {
                   <option value="App Developement">App Development</option>
                 </Dropdowns>
                 <br />
-                Ping us at 😉&nbsp;
+                <label htmlFor="email">Ping us at 😉</label>&nbsp;
                 <EmailInput
+                  id="email"
                   type="email"
                   value={sender_email}
                   placeholder="&nbsp; Your Email Address"
@@ -250,8 +253,9 @@ const ContactUs = () => {
                     setEmail(e.target.value);
                   }}
                 />
-                Contact number📞&nbsp;
+                <label htmlFor="phone">Contact number📞</label>&nbsp;
                 <PhoneInput
+                  id="phone"
                   type="tel"
                   value={sender_phone}
                   placeholder="Your Phone Number"

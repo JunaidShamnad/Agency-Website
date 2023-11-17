@@ -9,43 +9,50 @@ const works = [
         id: 2,
         name: 'Hitoq',
         image: '/images/MOCKUPS1/hitoq-mockup3.png',
-        url: 'http://www.hitoq.com'
+        url: 'http://www.hitoq.com',
+        alt: 'Screenshot of Hitoq website'
     },
     {
         id: 3,
         name: 'Bluecon',
         image: '/images/MOCKUPS1/bluecon-mockup4.png',
-        url: 'https://www.blueconllc.com/'
+        url: 'https://www.blueconllc.com/',
+        alt: 'Screenshot of Bluecon website'
     },
     {
         id: 4,
         name: 'Neocart',
         image: '/images/MOCKUPS1/neocart-mockup5.png',
-        url: 'https://neocart.ae/'
+        url: 'https://neocart.ae/',
+        alt: 'Screenshot of Neocart website'
     },
     {
         id: 5,
         name: 'Bellkare',
         image: '/images/MOCKUPS1/Bellkare-mockup6.png',
-        url: 'https://www.bellkare.com/'
+        url: 'https://www.bellkare.com/',
+        alt: 'Screenshot of Bellkare website'
     },
     {
         id: 6,
         name: 'Neha Group',
         image: '/images/MOCKUPS1/NehaGroup-mockup7.png',
-        url: 'https://nehagrp.com/'
+        url: 'https://nehagrp.com/',
+        alt: 'Screenshot of Nehagroup website'
     },
     {
         id: 7,
         name: 'Innovgrab',
         image: '/images/MOCKUPS1/Innovgrab-mockup8.png',
-        url: 'https://www.innovgrab.com/'
+        url: 'https://www.innovgrab.com/',
+        alt: 'Screenshot of Innovgrab website'
     },
     {
         id: 8,
         name: "Dowl",
         image: 'images/MOCKUPS1/Dowl-mockup2.png',
-        url: 'https://www.dowlfabs.com/'
+        url: 'https://www.dowlfabs.com/',
+        alt: 'Screenshot of Dowl website'
     }
     
 ]

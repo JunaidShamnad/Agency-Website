@@ -50,6 +50,7 @@ const Services = () => {
               viewport={{ once: true}}
             >
               <ServiceImage
+               alt="Web Development Icon"
                 initial={{ opacity: 0 ,x:-130}}
                 whileInView={{ opacity: 1,x:0 }}
                 transition={{duration:0.7,delay:0.8}}
@@ -74,6 +75,7 @@ const Services = () => {
               viewport={{ once: true}}
             >
               <ServiceImage
+              alt="App Development Icon"
                 initial={{ opacity: 0 ,x:-130}}
                               whileInView={{ opacity: 1,x:0 }}
                               transition={{duration:0.7,delay:0.8}}
@@ -97,6 +99,7 @@ const Services = () => {
               viewport={{ once: true}}
             >
               <ServiceImage
+              alt="Digital Marketing Icon"
                 initial={{ opacity: 0 ,x:-130}}
                 whileInView={{ opacity: 1,x:0 }}
                 transition={{duration:0.7,delay:0.8}}

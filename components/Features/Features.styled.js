@@ -58,7 +58,7 @@ export const LeftHeader = styled.div`
 `
 
 export const LeftCaption = styled.p`
-    color: gray;
+    color: #696969;
     font-weight: bold;
 `
 

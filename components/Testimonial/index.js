@@ -12,7 +12,7 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 
 function Testimonial() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1, 

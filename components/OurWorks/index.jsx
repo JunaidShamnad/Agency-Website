@@ -82,7 +82,7 @@ const OurWorks = () => {
             {works.map(work => (
               <WorkDiv key={work.id} style={{paddingRight:"10px"}}>
               <ImageDiv 
-                style={{background:`url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                style={{background:`url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}} alt={work.alt}>
              <a href={work.url} target="_blank" rel="noopener noreferrer">
                 <ViewButton>{work.name}</ViewButton> 
             </a>
