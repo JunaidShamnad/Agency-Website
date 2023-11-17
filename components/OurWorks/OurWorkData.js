@@ -10,28 +10,28 @@ const works = [
         name: 'Hitoq',
         image: '/images/MOCKUPS1/hitoq-mockup3.png',
         url: 'http://www.hitoq.com',
-        alt: 'Screenshot of Hitoq website'
+        alt: 'Preview of Hitoq website'
     },
     {
         id: 3,
         name: 'Bluecon',
         image: '/images/MOCKUPS1/bluecon-mockup4.png',
         url: 'https://www.blueconllc.com/',
-        alt: 'Screenshot of Bluecon website'
+        alt: 'Preview of Bluecon website'
     },
     {
         id: 4,
         name: 'Neocart',
         image: '/images/MOCKUPS1/neocart-mockup5.png',
         url: 'https://neocart.ae/',
-        alt: 'Screenshot of Neocart website'
+        alt: 'Preview of Neocart website'
     },
     {
         id: 5,
         name: 'Bellkare',
         image: '/images/MOCKUPS1/Bellkare-mockup6.png',
         url: 'https://www.bellkare.com/',
-        alt: 'Screenshot of Bellkare website'
+        alt: 'Preview of Bellkare website'
     },
     {
         id: 6,
@@ -45,14 +45,14 @@ const works = [
         name: 'Innovgrab',
         image: '/images/MOCKUPS1/Innovgrab-mockup8.png',
         url: 'https://www.innovgrab.com/',
-        alt: 'Screenshot of Innovgrab website'
+        alt: 'Preview of Innovgrab website'
     },
     {
         id: 8,
         name: "Dowl",
         image: 'images/MOCKUPS1/Dowl-mockup2.png',
         url: 'https://www.dowlfabs.com/',
-        alt: 'Screenshot of Dowl website'
+        alt: 'Preview of Dowl website'
     }
     
 ]

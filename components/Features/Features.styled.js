@@ -105,7 +105,7 @@ export const LeftImg = styled.div`
     width: 0;
     overflow: hidden;
     visibility: hidden;
-    aria-label: "Image of a female teammate shaking hands with a client";
+    aria-label: "A female teammate shaking hands with a client";
   }
     @media (max-width: 950px) {
         width:100%;
