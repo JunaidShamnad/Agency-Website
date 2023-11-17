@@ -170,29 +170,29 @@ const HeroSection = () => {
       <ClientSection>
         <ClientsContainer>
           <Slider {...settings}>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/Client1.svg" alt="Innovgrab logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/Client1.svg" alt="Innovgrab logo" tabIndex={-1}/>
             </ClientLogoDiv>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/client2.svg" alt="Dowl logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/client2.svg" alt="Dowl logo" tabIndex={-1}/>
             </ClientLogoDiv>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/client03.svg" alt="Hitoq logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/client03.svg" alt="Hitoq logo" tabIndex={-1}/>
             </ClientLogoDiv>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/client04.svg" alt="Bellkare logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/client04.svg" alt="Bellkare logo" tabIndex={-1}/>
             </ClientLogoDiv>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/client05.svg" alt="Aadiveda logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/client05.svg" alt="Aadiveda logo" tabIndex={-1}/>
             </ClientLogoDiv>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/Client06.svg" alt="Neocart logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/Client06.svg" alt="Neocart logo" tabIndex={-1}/>
             </ClientLogoDiv>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/client07.svg" alt="Neha group logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/client07.svg" alt="Neha group logo" tabIndex={-1}/>
             </ClientLogoDiv>
-            <ClientLogoDiv tabIndex={-1}>
-              <ClientLogo src="/images/CLIENTS/client08.svg" alt="Neotech logo"/>
+            <ClientLogoDiv aria-hidden="true">
+              <ClientLogo src="/images/CLIENTS/client08.svg" alt="Neotech logo" tabIndex={-1}/>
             </ClientLogoDiv>
 
 

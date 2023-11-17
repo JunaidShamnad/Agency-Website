@@ -99,7 +99,6 @@ export const AboutDescription = styled.p`
   text-align: left;
   color:#0D0A19;
   margin-bottom:10px;
-  opacity:0.8;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.tablet}) {
     margin-bottom:0px; 
   }
