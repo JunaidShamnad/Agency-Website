@@ -62,7 +62,7 @@ export const ServiceHeader = styled.div`
   }
 `;
 
-export const WhatWeDo = styled.h3`
+export const WhatWeDo = styled.h4`
   color: #696969;
   text-align: left;
   text-transform: uppercase;
