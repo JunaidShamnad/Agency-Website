@@ -81,7 +81,7 @@ export const ServiceHeadingDiv = styled.div`
   align-items: center;
   margin-top: 1.5rem;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin-top: 0rem;
+    margin-top: 10px;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakpoints?.smallMobile}) {
     justify-content: flex-start;
@@ -227,7 +227,7 @@ export const Service = styled(motion.div)`
   width: 100%;
   height: auto;
   border: 1px solid black;
-  padding: 2rem;
+  padding: 1.5rem;
   color: black;
   border-radius: 25px;
   padding-top: 3rem;
