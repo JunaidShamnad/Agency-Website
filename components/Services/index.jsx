@@ -108,7 +108,7 @@ const Services = () => {
                 </ServiceTitle>
               
               <ServiceDetails>
-                Strategic Digital Marketing Solutions for Business Growth   
+                <p>Strategic Digital Marketing Solutions for Business Growth</p>   
               </ServiceDetails>
               
             </Service>

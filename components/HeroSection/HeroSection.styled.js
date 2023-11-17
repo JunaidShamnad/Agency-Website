@@ -134,7 +134,7 @@ export const StarImg = styled.img`
 `
 
 export const ShowText = styled.p`
-  color: #ada9a9;
+  color: #d9d9d9;
   font-size:18px;
 `
 

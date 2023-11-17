@@ -143,7 +143,7 @@ export const ServiceContent = styled.div`
 export const ServiceDetails = styled.div`
   width: 100%;
   height: auto;
-  color: gray;
+  color: #6b6b6b;
   line-height: 25px;
   text-align: center;
   padding: 10px 0px;
