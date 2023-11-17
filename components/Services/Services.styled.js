@@ -63,7 +63,7 @@ export const ServiceHeader = styled.div`
 `;
 
 export const WhatWeDo = styled.h4`
-  color: #696969;
+  color: #353535;
   text-align: left;
   text-transform: uppercase;
   font-size: 22px;
@@ -87,7 +87,7 @@ export const ServiceHeadingDiv = styled.div`
     justify-content: flex-start;
   }
 `
-export const ServiceHeading = styled.h3`
+export const ServiceHeading = styled.h2`
   ${MainHeading}
   color: #1d1a26;
 }

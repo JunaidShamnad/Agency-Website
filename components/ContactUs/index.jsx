@@ -266,7 +266,7 @@ const ContactUs = () => {
                 />
               </ContactForm>
               <TermsCheckbox>
-                <label>
+                <label  style={{ display: 'flex', alignItems: 'center' }}>
                 <Checkbox
                   type="checkbox"
                   required

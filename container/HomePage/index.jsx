@@ -43,7 +43,7 @@ const HomePage = () => {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection id="main-content"/>
       <AboutUs ref={scrollRef} />
       <Services />
       <OurWorks />

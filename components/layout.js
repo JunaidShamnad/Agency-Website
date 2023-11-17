@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-
+import SkipNavigation from './SkipNavigation';
 // import Navbar from "";
 /*const Navbar = dynamic(
   () => {
@@ -14,9 +14,10 @@ import Navbar from "./Navbar";
 const layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+    <SkipNavigation />
+      <Navbar id="main-menu"/>
       {children}
-      <Footer />
+      <Footer id="footer" />
     </>
   );
 };

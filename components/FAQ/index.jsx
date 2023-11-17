@@ -36,8 +36,8 @@ const FAQ = () => {
             <FaqsSection key={item.id}>
               <LeftSection>
                 <Faq>
-                  <QuestionWrapper onClick={() => toggle(index)}>
-                    <FaqQuestion>
+                  <QuestionWrapper role="button" onClick={() => toggle(index)} tabIndex={0}>
+                    <FaqQuestion tabIndex={0}>
                       {item.question}
                       {clicked === index ? <MinusIcon aria-label="Collapse FAQ answer"
                 aria-expanded="true"/> : <PlusIcon  aria-label="Expand FAQ answer"

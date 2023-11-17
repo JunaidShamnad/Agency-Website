@@ -84,7 +84,7 @@ export const HeroForm = styled(motion.div)`
   
 `
 
-export const TitleContact = styled.h1`
+export const TitleContact = styled.h2`
   ${MainHeading}
   width: 70%;
   margin-bottom: 4rem;
@@ -146,9 +146,9 @@ export const Detail = styled.div`
     margin-left: 0;
   }
 `;
-export const DetailTitle = styled.h1`
+export const DetailTitle = styled.h4`
   font-size: 19px;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 10px;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
       font-size: 20px;
@@ -345,7 +345,7 @@ margin-bottom: 40px;
 // outline:none;
 // font-size:32px;
 // `;
-export const GetaQuote = styled.h1`
+export const GetaQuote = styled.h2`
 font-size:27px;
 font-weight:700;
 text-align: center;
@@ -359,7 +359,7 @@ font-weight:bold;
 margin:0 0 50px 0;
 `;
 export const TermsCheckbox = styled.div`
-display:flex;
+// display:flex;
 margin:30px 0 10px 0;
 
 `;
@@ -379,7 +379,7 @@ color:#fff;
 }
 
 `;
-export const CheckboxTitle = styled.h1`
+export const CheckboxTitle = styled.p`
 font-size:16px;
 margin-left:15px;
 letter-spacing:0.8;

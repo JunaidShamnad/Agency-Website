@@ -210,7 +210,7 @@ const ContactUs1 = (props) => {
           />
         </ContactForm>
         <TermsCheckbox>
-          <label>
+          <label  style={{ display: 'flex', alignItems: 'center' }}>
           <Checkbox
             type="checkbox"
             required

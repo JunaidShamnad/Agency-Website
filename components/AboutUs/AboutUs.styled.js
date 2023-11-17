@@ -39,7 +39,7 @@ export const About = styled.div`
   ${divCenter}
   margin-bottom: 2.5rem;
 `;
-export const AboutTitle = styled.h1`
+export const AboutTitle = styled.h2`
   /*${HeadingH2};
   width: ${({ theme }) => theme.width[8]};
   word-wrap: break-word;

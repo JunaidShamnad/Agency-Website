@@ -166,7 +166,7 @@ export const Reviewer = styled.h3`
     font-weight:700;
     font-size:25px;
     letter-spacing:0.5px;
-    opacity:0.8;
+    // opacity:0.8;
     margin-bottom: 15px;
     @media (max-width: ${({ theme }) => theme.breakpoints.smallTablet}) {
       font-size: 20px;

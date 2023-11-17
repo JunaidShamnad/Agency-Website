@@ -68,7 +68,7 @@ export const WorkOne = styled.div`
   width: 100%;
   place-content: center;
 `;
-export const WorkTitle = styled.h2`
+export const WorkTitle = styled.h3`
   width: 100%;
   line-height: 140%;
   margin-top:1rem;
@@ -105,11 +105,11 @@ export const WorkDescription = styled.p`
   line-height: 140%;
   opacity:0.8;
 `;
-export const WorkHeading = styled.h1`
+export const WorkHeading = styled.h2`
   ${MainHeading}
 `;
 
-export const SubHeading = styled.p`
+export const SubHeading = styled.h4`
   font-size: 25px;
   margin-top:15px;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {

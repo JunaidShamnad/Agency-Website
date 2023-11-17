@@ -43,7 +43,7 @@ export const Logo = styled(motion.img)`
   cursor: pointer;
 `;
 
-export const LogoText = styled.h1`
+export const LogoText = styled.p`
  font-size:24px;
  font-weight:600;
 `

@@ -78,7 +78,7 @@ margin:0.5rem;
   }`;
 export const SidebarMenuLinkA = styled(motion.a)`
  color:#0D0A19;;
- opacity:0.8;
+ opacity:0.95;
  font-size: 1.8rem;
  text-decoration: underline;
   font-weight:600;

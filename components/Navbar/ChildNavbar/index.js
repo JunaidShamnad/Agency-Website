@@ -39,7 +39,7 @@ const ChildNavbar = ({ toggle}) => {
     <Nav  scrollNav={scrollNav} >
       <NavContainer>
         <NavLink href="/">
-         <NavLinkA>{LogoValue === "text" ? <Link href="https://intelpik.com/"><LogoText>Intelpik.</LogoText></Link> :<Logo src={LogoImage.src} alt="logo" />}</NavLinkA>
+         <NavLinkA aria-label="Intelpik Home">{LogoValue === "text" ? <Link href="https://intelpik.com/"><LogoText>Intelpik.</LogoText></Link> :<Logo src={LogoImage.src} alt="logo" />}</NavLinkA>
         </NavLink>
         <MobileMenu onClick={toggle}>
           <MenuIcon />
@@ -48,7 +48,7 @@ const ChildNavbar = ({ toggle}) => {
           {Links.map((link) => (
             <NavItem key={link.id}>
               <NavLink href={link.to}>
-                <NavLinkA> {link.name}</NavLinkA>
+                <NavLinkA role="button"> {link.name}</NavLinkA>
               </NavLink>
             </NavItem>
           ))}

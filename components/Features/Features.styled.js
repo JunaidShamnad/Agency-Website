@@ -57,12 +57,20 @@ export const LeftHeader = styled.div`
     }
 `
 
-export const LeftCaption = styled.p`
-    color: #696969;
-    font-weight: bold;
+export const LeftCaption = styled.h4`
+color: #353535;
+text-align: left;
+text-transform: uppercase;
+font-size: 22px;
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  font-size:16px;
+}
+@media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
+  font-size:16px;
+}
 `
 
-export const LeftHeading = styled.h1`
+export const LeftHeading = styled.h2`
     ${MainHeading}
     @media (max-width: ${({ theme }) => theme.breakpoints.smallestMobile}) {
         font-size: 2.5rem;
@@ -70,7 +78,10 @@ export const LeftHeading = styled.h1`
 `
 
 export const LeftDescription = styled.p`
-    width: 70%;
+width: 70%;
+font-weight: 500;
+font-size: 16px;
+
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width:90%;
     } ;
@@ -178,6 +189,8 @@ export const RightParagraph = styled.p`
     padding-left: 0.6rem;
     line-height: 1.5rem;
     width: 60%;
+    font-weight: 500;
+font-size: 16px;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width:100%;
         text-align: center;
