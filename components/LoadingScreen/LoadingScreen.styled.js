@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Screen = styled.div`
   position:relative;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   background: #5928E5;
   display: flex;
   justify-content: center;
