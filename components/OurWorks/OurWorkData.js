@@ -32,13 +32,13 @@ const works = [
         url: 'https://neocart.ae/',
         alt: 'Preview of Neocart website'
     },
-    {
-        id: 6,
-        name: 'Bellkare',
-        image: '/images/MOCKUPS1/Bellkare-mockup6.png',
-        url: 'https://www.bellkare.com/',
-        alt: 'Preview of Bellkare website'
-    },
+    // {
+    //     id: 6,
+    //     name: 'Bellkare',
+    //     image: '/images/MOCKUPS1/Bellkare-mockup6.png',
+    //     url: 'https://www.bellkare.com/',
+    //     alt: 'Preview of Bellkare website'
+    // },
     {
         id: 7,
         name: 'Neha Group',
