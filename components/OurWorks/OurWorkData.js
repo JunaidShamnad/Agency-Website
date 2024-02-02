@@ -46,13 +46,13 @@ const works = [
         url: 'https://nehagrp.com/',
         alt: 'Screenshot of Nehagroup website'
     },
-    {
-        id: 78,
-        name: 'Innovgrab',
-        image: '/images/MOCKUPS1/Innovgrab-mockup8.png',
-        url: 'https://www.innovgrab.com/',
-        alt: 'Preview of Innovgrab website'
-    },
+    // {
+    //     id: 78,
+    //     name: 'Innovgrab',
+    //     image: '/images/MOCKUPS1/Innovgrab-mockup8.png',
+    //     url: 'https://www.innovgrab.com/',
+    //     alt: 'Preview of Innovgrab website'
+    // },
     {
         id: 9,
         name: "Dowl",
