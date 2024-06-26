@@ -2,7 +2,7 @@ const works = [
    
         {
         id:1,
-        name: 'AL SARAS,
+        name: 'AL SARAS',
         image: '/images/MOCKUPS/alsaras.gif',
         url: 'https://alsarasmfg.com/',
         alt: 'Preview of AL SARAS website'
