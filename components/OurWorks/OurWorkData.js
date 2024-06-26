@@ -45,7 +45,7 @@ const works = [
         name: 'Prolifica',
         image: '/images/MOCKUPS1/Prolifica-mockup7.png',
         url: 'https://www.prolificatech.com/'
-    },
+    }
     
 ]
 
