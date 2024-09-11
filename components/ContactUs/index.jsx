@@ -277,7 +277,7 @@ const ContactUs = () => {
                   onChange={(e) => {
                     setCheck(e.target.checked);
                   }}
-                  required
+                 
                 />
                 <CheckboxTitle>
                   I have accepted all the terms and conditions
