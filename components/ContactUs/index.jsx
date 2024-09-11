@@ -226,6 +226,7 @@ const ContactUs = () => {
                     set_sender_name(e.target.value);
                     setName(e.target.value);
                   }}
+                  required
                 />
 
                 &nbsp;<label htmlFor="contact-service"> and I&apos;m looking for </label>&nbsp;
@@ -236,6 +237,7 @@ const ContactUs = () => {
                   onChange={(e) => {
                     set_sender_service(e.target.value);
                   }}
+                  required
                 >
                   <option value="Web Development">Web Development</option>
                   <option value="Digital Marketing">Digital Marketing</option>
@@ -252,6 +254,7 @@ const ContactUs = () => {
                     set_sender_email(e.target.value);
                     setEmail(e.target.value);
                   }}
+                  required
                 />
                 <label htmlFor="contact-phone">Contact number📞</label>&nbsp;
                 <PhoneInput
@@ -263,6 +266,7 @@ const ContactUs = () => {
                     set_sender_phone(e.target.value);
                     setPhone(e.target.value);
                   }}
+                  required
                 />
               </ContactForm>
               <TermsCheckbox>
@@ -273,6 +277,7 @@ const ContactUs = () => {
                   onChange={(e) => {
                     setCheck(e.target.checked);
                   }}
+                  required
                 />
                 <CheckboxTitle>
                   I have accepted all the terms and conditions
