@@ -217,7 +217,6 @@ const ContactUs1 = (props) => {
           <label  style={{ display: 'flex', alignItems: 'center' }}>
           <Checkbox
             type="checkbox"
-            required
             onChange={(e) => {
               setCheck(e.target.checked);
             }}
