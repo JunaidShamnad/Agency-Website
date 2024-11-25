@@ -10,7 +10,7 @@ const Footer = () => {
       <Container>
         <FooterTitles>&copy; {year} All Rights Reserved</FooterTitles>
         <FooterTitles>Designed And Developed By <strong><Link href="https://intelpik.com/">Intelpik</Link></strong></FooterTitles>
-        <Link href="mailto:junaid@intelpik.com"><FooterTitles>junaid@intelpik.com</FooterTitles></Link>
+        <Link href="mailto:hello@intelpik.com"><FooterTitles>hello@intelpik.com</FooterTitles></Link>
       </Container>
       </Section>
     )
