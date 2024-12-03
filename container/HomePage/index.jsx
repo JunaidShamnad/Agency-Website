@@ -15,6 +15,8 @@ import Link from 'next/link';
 import { BsWhatsapp } from 'react-icons/bs';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import CustomSliderComponent from '../../components/slider/CustomSliderComponent';
+import TestimonialSlider from '../../components/slider/Testimonial';
 
 
 const HomePage = () => {
@@ -49,6 +51,7 @@ const HomePage = () => {
       <OurWorks />
       <Features />
       <Testimonial />
+      <TestimonialSlider/>
       <FAQ />
       <ContactUs />
       <a target='_blank' href="https://wa.me/+918590302905" aria-label="Chat with us on WhatsApp">
