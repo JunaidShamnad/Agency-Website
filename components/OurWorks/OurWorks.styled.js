@@ -184,7 +184,6 @@ export const WorkInnerContainer = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    place-items: center;
     /* ${flexColumn} */
   } ;
 `;
