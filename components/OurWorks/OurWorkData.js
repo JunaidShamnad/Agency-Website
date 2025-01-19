@@ -3,7 +3,7 @@ const works = [
           {
         id:1,
         name: 'Valoris',
-        image: '/images/MOCKUPS/valoris-framer expert junaid.png',
+        image: '/images/MOCKUPS/valoris.png',
         url: 'https://valoristax.com/',
         alt: 'Preview of Valoris website'
     }, {
