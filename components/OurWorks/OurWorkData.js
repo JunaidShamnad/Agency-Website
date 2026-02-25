@@ -44,14 +44,14 @@ const works = [
         image: '/images/MOCKUPS1/bluecon-mockup4.png',
         url: 'https://www.blueconllc.com/',
         alt: 'Preview of Bluecon website'
-    },
-  
-   {
-        id: 8,
-        name: 'Prolifica',
-        image: '/images/MOCKUPS1/Prolifica-mockup7.png',
-        url: 'https://www.prolificatech.com/'
     }
+  
+   // {
+   //      id: 8,
+   //      name: 'Prolifica',
+   //      image: '/images/MOCKUPS1/Prolifica-mockup7.png',
+   //      url: 'https://www.prolificatech.com/'
+   //  }
     
 ]
 
